@@ -13,7 +13,11 @@ target: $(target)
 
 ##################################################################
 
-pardirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates
+projdirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates
+
+colddirs += $(projdirs)
+
+pardirs += $(projdirs)
 
 Ignore += $(pardirs)
 
@@ -180,6 +184,7 @@ makestuff/Makefile:
 -include makestuff/texdeps.mk
 -include makestuff/wrapR.mk
 -include makestuff/webpix.mk
+-include makestuff/hotcold.mk
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
