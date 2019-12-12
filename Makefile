@@ -1,4 +1,7 @@
-# disease_model_talks
+
+# disease_dynamics
+# CARRIED ON from disease_model_talks
+# Workshops/disease
 
 ##################################################################
 
@@ -10,26 +13,6 @@ target: $(target)
 
 ##################################################################
 
-## Cribbing
-
-## Not tested
-prev: dir=~/gitroot/disease_model_talks/
-prev:
-	$(linkdirname)
-
-ptargets = $(wildcard prev/*.*)
-ctargets = $(notdir $(ptargets))
-
-$(ctargets):
-	$(CP) prev/$@ .
-
-%: prev/%
-	$(copy)
-
-######################################################################
-
-## Content sources
-## WARNING: No slashes!!
 pardirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates
 
 alldirs += $(pardirs)
@@ -39,7 +22,6 @@ alldirs += $(pardirs)
 # make files
 
 Sources += Makefile README.md LICENSE.md notes.txt
-imageDrop = ~/Dropbox/disease_model_lectures/
 
 -include makestuff/newtalk.def
 -include makestuff/perl.def
@@ -53,17 +35,8 @@ Sources += beamer.tmp notes.tmp
 
 ######################################################################
 
-## Drop stuff
-
-## Dropping web_drop and changing to webpix
-## Old step files in ~/gitroot/Lecture_images, I guess
+imageDrop = ~/Dropbox/disease_model_lectures/
 Sources += $(wildcard *.step)
-
-######################################################################
-
-## Sandbox
-
-Endemic_curves/propCurves.Rout.pdf: Endemic_curves/propCurves.R
 
 ######################################################################
 

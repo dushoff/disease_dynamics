@@ -1,0 +1,96 @@
+
+Exploring the interaction between models and data
+
+PRESENT \vfill
+
+Jonathan Dushoff, McMaster University
+
+\url{http://lalashan.mcmaster.ca/DushoffLab}
+
+PRESENT \vfill
+
+PRESENT 2016 Summer Course on Mathematical Modeling and Analysis of 
+Infectious Diseases
+
+PRESENT \vfill
+
+PRESENT National Taiwan University
+
+PRESENT \vfill
+
+----------------------------------------------------------------
+
+Goals
+
+	Explore some ideas of using a model to explore disease data
+
+	Use estimates of HIV prevalence from Zimbabwe as an example
+
+----------------------------------------------------------------------
+
+Bridging
+
+PIC DBFIG 0.7 web_drop/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
+
+	Models are the tool we use to bridge between data and mechanisms
+
+	In both directions
+
+----------------------------------------------------------------------
+
+Estimated HIV prevalence in Zimbabwe
+
+FIG SIR_simulations/zim.prev.Rout.pdf
+
+----------------------------------------------------------------------
+
+Experimental fitting
+
+	We will fit by eye, for learning purpose only
+
+	Later, we will talk about statistical frameworks
+
+	Code online: \url{https://github.com/dushoff/SIR_simulations}
+
+----------------------------------------------------------------------
+
+FIG HIV_model_data/Diagram1.png
+
+----------------------------------------------------------------------
+
+Phenomenological heterogeneity
+
+	Just \emph{assume} that you can approximate this complicated phenomenon
+	with a simple functional form, $\beta = f(P)$
+
+		Original study used $\beta = \beta_0 \exp(-\alpha P)$
+
+		We will use $\beta = \beta_0 (1-P)^\kappa$
+
+	Both forms start with $\beta = \beta_0$ and decline smoothly with
+	prevalence
+
+----------------------------------------------------------------------
+
+FIG HIV_model_data/Diagram2.png
+
+----------------------------------------------------------------------
+
+Realistic time distributions
+
+FIG web_drop/boxcars.jpg
+
+----------------------------------------------------------------------
+
+WIDEFIG HIV_model_data/Diagram3.png
+
+----------------------------------------------------------------------
+
+Are people \emph{responding} to the epidemic?
+
+FIG web_drop/SA_region_LE.png
+
+----------------------------------------------------------------------
+
+WIDEFIG HIV_model_data/Diagram5.png
+

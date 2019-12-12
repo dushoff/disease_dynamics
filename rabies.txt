@@ -1,0 +1,637 @@
+
+EXTRA
+
+	This talk is descended from one of my first-ever MMED talks
+
+	In this form starting from the 2018 public lecture
+
+	~/Dropbox/ICI3D_Materials/MMED2018/LectureSlides/mentor_research/ModellingRabiesElimination_MMED2018_Thumbi.pdf
+
+	http://www.who.int/rabies/en
+
+----------------------------------------------------------------------
+
+EXTRA Bio
+
+Jonathan Dushoff uses mathematical, statistical and computational methods to advance public health, with a particular focus on infectious diseases. Jonathan was raised and educated in the United States, and worked for two years in the Peace Corps in Swaziland. After receiving a Ph.D. from Princeton University, he did research in advocacy for four years in Taiwan. He is currently a professor in Hamilton, Canada. A founding member of the International Clinics on Infectious Disease Dynamics and Data, he has taught workshops at AIMS every year since 2007. He was recently appointed an Associate Researcher at the Stellenbosch Center for Excellence in something
+
+----------------------------------------------------------------------
+
+EXTRA Math and rabies control
+
+Rabies is a horrifying disease whose effects on humans are almost entirely preventable. Within the last decade rabies has been recognized as a global public-health priority, and some areas of the world have made large strides in control, while others continue to struggle. This talk will discuss the role of mathematical modeling, and novel statistical approaches, in: elucidating patterns of rabies spread; informing intervention strategies; and evaluating control progress and prospects
+
+----------------------------------------------------------------------
+
+EXTRA Outline
+
+Old stuff
+
+Burden
+
+Americas paper
+* https://docs.google.com/document/d/1YWC5109-EORVy1ICuqzCZMhRaLXOLXZXXLVyPACfVbw
+
+Surveillance for elimination paper
+* biorxiv?
+
+Pre- vs. post-vaccination 
+* (Gavi vaccine analysis)
+
+----------------------------------------------------------------------
+
+NOFRAME
+
+\newcommand{\jdtitle}{Math and rabies control}
+\newcommand{\years}{2010--2018} 
+
+----------------------------------------------------------------------
+
+ICI3D
+
+----------------------------------------------------------------------
+
+SECTION Introduction
+
+----------------------------------------------------------------------
+
+TSS What is rabies?
+
+	A fatal, viral disease
+
+	Transmitted by saliva, usually via bites
+
+----------------------------------------------------------------------
+
+Rabies is an under-rated disease
+
+HFIG 0.8 my_images/burden.png
+
+CREDIT Lembo et.\ al, PLoS NTDs
+
+----------------------------------------------------------------------
+
+Rabies is scary
+
+WIDEFIG webpix/dog_drawing.jpg
+
+----------------------------------------------------------------------
+
+Rabies is expensive
+
+WIDEFIG webpix/typhoid.jpg
+
+----------------------------------------------------------------------
+
+Effective, economical control measures are available
+
+WIDEFIG webpix/indian_vaccine.jpg
+
+----------------------------------------------------------------------
+
+Dog-mediated rabies is slated for elimination
+
+WIDEFIG webpix/wrd.png
+
+----------------------------------------------------------------------
+
+TSS What is math?
+
+	American for maths
+
+	A well-defined framework for thinking about how assumptions relate to
+	conclusions
+
+	A powerful tool for helping to ask scientific questions
+
+----------------------------------------------------------------------
+
+Dynamical modeling connects scales
+
+REP DBFIG 0.7 SIR_model_family/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
+
+	Start with rules about how things change in short time steps
+
+		Usually based on \emph{individuals}
+
+	Calculate results over longer time periods
+
+		Usually about \emph{populations}
+
+----------------------------------------------------------------------
+
+Statistics evaluates patterns
+
+WIDEFIG my_images/synchrony/F1incidence.talk.png
+
+\vspace{-2em}
+
+CREDIT Hampson et al., PNAS, 2007
+
+----------------------------------------------------------------------
+
+TSEC Math and disease elimination
+
+WIDEFIG TREE_crop.jpg
+
+----------------------------------------------------------------------
+
+The basic reproductive number
+
+	$\Ro$ is the number of people who would be infected by an
+	infectious individual \emph{in a fully susceptible population.}
+
+	$\Ro = c p D$
+
+		$c$: Contact Rate
+
+		$p$: Probability of transmission (infectivity)
+
+		$D$: Average duration of infection
+
+	A disease can invade a population if and only if $\Ro>1$.
+
+	\Rx\ usually declines from \Ro\ if the disease spreads (fewer people are
+	susceptible)
+
+----------------------------------------------------------------------
+
+RHEAD Endemic curves
+
+BC
+
+CFIG Endemic_curves/propCurves.Rout-3.pdf
+
+NC
+
+	Threshold value
+
+	Sharp response to changes in factors underlying transmission 
+
+	Implications for control
+
+EC
+
+----------------------------------------------------------------------
+
+Speed and risk
+
+BC
+
+	Which is more dangerous, a fast disease, or a slow disease?
+
+		How are we measuring speed?
+
+		How are we measuring danger?
+
+		\emph{What do we already know?}
+
+NC
+
+SIDEFIG SIR_model_family/generationTime.Rout-0.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+Speed and risk
+
+FIG SIR_simulations/hiv_generations.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Speed and risk
+
+FIG SIR_simulations/hiv_generations.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Speed and risk
+
+DOUBLEPDF SIR_simulations/hiv_generations.Rout
+
+----------------------------------------------------------------------
+
+SECTION Patterns of spread in Africa
+
+----------------------------------------------------------------------
+
+Spatiotemporal patterns of rabies in Africa
+
+WIDEFIG my_images/synchrony/F1incidence.talk.png
+
+\vspace{-2em}
+
+CREDIT Hampson et al., PNAS, 2007
+
+----------------------------------------------------------------------
+
+TSS Statistics
+
+	What patterns do we see?
+
+	How clearly do we see them?
+
+----------------------------------------------------------------------
+
+Synchrony
+
+BCC
+
+CFIG my_images/synchrony/F1incidence.talk.png
+
+NCC
+
+	What is a fair way to compare these to a null (unsynchronized) model?
+
+	Randomize starting points, not each point individually
+
+EC
+
+----------------------------------------------------------------------
+
+Geographic correlations
+
+HFIG 0.9 my_images/synchrony/Geography.pdf
+
+----------------------------------------------------------------------
+
+Geographic correlations
+
+BCC
+
+CFIG my_images/synchrony/Geography.pdf
+
+NCC
+
+	What is a fair way to compare \emph{these} to a null model
+
+	Randomize one of the \emph{country lists}, not the individual points
+
+EC
+
+----------------------------------------------------------------------
+
+Periodicity
+
+WIDEFIG my_images/synchrony/F1incidence.talk.png
+
+----------------------------------------------------------------------
+
+Periodicity
+
+BCC
+
+CFIG my_images/synchrony/F1incidence.talk.png
+
+NCC
+
+	What is a fair way to compare these to a null (non-periodic) model?
+
+	Randomize \emph{differences} rather than observations
+
+EC
+
+----------------------------------------------------------------------
+
+Results
+
+	Rabies in Africa is
+
+		Synchronized at a large spatial scale
+
+		Periodic
+
+		Fast (ie., cycles are faster than simple models can predict)
+
+----------------------------------------------------------------------
+
+TSS Dynamical models
+
+	What might explain the patterns that we see?
+
+	Based on observations of health systems, we hypothesized that humans are \emph{responding} to rabies outbreaks
+
+		Vaccination, education, awareness
+
+----------------------------------------------------------------------
+
+Explaining fast cycles
+
+HFIG 0.9 my_images/response_model.png
+
+----------------------------------------------------------------------
+
+Conclusions
+
+	Rabies in Africa is synchronous and periodic
+
+	Synchrony between countries may be due to border crossing
+
+		by rabid dogs
+
+		or by human ideas
+
+		not likely to be simply due to reporting
+
+	Periodicity is likely driven by human responses (and their lack)
+
+	Governments should:
+
+		all contribute to the effort
+
+		be consistent through time
+
+----------------------------------------------------------------------
+
+SECTION What species are important?
+
+----------------------------------------------------------------------
+
+Multiple populations
+
+WIDEFIG webpix/hyenas.jpg
+
+----------------------------------------------------------------------
+
+Maintenance populations
+
+FIG webpix/reservoir.jpg
+
+----------------------------------------------------------------------
+
+NW Tanzania study
+
+HFIG 0.8 my_images/tz_cases.png
+
+\vspace{-2em}
+
+CREDIT Hampson et al.\ PLoS Biology
+
+----------------------------------------------------------------------
+
+Ngorongoro district
+
+FIG webpix/pastoralist.jpg
+
+----------------------------------------------------------------------
+
+Serengeti district
+
+FIG webpix/nyamongo.jpg
+
+----------------------------------------------------------------------
+
+Rabies cases identified
+
+FIG webpix/lembo_spp.jpg
+
+CREDIT Lembo et al. 2008 J. App.\ Ecol.
+
+----------------------------------------------------------------------
+
+Model fitting
+
+BC
+
+WIDEFIG webpix/lembo_ts.jpg
+
+NC
+
+	Domestic dogs are a maintenance population
+
+	Wild carnivores as a whole are not
+
+EC
+
+----------------------------------------------------------------------
+
+Model fitting
+
+BC
+
+WIDEFIG webpix/lembo_ts.jpg
+
+NC
+
+	Some amount of intervention in dogs alone should eliminate rabies
+	circulation in this population
+
+	No amount of intervention in the carnivore population alone will do this
+
+EC
+
+----------------------------------------------------------------------
+
+Model fitting
+
+BC
+
+CFIG webpix/reservoir.jpg
+
+NC
+
+	Some amount of intervention in dogs alone should eliminate rabies
+	circulation in this population
+
+	No amount of intervention in the carnivore population alone will do this
+
+EC
+
+----------------------------------------------------------------------
+
+Which species are important?
+
+BC
+
+	Vaccination in domestic dogs can eliminate canine rabies strains from
+	Serengeti and Ngorongoro districts
+
+	Maybe from everywhere!
+
+NC
+
+CFIG webpix/dog_resting.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+SECTION Transmission details
+
+----------------------------------------------------------------------
+
+Serengeti and Ngorongoro districts
+
+HFIG 0.8 my_images/tz_cases.png
+
+\vspace{-2em}
+
+CREDIT Hampson et al.\ PLoS Biology
+
+----------------------------------------------------------------------
+
+Contact tracing
+
+HFIG 0.9 my_images/Boyd3.png
+
+----------------------------------------------------------------------
+
+Time distributions
+
+HFIG 0.9 my_images/rabies_times.png
+
+----------------------------------------------------------------------
+
+Estimating \Ro
+
+	We estimated \Ro\ in three ways:
+
+		Rate of spread compared to time distributions
+
+		Number of bites expected without control measures, $\times$
+		probability of infection
+
+		Epidemic tree reconstruction (similar to reservoir paper)
+
+	In the latter two cases we had a more than one estimate, depending
+	on different assumptions about unobserved events
+
+----------------------------------------------------------------------
+
+Estimating \Ro
+
+HFIG 0.9 my_images/rabiesR0.png
+
+----------------------------------------------------------------------
+
+Vaccination campaigns
+
+HFIG 0.9 my_images/Boyd12.png
+
+----------------------------------------------------------------------
+
+Vaccination and outbreaks
+
+HFIG 0.9 my_images/outbreak.png
+
+----------------------------------------------------------------------
+
+Conclusions
+
+	Low \Ro\ means that elimination of canine rabies and thus the
+	public health threat of rabies is possible in this area
+
+		This implies that it should be possible in most or all areas of
+		the world -- it would be nice to know which
+
+	Short dog lifespans make elimination harder;
+	co-ordinated, consistent effort is required
+
+----------------------------------------------------------------------
+
+EXTRA Open questions
+
+	Why is \Ro\ for domestic dog transmission of rabies so consistently low?
+
+	Why is there little effect of dog density?
+
+----------------------------------------------------------------------
+
+TSEC Other topics
+
+BCC
+
+	Math is a wonderful tool!
+
+NCC
+
+CFIG webpix/wrench.png
+
+EC
+
+----------------------------------------------------------------------
+
+Learning from Latin America
+
+FIG my_images/lac_overview.png
+
+CREDIT Harris \ldots Hampson, in prep
+
+	Patterns of rabies decline
+
+----------------------------------------------------------------------
+
+Verifying elimination
+
+CREDIT Hampson et al \url{https://www.biorxiv.org/content/early/2016/12/31/096883}
+
+FIG my_images/active_chart.png
+
+----------------------------------------------------------------------
+
+Demography
+
+WFIG 0.8 webpix/puppies.jpg
+
+	How long do dogs live? How does this effect vaccination campaigns? What
+	would be the effect of sterilization?
+
+----------------------------------------------------------------------
+
+How does human vaccination fit in?
+
+WIDEFIG webpix/typhoid.jpg
+
+----------------------------------------------------------------------
+
+SEC Conclusions
+
+----------------------------------------------------------------------
+
+Get it right
+
+BC
+
+CFIG webpix/measure.jpg
+
+NC
+
+	Measure twice, cut once
+
+	Calculate twice, implement policy once
+
+	Dynamic models and statistics are our measuring devices
+
+EC
+
+----------------------------------------------------------------------
+
+Get it done
+
+HFIG 0.7 my_images/child_dog.png
+
+CREDIT \hfill\ Photo by @matthewmuturi
+
+Mass vaccination of domestic dogs should lead to:
+
+	elimination of canine rabies
+
+	decrease of $100\times$ or more in rabid bites and deaths
+
+----------------------------------------------------------------------
+
+Thanks
+
+	Public and workshop participants
+
+	AIMS
+
+	Katie Hampson, Glasgow group and other co-authors
+
+	Thumbi Mwangi
+
+	\ldots
+
+----------------------------------------------------------------------
+

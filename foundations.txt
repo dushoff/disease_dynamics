@@ -1,0 +1,439 @@
+Mathematical foundations for dynamics
+
+Jonathan Dushoff, McMaster University
+
+\url{http://lalashan.mcmaster.ca/DushoffLab}
+
+PRESENT \vfill
+
+PRESENT 2016 Summer Course on Mathematical Modeling and Analysis of 
+Infectious Diseases
+
+PRESENT \vfill
+
+PRESENT National Taiwan University
+
+PRESENT \vfill
+
+----------------------------------------------------------------------
+
+Goals
+
+	This lecture will explain
+
+		exponential growth (and decline)
+
+		simple qualitative methods for analyzing ODE-based dynamical systems
+
+		the importance of linear equations
+
+		some basic ideas about matrices and eigenvalues
+
+----------------------------------------------------------------------
+
+
+SEC Exponential change
+
+----------------------------------------------------------------------
+
+Modeling decline
+
+	We have some bacteria in a tank
+
+	They have no food, so they are simply dying at a \emph{per capita} rate
+	of 0.02/hr.
+
+	If the current density is 100 bacteria/ml, what will be the density
+	after 1 hr?
+
+	What will be the density after 1 wk?
+
+----------------------------------------------------------------------
+
+A simple model of population growth
+
+	$\ds \frac{dN}{dt} = (b-d)N $
+
+	$\ds \frac{dN}{dt} = rN$
+
+	This is the only differential equation you need to solve!
+
+	$N(t) = N(0) e^{rt} = N(0) \exp(rt)$
+
+	Bacteria example
+
+----------------------------------------------------------------------
+
+SEC Population growth example
+
+----------------------------------------------------------------------
+
+A more realistic model of population growth
+
+	Populations don't grow forever
+
+		or decline forever
+
+	Probably the birth rate will decline if the population is too crowded
+
+	Let's let the birth rate go down as population goes up:
+
+	$\ds \frac{dN}{dt} = (b_0 \exp(-N/N_b) - d)N$
+
+----------------------------------------------------------------------
+
+PSLIDE A model of population growth
+
+FIG Birth_death_models/birth.bd.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+RHEAD A model of population growth
+
+	PRESENT $\ds \frac{dN}{dt} = (b_0 \exp(-N/N_b) - d)N$
+
+	\emph{We don't want to solve this equation!}
+
+----------------------------------------------------------------------
+
+What can we do instead?
+
+	\emph{Computer simulations}: what will happen with particular parameters?
+
+	\emph{Qualitative analysis}: what can we learn in general?
+
+----------------------------------------------------------------------
+
+Population growth model
+
+	Structure: $\ds \frac{dN}{dt} = (b_0 \exp(-N/N_b) - d)N$
+
+	Parameters?
+
+		$b_0$: \emph{per capita} birth rate [1/time]
+
+		$d$: \emph{per capita} death rate [1/time]
+
+		$N_b$: Scale of population regulation [indiv]
+
+	State variables?
+
+		$N$: Population size [indiv]
+
+----------------------------------------------------------------------
+
+Computer simulation
+
+FIG Birth_death_models/birth.bd.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+PSLIDE What will this model do?
+
+FIG Birth_death_models/birth.bd.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+What will this model do?
+
+FIG Birth_death_models/birth.bd.Rout-8.pdf
+
+----------------------------------------------------------------------
+
+PSLIDE What will this model do?
+
+FIG Birth_death_models/birth.bd.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+What will this model do?
+
+FIG Birth_death_models/birth.bd.Rout-9.pdf
+
+----------------------------------------------------------------------
+
+RSLIDE Computer simulation
+
+FIG Birth_death_models/birth.bd.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+Computer simulation
+
+FIG Birth_death_models/birth.bd.Rout-5.pdf
+
+----------------------------------------------------------------------
+
+Qualitative analysis
+
+	Find \emph{equilibria} -- points where the population will not change
+
+		Structure: $\ds \frac{dN}{dt} = f(N)$
+
+		Equilibria when $f(N) = 0$
+
+	Analyze equilibrium \emph{stability} -- if we are \emph{near} the
+	equilibrium, we will move toward it or away from it?
+
+		How does $f(N)$ \emph{change} near an equilibrium?
+
+----------------------------------------------------------------------
+
+PSLIDE Linearization
+
+FIG Birth_death_models/ntu.bd.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Linearization
+
+FIG Birth_death_models/ntu.bd.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+PSLIDE Zoom to extinction equilibrium
+
+FIG Birth_death_models/ntu.bd.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+Zoom to extinction equilibrium
+
+FIG Birth_death_models/ntu.bd.Rout-4.pdf
+
+----------------------------------------------------------------------
+
+PSLIDE Linearization
+
+FIG Birth_death_models/ntu.bd.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+PSLIDE Zoom to carrying capacity
+
+FIG Birth_death_models/ntu.bd.Rout-5.pdf
+
+----------------------------------------------------------------------
+
+Zoom to carrying capacity
+
+FIG Birth_death_models/ntu.bd.Rout-6.pdf
+
+----------------------------------------------------------------------
+
+PSLIDE Linearization
+
+FIG Birth_death_models/ntu.bd.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+PSLIDE Zoom to other point
+
+FIG Birth_death_models/ntu.bd.Rout-7.pdf
+
+----------------------------------------------------------------------
+
+Zoom to other point
+
+FIG Birth_death_models/ntu.bd.Rout-8.pdf
+
+----------------------------------------------------------------------
+
+Linearization
+
+	Near an equilibrium, the system behaves like:
+
+	$\ds \frac{dx}{dt} = Jx $
+
+		$x$ is the distance from equilibrium
+		
+		$\ds J = \frac{\partial f}{\partial x}$
+
+	The solution is $x(t) = x(0)\exp(Jt)$
+
+		Moves away exponentially if $J>0$
+
+		Moves in exponentially if $J<0$
+
+----------------------------------------------------------------------
+
+SEC Disease model
+
+----------------------------------------------------------------------
+
+What about our simple disease model?
+
+WIDEFIG SIR_model_family/sirbd.three.pdf
+
+\begin{eqnarray*}
+	\frac{dS}{dt}  &=&  \mu N- \beta \frac{SI}{N} -\mu S \\
+	\frac{dI}{dt}  &=& \beta \frac{SI}{N}- \gamma I  -\mu R \\
+	\frac{dR}{dt}  &=& \gamma I -\mu R
+\end{eqnarray*}
+
+----------------------------------------------------------------------
+
+Disease model
+
+	Parameters?
+
+		$\mu$: Death rate [1/time]
+
+		$\beta$: Transmission rate [1/time]
+
+		$\gamma$: Recovery rate [1/time]
+
+		$N$: Population size [indiv]
+
+	State variables?
+
+		$S, I, R$ -- but we are going to ignore $R$
+
+			ANS It does not affect $S$ or $I$ under our assumptions
+
+			ANS It is redundant (we know it if we know $N$, $S$ and $I$.
+
+----------------------------------------------------------------------
+
+Equilibria
+
+	$I=0$, $S=N$
+
+		The \emph{disease-free equilibrium} (DFE)
+
+	$S=\gamma/\beta$, $I=$ (something)
+
+		The \emph{endemic equilibrium} (EE)
+
+----------------------------------------------------------------------
+
+Qualitative analysis
+
+	\begin{eqnarray*}
+		\frac{dS}{dt}  &=&  f(S, I)\\
+		\frac{dI}{dt}  &=& g(S, I)
+	\end{eqnarray*}
+
+	We still have linear equations near the equilibrium
+
+	This is the only kind of equation we can solve
+
+	Behaviour is determined by 
+
+	\begin{displaymath}
+		J = \left(
+			\begin{array}{ll}
+				\frac{\partial f}{\partial S}
+				& \frac{\partial f}{\partial I}
+				\\ \frac{\partial g}{\partial S}
+				& \frac{\partial g}{\partial I}
+			\end{array}
+		\right)
+	\end{displaymath}
+
+----------------------------------------------------------------------
+
+SEC Matrices and eigenvalues
+
+----------------------------------------------------------------------
+
+Rabbits
+
+	Imagine we have a population of rabbits
+
+		Baby rabbits become adults after one month
+
+		Each pair of adult rabbits produces one pair of baby rabbits each
+		month
+
+		Rabbits never die
+
+	What happens to this population?
+
+----------------------------------------------------------------------
+
+Matrix equations
+
+	We describe this as equations for \textbf{A}dult and \textbf{B}aby rabbits:
+
+		$A' = A+B$
+
+		$B' = A$
+
+	In matrix terms, we write:
+
+		\begin{displaymath}
+			\left(
+				\begin{array}{l}
+					A' \\ B'
+				\end{array}
+			\right)
+			=
+			\left(
+				\begin{array}{ll}
+					1 & 1
+					\\ 1 & 0
+				\end{array}
+			\right)
+			\left(
+				\begin{array}{l}
+					A \\ B
+				\end{array}
+			\right)
+		\end{displaymath}
+
+----------------------------------------------------------------------
+
+Eigenvectors and eigenvalues
+
+	We describe matrix dynamics using eigenvectors and eigenvalues
+
+		An \emph{eigenvector} is a vector which keeps its shape when
+		multiplied by the matrix (it is just multiplied by a regular number)
+
+		An \emph{eigenvalue} is the number we multiply by 
+
+----------------------------------------------------------------------
+
+Dominant values
+
+	Usually, matrix dynamics have a single \emph{dominant} eigenvalue (and
+	eigenvector)
+
+		This is just the one that is most important for the dynamics we are
+		studying
+
+----------------------------------------------------------------------
+
+Disease example
+
+DOUBLEPDF SIR_simulations/recurrent.plots.Rout
+
+----------------------------------------------------------------------
+
+Disease-free equilibrium
+
+	Dominant eigenvalue is (usually) $\beta-\gamma$
+
+		Describes how fast the epidemic grows exponentially
+
+		Eigenvector describes relationship between \emph{increase in $I$} and
+		\emph{decrease in $S$}
+
+	Other eigenvalue describes how fast susceptibles recover to equilibrium
+	when there is no disease
+
+----------------------------------------------------------------------
+
+Endemic equilibrium
+
+	There is a pair of \emph{complex} eigenvalues
+
+		$a+bi$, where $i = \sqrt{-1}$
+
+	In complex eigenvalues:
+	
+		real part ($a$) describes exponential growth (or decline)
+	
+		imaginary part ($b$) describes rate of oscillation
+
