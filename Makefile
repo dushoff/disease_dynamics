@@ -21,7 +21,7 @@ pardirs += $(projdirs)
 
 Ignore += $(pardirs)
 
-alldirs += $(pardirs) makestuff
+alldirs += $(pardirs)
 
 ######################################################################
 
