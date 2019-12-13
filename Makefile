@@ -44,6 +44,8 @@ Sources += beamer.tmp notes.tmp
 imageDrop = ~/Dropbox/disease_model_lectures/
 Sources += $(wildcard *.step)
 
+data.html: data.step
+
 ######################################################################
 
 Sources += local.txt.format
@@ -164,6 +166,24 @@ Sources += taxonomy.jpg
 Ignore += taxon.jpg
 taxon.jpg: taxonomy.jpg Makefile
 	convert -crop 960x560+0+100 $< $@
+
+######################################################################
+
+## New DAIDD intro lecture 2019 Dec 13 (Fri)
+
+data.final.pdf: data.txt
+data.draft.pdf: data.txt
+data.handouts.pdf: data.txt
+
+## downcall science/Pearson18.pdf ##
+## downcall science/WilliamsReflections.pdf ##
+## downcall science/Williams17.pdf ##
+## downcall science/rubella_tycho.zip ##
+## downcall science/crs_tycho.zip ##
+science: dir=~/Dropbox/iciScience
+science:
+	$(linkdirname)
+Makefile: science
 
 ######################################################################
 
