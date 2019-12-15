@@ -186,6 +186,7 @@ taxon.jpg: taxonomy.jpg Makefile
 ## https://docs.google.com/presentation/d/1eEFe-SVc1LMBU85wrrHl5fuolo-alg3yk0EeqhdxOHI/
 ## science/WilliamsReflections.pdf ##
 ## science/Williams17.pdf ##
+Ignore += science
 science: dir=~/Dropbox/iciScience
 science:
 	$(linkdirname)
@@ -195,6 +196,7 @@ science/%:
 ## If we're going to cannibalize, it would be good to have a link here to a public version of the original slides, but this is not available
 
 ## my_images/africaMAP.png ##
+Ignore += pearson*.*
 pearson.pages: science/Pearson18.pdf
 	convert $< pearson.png
 	touch $@
@@ -213,6 +215,7 @@ pearson-%.loop.jpg: pearson-%.pdf Makefile
 
 maternal.Rout: science/mat1.csv maternal.R
 
+Ignore += snow*.pdf
 snow0.pdf: science/Williams17.pdf
 	pdfjam --landscape -o $@ $< 45
 
@@ -222,6 +225,7 @@ snow_pumps.pdf: science/Williams17.pdf
 Farr.Rout: science/farr.tsv Farr.R
 
 ## Smoking stuff
+Ignore += fev.csv
 fev.csv: 
 	wget -O $@ "http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/FEV.csv"
 smoking.Rout: fev.csv smoking.R
