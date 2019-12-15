@@ -23,6 +23,10 @@ Ignore += $(pardirs)
 
 alldirs += $(pardirs) makestuff
 
+## This should be, but isn't, obviated by colddirs
+SIR_model_family/%.pdf:
+	$(makethere)
+
 ######################################################################
 
 # make files
@@ -173,17 +177,56 @@ taxon.jpg: taxonomy.jpg Makefile
 
 data.final.pdf: data.txt
 data.draft.pdf: data.txt
-data.handouts.pdf: data.txt
+## data.handouts.pdf: data.txt
+## data.handouts.tex ## data.handouts.log
 
-## downcall science/Pearson18.pdf ##
-## downcall science/WilliamsReflections.pdf ##
-## downcall science/Williams17.pdf ##
-## downcall science/rubella_tycho.zip ##
-## downcall science/crs_tycho.zip ##
+######################################################################
+
+## science/What19.pdf ##
+## science/Pearson18.pdf ##
+	## https://docs.google.com/presentation/d/1eEFe-SVc1LMBU85wrrHl5fuolo-alg3yk0EeqhdxOHI/
+## science/WilliamsReflections.pdf ##
+## science/Williams17.pdf ##
 science: dir=~/Dropbox/iciScience
 science:
 	$(linkdirname)
-Makefile: science
+science/%:
+	$(MAKE) science
+
+## If we're going to cannibalize, it would be good to have a link here to a public version of the original slides, but this is not available
+
+## my_images/africaMAP.png ##
+pearson.pages: science/Pearson18.pdf
+	convert $< pearson.png
+	touch $@
+
+## This is wasteful
+## pearson-11.main.png:
+pearson-%.main.png: pearson-%.png Makefile
+	convert $< $@
+
+## This is terrible
+## pearson-15.loop.jpg:
+pearson-%.pdf: science/Pearson18.pdf
+	pdfjam --landscape -o $@ $< $*
+pearson-%.loop.jpg: pearson-%.pdf Makefile
+	convert -crop 800x440+20+40 $< $@
+
+maternal.Rout: science/mat1.csv maternal.R
+
+snow0.pdf: science/Williams17.pdf
+	pdfjam --landscape -o $@ $< 45
+
+snow_pumps.pdf: science/Williams17.pdf
+	pdfjam --landscape -o $@ $< 46
+
+Farr.Rout: science/farr.tsv Farr.R
+
+## Smoking stuff
+fev.csv: 
+	wget -O $@ "http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/FEV.csv"
+smoking.Rout: fev.csv smoking.R
+smoke_effects.Rout: smoking.Rout smoke_effects.R
 
 ######################################################################
 

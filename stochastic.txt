@@ -13,7 +13,7 @@ NOFRAME
 
 \newcommand{\jdtitle}{Stochastic models:}
 \newcommand{\jdsub}{Concepts and analysis}
-\newcommand{\years}{2007--2018} 
+\newcommand{\years}{2007--2019} 
 
 ----------------------------------------------------------------------
 

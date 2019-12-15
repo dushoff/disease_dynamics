@@ -11,14 +11,243 @@ ICI3DTHEME
 
 ----------------------------------------------------------------------
 
+SEC Introduction
+
+----------------------------------------------------------------------
+
 Goals
 
+	Process of science
+
+	How science informs public health
+
+		Specific examples
+
+	Different approaches
+
 ----------------------------------------------------------------------
 
+Science is a \emph{process}
+
+	Observe and experiment with reality to \emph{discover} and \emph{challenge}
+	ideas about how it works
+
+	A key to science is that everything is open to question
+
+		Science is the belief in the ignorance of experts -- \emph{Feynman}
 
 ----------------------------------------------------------------------
 
-Summary
+The process of science
+
+FIG pearson-15.loop.jpg
 
 ----------------------------------------------------------------------
+
+Science without experiments
+
+FIG pearson-16.loop.jpg
+
+----------------------------------------------------------------------
+
+SEC Public health
+
+----------------------------------------------------------------------
+
+TSS Maternal mortality
+
+	Igor Semmelweiss
+
+	Vienna general hospital
+
+	ADD Odds ratios
+
+	ADD Better HIGHFIG
+
+----------------------------------------------------------------------
+
+PICSLIDE DIAGRAM maternal.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+PICSLIDE DIAGRAM maternal.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+DIAGRAM maternal.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+TSS Cholera
+
+	Is it caused by bad air, or bad water?
+
+	What's bad about it?
+
+----------------------------------------------------------------------
+
+Cholera and air
+
+FIG Farr.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Cholera and air
+
+FIG Farr.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+PIC FIG snow0.pdf
+
+----------------------------------------------------------------------
+
+PIC FIG snow_pumps.pdf
+
+----------------------------------------------------------------------
+
+SS Other examples
+
+----------------------------------------------------------------------
+
+Yellow fever and malaria
+
+	Ross determined the cause of malaria primarily by experiments on mosquitoes
+
+	Reed determined the cause of yellow fever primarily by experiments on human
+	volunteers
+
+----------------------------------------------------------------------
+
+Rubella
+
+WFIG 0.8 webpix/rubella_pink.jpg
+
+----------------------------------------------------------------------
+
+Measles
+
+WFIG 0.8 webpix/measles_pink.jpg
+
+----------------------------------------------------------------------
+
+Polio
+
+WFIG 0.8 webpix/polio_pink.jpg
+
+----------------------------------------------------------------------
+
+Influenza
+
+WFIG 0.8 webpix/flu_pink.jpg
+
+----------------------------------------------------------------------
+
+SEC Approaches to epidemiology
+
+----------------------------------------------------------------------
+
+Data, models and science
+
+	We're never finished, we compare models to data over and over again
+
+	Data is what we use to develop and understand models
+
+	Models are what we use to interpret data
+
+		and they can suggest what data we need to collect
+
+	Complicated or hard-to-test theories may require \emph{dynamical} models
+
+---------------------------------------------------------------------
+
+BCC
+
+\textbf{Classical epidemiology}
+
+\vspace{8ex}
+
+	Avoid mechanism
+
+	Control for non-independence of ``units''
+
+\vspace{30ex}
+
+NCC
+
+\textbf{Dynamical epidemiology}
+
+\vspace{8ex}
+
+	Embrace mechanism
+
+	Explicitly incorporate dependence between units
+
+		X is infected because Y infected them
+
+\vspace{30ex}
+
+EC
+
+----------------------------------------------------------------------
+
+Classical example
+
+FIG smoking.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Classical example
+
+FIG smoking.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Univariate means
+
+FIG smoke_effects.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Multivariate means
+
+FIG smoke_effects.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Dynamical example
+
+DIAGRAM SIR_model_family/sir.three.pdf
+
+----------------------------------------------------------------------
+
+Bridging
+
+	Classical epidemiology relies on statistics, avoids mechanism
+
+	Mathematical epidemiology (the traditional approach to dynamical
+	epidemiology) explores mechanism, avoids statistics
+
+	Much modern dynamical epidemiology seeks ways to put dynamical mechanisms
+	into a statistical framework
+
+		This is hard
+
+----------------------------------------------------------------------
+
+TSEC Summary
+
+	Science is an ongoing process
+
+	Models are the way that we bridge between theory and reality
+
+	Dynamical models have a key role
+
+		When we can't do experiments
+
+		When mechanisms are complex
+
+	We should work to combine dynamics with statistical approaches
+
+		But not this week
 

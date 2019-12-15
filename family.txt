@@ -63,7 +63,7 @@ DIAGRAM SIR_model_family/sir.three.pdf
 
 What determines transition rates?
 
-REP DIAGRAM SIR_model_family/sir.three.pdf
+reP DIAGRAM SIR_model_family/sir.three.pdf
 
 	People get better independently
 
