@@ -23,7 +23,7 @@ Goals
 
 		Specific examples
 
-	Different approaches
+	Approaches to epidemiology
 
 ----------------------------------------------------------------------
 
@@ -50,7 +50,16 @@ FIG pearson-16.loop.jpg
 
 ----------------------------------------------------------------------
 
+EXTRA NOTES Science with and without experiments
+
+DOUBLEFIG pearson-15.loop.jpg pearson-16.loop.jpg
+
+ADD Did not work (pix not right size)
+
+----------------------------------------------------------------------
+
 SEC Public health
+
 
 ----------------------------------------------------------------------
 
@@ -61,8 +70,6 @@ TSS Maternal mortality
 	Vienna general hospital
 
 	ADD Odds ratios
-
-	ADD Better HIGHFIG
 
 ----------------------------------------------------------------------
 
@@ -78,6 +85,10 @@ DIAGRAM maternal.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
+DIAGRAM maternal.Rout-3.pdf
+
+----------------------------------------------------------------------
+
 TSS Cholera
 
 	Is it caused by bad air, or bad water?
@@ -86,7 +97,7 @@ TSS Cholera
 
 ----------------------------------------------------------------------
 
-Cholera and air
+PSLIDE Cholera and air
 
 FIG Farr.Rout-0.pdf
 
@@ -119,27 +130,41 @@ Yellow fever and malaria
 
 ----------------------------------------------------------------------
 
-Rubella
+PSLIDE Rubella
 
 WFIG 0.8 webpix/rubella_pink.jpg
 
 ----------------------------------------------------------------------
 
-Measles
+PSLIDE Measles
 
 WFIG 0.8 webpix/measles_pink.jpg
 
 ----------------------------------------------------------------------
 
-Polio
+PSLIDE Polio
 
 WFIG 0.8 webpix/polio_pink.jpg
 
 ----------------------------------------------------------------------
 
-Influenza
+PSLIDE Influenza
 
 WFIG 0.8 webpix/flu_pink.jpg
+
+----------------------------------------------------------------------
+
+NOTES Other viruses
+
+Pictures from CDC Pink book \url{https://www.cdc.gov/vaccines/pubs/pinkbook/index.html}
+
+	Rubella
+
+	Measles
+
+	Polio
+
+	Influenza
 
 ----------------------------------------------------------------------
 
@@ -165,19 +190,19 @@ BCC
 
 \textbf{Classical epidemiology}
 
-\vspace{8ex}
+PRESENT \vspace{8ex}
 
 	Avoid mechanism
 
 	Control for non-independence of ``units''
 
-\vspace{30ex}
+PRESENT \vspace{30ex}
 
 NCC
 
 \textbf{Dynamical epidemiology}
 
-\vspace{8ex}
+PRESENT \vspace{8ex}
 
 	Embrace mechanism
 
@@ -185,7 +210,7 @@ NCC
 
 		X is infected because Y infected them
 
-\vspace{30ex}
+PRESENT \vspace{30ex}
 
 EC
 

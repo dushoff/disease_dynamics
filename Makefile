@@ -175,16 +175,15 @@ taxon.jpg: taxonomy.jpg Makefile
 
 ## New DAIDD intro lecture 2019 Dec 13 (Fri)
 
-data.final.pdf: data.txt
-data.draft.pdf: data.txt
+## data.final.pdf: data.txt
+## data.draft.pdf: data.txt
 ## data.handouts.pdf: data.txt
-## data.handouts.tex ## data.handouts.log
 
 ######################################################################
 
 ## science/What19.pdf ##
 ## science/Pearson18.pdf ##
-	## https://docs.google.com/presentation/d/1eEFe-SVc1LMBU85wrrHl5fuolo-alg3yk0EeqhdxOHI/
+## https://docs.google.com/presentation/d/1eEFe-SVc1LMBU85wrrHl5fuolo-alg3yk0EeqhdxOHI/
 ## science/WilliamsReflections.pdf ##
 ## science/Williams17.pdf ##
 science: dir=~/Dropbox/iciScience
