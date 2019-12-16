@@ -64,6 +64,24 @@ Unpredictable public events
 
 ----------------------------------------------------------------------
 
+PSLIDE Deterministic spread
+
+LANDFIG SIR_model_family/onedet.pdf
+
+--------------------------------------------------------------------
+
+PSLIDE Demographic spread
+
+LANDFIG SIR_model_family/onesto.pdf
+
+----------------------------------------------------------------------
+
+Demographic spread
+
+LANDFIG SIR_model_family/onestoch.pdf
+
+----------------------------------------------------------------------
+
 SEC A discrete-time example
 
 ----------------------------------------------------------------------
@@ -86,21 +104,13 @@ ADD Practical simulation chaos graphic
 
 ----------------------------------------------------------------------
 
-PSLIDE Deterministic spread
+PRESLIDE Probability distributions
 
-LANDFIG SIR_model_family/onedet.pdf
+	Our practical example was equivalent to using which probability distribution?
 
---------------------------------------------------------------------
+		ANS Binomial
 
-PSLIDE Demographic spread
-
-LANDFIG SIR_model_family/onesto.pdf
-
-----------------------------------------------------------------------
-
-Demographic spread
-
-LANDFIG SIR_model_family/onestoch.pdf
+	What are other distributions we could have used, and what would that mean?
 
 ----------------------------------------------------------------------
 
@@ -130,7 +140,28 @@ NOTES FIG stats/distarrow-3.pdf
 
 ----------------------------------------------------------------------
 
-SEC Describing a stochastic process 
+Probability distributions
+
+	Our practical example was equivalent to using which probability distribution?
+
+		ANS Binomial
+
+	What are other distributions we could have used, and what would that mean?
+
+		Poisson preserves the mean, but neglects the population size
+
+			Can be good when population size is unknown or large
+
+			ANS compared to the mean
+
+		Poisson $\to$ negative binomial \\ binomial $\to$ beta binomial
+		\\ allow for additional sources of variance
+
+			ANS Analogous to environmental stochasticity
+
+----------------------------------------------------------------------
+
+SEC A continuous-time framework
 
 ----------------------------------------------------------------------
 
@@ -142,11 +173,10 @@ States and rates
 		If the rate of event $E$ is $r_E(t)$, the probability of the
 		event occurring in the time interval $(t, t+dt)$ is	$r_E(t) dt$
 
-	If the system is {\em Markovian}, $r_E(t)$ depends only on the state
-	of the system at time $t$
+	If we assume that event rates depend on measurable states then waiting times
+	are exponential
 
-		The Markovian assumption is convenient, but can
-		have unwanted consequences
+		We'll talk about relaxing this assumption
 
 ----------------------------------------------------------------------
 
@@ -174,10 +204,29 @@ Analogy
 
 		In the limit as $N\to\infty$
 
+----------------------------------------------------------------------
+
+SEC A continuous time example
 
 ----------------------------------------------------------------------
 
-SEC Analyzing
+Model world
+
+	Simple SIR
+
+	No births, deaths or loss of immunity
+
+	Homogeneous mixing
+
+----------------------------------------------------------------------
+
+EXTRA A practical simulation
+
+	ADD Chaos graphic
+
+----------------------------------------------------------------------
+
+SEC Analyzing stochastic systems
 
 ----------------------------------------------------------------------
 
@@ -209,10 +258,9 @@ Some techniques
 
 		Rarely possible
 
-	Analytic approximations to the ensemble distribution
+	Approximations to the ensemble distribution
 
 ----------------------------------------------------------------------
-
 
 PSLIDE Deterministic model
 
@@ -250,8 +298,6 @@ The fate of infectious disease
 
 		Disease fails to ``establish'' 
 
-		We will make this precise later
-
 	Burn-out
 
 		Disease goes extinct after first epidemic
@@ -260,150 +306,38 @@ The fate of infectious disease
 
 		Disease goes extinct after system approaches quasi-equilibrium
 
-		Can take a {\em long} time
-
 ----------------------------------------------------------------------
 
-SEC Analytic methods
+Mathematics
 
-----------------------------------------------------------------------
+	Simple models can approximate:
 
-Linearization
+		The probability of fizzle, and burn out
 
-	Two of the most useful tools for understanding deterministic disease
-	models are linearizations:
+		The average time until fade-out if the system survives fizzle and burn-out
 
-		{\bf Disease-free equilibrium:} what factors control whether the
-		disease can invade and persist?
+	What about permanence
 
-		{\bf Endemic equilibrium:} tendency to cycle, damping or
-		persistence of cycles
+		Mathematically impossible! Why?
 
-	Both of these methods have analogues in demographic models
-
-----------------------------------------------------------------------
-
-Linear birth-death process
-
-	We do an invasion analysis by asking how the number of infectives
-	behaves in the limit where we assume that virtually the whole
-	population is susceptible.
-
-	This corresponds to a demographic model with the state determined by
-	the number of infectious individuals $I$ 
-	
-	This system has only two events:
-
-		Infection at rate $R_0 I$
-
-		Recovery at rate $I$
-
-----------------------------------------------------------------------
-
-Long-term behavior
-
-	Unlike the finite systems discussed before, the probability of
-	eventual extinction in this system is not one!
-
-	Why not?
-
-		Probability of extinction given persistence goes to zero, as
-		expected number of infectious individuals goes to $\infty$
-
-----------------------------------------------------------------------
-
-Extinction probability
-
-	Chains of infection are independent in this model
-
-	We can use this fact to solve directly for the probability of
-	extinction when starting from $I$ infections, $E_I$
-
-		$\displaystyle E_I = R_0^{-I}$, when $R_0>1$
-
-		$1$, otherwise
-
-	We can define this as the `fizzle' probability: the disease would
-	have gone extinct even without depleting any susceptibles.
-
-----------------------------------------------------------------------
-
-Moment calculations
-
-	Ask: what is the expected behavior of the mean, variance, \ldots of
-	the ensemble?
-
-	Define: $\ds \mu = \sum_I	{I p_i}$
-
-	How does $\mu$ change through time?
-
-		$\ds \dot \mu = \sum_I	{I \dot p_I}$
-
-		$\ds = \sum_I	{(b_I	-	m_I)	p_I}$, where	$b(I) = R_0I$ is the
-		`birth' rate, and $m(I) = I$ is the `death' rate
-
-	These equations can be solved in the linear system, or approximated
-	(by ``moment closure") for non-linear systems
-
-----------------------------------------------------------------------
-
-Diffusion approximations
-
-	We can approximate the discrete-valued demographic system with a
-	real-valued system that reflects the mean {\em and variance} of the
-	demographic system
-
-		Thus we can incorporate demographic stochasticity in a continuous
-		system
-
-		An excellent approximation except when some values are very small
-
-	In a linear (or linearized) system, we can solve the equilibrium
-	distribution of the continuous equations, and thus approximate
-	the quasi-equilibrium distribution
-
-		Disease persistence
-
-		Size of demographic fluctuations
-
-----------------------------------------------------------------------
-
-Diffusion approximations
-
-	We linearize about the endemic equilibrium, in exact analogy to Jacobian
-	methods for stability in deterministic models
-
-	Diffusion (and thus demographic stochasticity) is relatively
-	unimportant when the square of the number infected is large compared
-	to the demographic variance
-
-		Number infected at equilibrium: $\ds \frac{(R_0-1)\rho N}{R}$
-
-			$\ds \approx \rho N$
-
-		Demographic variance: $\approx N$
-
-	Diffusion index $\ds \approx \rho^2 N$.  If $\rho$ is small,
-	demographic stochasticity can be important even for very large
-	populations.
+		ANS In practice, corresponds to a very large average time until fade-out
 
 ----------------------------------------------------------------------
 
 TSEC Conclusions
 
-	Treating individuals as individuals can have dramatic effects on
+	Stochasticity is real
+
+		People are individuals
+
+		The world has weather, and history
+
+	Even minimal stochasticity can have dramatic effects on
 	models of disease transmission
 
-		Acquired immunity is an important part of this phenomenon
+		Amplified by acquired immunity 
 
 	Stochastic models are hard, and we usually combine techniques to
-	understand them:
+	understand them
 
-		Analytic approximation
-
-		Simulating ensemble distributions
-
-		Simulating realizations
-
-	Remember: People are individuals $\implies$ demographic stochasticity is real!
-TSEC Summary
+	Even though it's real, you may not need it for your research question

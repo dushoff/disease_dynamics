@@ -71,7 +71,7 @@ REP DIAGRAM SIR_model_family/sir.three.pdf
 
 ----------------------------------------------------------------------
 
-PSLIDE Conceptual modeling
+EXTRA PSLIDE Conceptual modeling
 
 DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -163,7 +163,7 @@ DIAGRAM SIR_model_family/sirodes.const.pdf
 
 ----------------------------------------------------------------------
 
-Spreadsheet implementation
+EXTRA Spreadsheet implementation
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -171,7 +171,7 @@ NOTES ADD Suppress for John's drafty version  \url{http://tinyurl.com/SIR-MMED-2
 
 ----------------------------------------------------------------------
 
-PSLIDE Model taxonomy
+Model taxonomy
 
 FIG taxon.jpg
 
@@ -239,11 +239,15 @@ Population sizes
 
 	How does $\beta$ change with population size?
 
-	Recall that $\beta$ is the \emph{per capita} rate of contacts
+	We can make different assumptions about this
+
+		It may increase with population size, or not
+
+	If population size changes we have to \emph{consider} the question
 
 ----------------------------------------------------------------------
 
-PSLIDE Population sizes
+EXTRA PSLIDE Population sizes
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -251,7 +255,7 @@ DIAGRAM SIR_model_family/sirodes.const.pdf
 
 ----------------------------------------------------------------------
 
-RHEAD Population sizes
+EXTRA RHEAD Population sizes
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -259,7 +263,7 @@ DIAGRAM SIR_model_family/sirodes.pdf
 
 ----------------------------------------------------------------------
 
-FIG SIR_model_family/beta.Rout-0.pdf
+EXTRA FIG SIR_model_family/beta.Rout-0.pdf
 
 	$\beta(N) = \beta_0$
 
@@ -269,7 +273,7 @@ FIG SIR_model_family/beta.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-FIG SIR_model_family/beta.Rout-1.pdf
+EXTRA FIG SIR_model_family/beta.Rout-1.pdf
 
 	$\beta(N) = \beta_1 N$
 
@@ -279,7 +283,7 @@ FIG SIR_model_family/beta.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-FIG SIR_model_family/beta.Rout-3.pdf
+EXTRA FIG SIR_model_family/beta.Rout-3.pdf
 
 	Per-capita rate:
 
@@ -299,11 +303,11 @@ Digression -- units
 
 		$\beta/\gamma = \beta D: [1]$
 
-	Components of $\beta$ may have different units
+	NOTES Components of $\beta$ may have different units
 
-		Standard incidence, $\beta_0: [1/\mathrm{time}]$
+		NOTES Standard incidence, $\beta_0: [1/\mathrm{time}]$
 
-		Mass-action incidence, $\beta_1: [1/(\mathrm{people} \cdot \mathrm{time})]$
+		NOTES Mass-action incidence, $\beta_1: [1/(\mathrm{people} \cdot \mathrm{time})]$
 
 ----------------------------------------------------------------------
 
@@ -340,7 +344,7 @@ LANDFIG SIR_model_family/comp.pdf
 
 ----------------------------------------------------------------------
 
-PSLIDE Model taxonomy
+EXTRA PSLIDE Model taxonomy
 
 FIG taxon.jpg
 
