@@ -14,7 +14,7 @@ NOFRAME
 
 \newcommand{\jdtitle}{Foundations of dynamic modeling:}
 \newcommand{\jdsub}{The SIR Model Family}
-\newcommand{\years}{2013--2018} 
+\newcommand{\years}{2013--2019} 
 
 ----------------------------------------------------------------------
 
@@ -39,7 +39,7 @@ Goals
 
 Dynamical modeling connects scales
 
-REP DBFIG 0.7 my_images/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
+REP DBFIG 0.7 SIR_model_family/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
 
 	Start with rules about how things change in short time steps
 
@@ -63,7 +63,7 @@ DIAGRAM SIR_model_family/sir.three.pdf
 
 What determines transition rates?
 
-reP DIAGRAM SIR_model_family/sir.three.pdf
+REP DIAGRAM SIR_model_family/sir.three.pdf
 
 	People get better independently
 
@@ -167,7 +167,7 @@ Spreadsheet implementation
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
-\url{http://tinyurl.com/SIR-MMED-2018}
+NOTES ADD Suppress for John's drafty version  \url{http://tinyurl.com/SIR-MMED-2018}
 
 ----------------------------------------------------------------------
 
@@ -203,7 +203,7 @@ DBFIG 0.8 SIR_model_family/exp.Rout-0.pdf 0.8 SIR_model_family/exp.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-Scripts vs.\ spreadsheets
+EXTRA (Hargrove does not want) Scripts vs.\ spreadsheets
 
 PIC DBFIG 0.7 SIR_model_family/gd.png 0.8 SIR_model_family/R.png
 
@@ -295,7 +295,11 @@ Digression -- units
 
 	$\beta: [1/\mathrm{time}]$
 
+		The true $\beta$ always has people in the numerator and the denominator
+
 		$\beta/\gamma = \beta D: [1]$
+
+	Components of $\beta$ may have different units
 
 		Standard incidence, $\beta_0: [1/\mathrm{time}]$
 

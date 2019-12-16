@@ -13,7 +13,7 @@ target: $(target)
 
 ##################################################################
 
-projdirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates
+projdirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates stats
 
 colddirs += $(projdirs)
 
@@ -21,9 +21,11 @@ pardirs += $(projdirs)
 
 Ignore += $(pardirs)
 
+## This shouldn't be needed‽
 alldirs += $(pardirs) makestuff
 
-## This should be, but isn't, obviated by colddirs
+## This should be, but apparently isn't, obviated by colddirs
+## Other pardirs seem to be cold, though
 SIR_model_family/%.pdf:
 	$(makethere)
 
@@ -147,6 +149,14 @@ stochastic.draft.pdf: stochastic.txt
 stochastic.handouts.pdf: stochastic.txt
 stochastic.html: stochastic.step
 stochastic.push:
+
+## DAIDDier stochastic lecture
+
+individual.final.pdf: individual.txt
+individual.draft.pdf: individual.txt
+individual.handouts.pdf: individual.txt
+individual.html: individual.step
+individual.push:
 
 ######################################################################
 

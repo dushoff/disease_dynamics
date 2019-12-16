@@ -1,0 +1,409 @@
+
+NOFRAME
+
+\newcommand{\jdtitle}{}
+\newcommand{\jdsub}{Simple individual-based models}
+\newcommand{\years}{2007--2019}
+
+----------------------------------------------------------------------
+
+ICI3DTHEME
+
+----------------------------------------------------------------------
+
+SEC Introduction
+
+----------------------------------------------------------------------
+
+Goals
+
+----------------------------------------------------------------------
+
+Modelling individual events
+
+	Differential equations model continuous processes
+
+	Disease spreads in the real world through discrete events
+
+	Discrete events are fundamentally stochastic
+
+		Even in theory we don't know when the next event will occur, nor
+		even what it will be
+
+--------------------------------------------------------------------
+
+Types of stochasticity
+
+	Demographic stochasticity is caused by the existence of individual
+	people and discrete events
+
+	Environmental stochasticity refers to events that affect more than
+	one person at a time
+
+		Weather
+
+		Politics
+
+		Economics
+
+----------------------------------------------------------------------
+
+PSLIDE Modelling individual events
+
+FIG SIR_model_family/trans.jpg
+
+A stochastic potential-transmission event
+
+--------------------------------------------------------------------
+
+PSLIDE Modelling larger-scale events
+
+DOUBLEFIG webpix/katrina.jpg webpix/thabo.jpg
+
+Unpredictable public events
+
+----------------------------------------------------------------------
+
+SEC A discrete-time example
+
+----------------------------------------------------------------------
+
+Model world
+
+	Fixed \Ro
+
+	Model spread by disease generation
+
+		Generations don't overlap \emph{or} we're being sophisticated
+
+	No recovery, birth or death
+
+		ANS Maybe disease is too fast
+
+ADD Model world graphic
+
+ADD Practical simulation chaos graphic
+
+----------------------------------------------------------------------
+
+PSLIDE Deterministic spread
+
+LANDFIG SIR_model_family/onedet.pdf
+
+--------------------------------------------------------------------
+
+PSLIDE Demographic spread
+
+LANDFIG SIR_model_family/onesto.pdf
+
+----------------------------------------------------------------------
+
+Demographic spread
+
+LANDFIG SIR_model_family/onestoch.pdf
+
+----------------------------------------------------------------------
+
+PSLIDE Distribution diagram
+
+HFIG 1.3 stats/distarrow-0.pdf
+
+----------------------------------------------------------------------
+
+PSLIDE Distribution diagram
+
+HFIG 1.3 stats/distarrow-1.pdf
+
+----------------------------------------------------------------------
+
+PSLIDE Distribution diagram
+
+HFIG 1.3 stats/distarrow-2.pdf
+
+----------------------------------------------------------------------
+
+Distribution diagram
+
+PRESENT HFIG 1.3 stats/distarrow-3.pdf
+
+NOTES FIG stats/distarrow-3.pdf
+
+----------------------------------------------------------------------
+
+SEC Describing a stochastic process 
+
+----------------------------------------------------------------------
+
+States and rates
+
+	We describe our system in terms of the {\em probability rates}
+	of events happening
+
+		If the rate of event $E$ is $r_E(t)$, the probability of the
+		event occurring in the time interval $(t, t+dt)$ is	$r_E(t) dt$
+
+	If the system is {\em Markovian}, $r_E(t)$ depends only on the state
+	of the system at time $t$
+
+		The Markovian assumption is convenient, but can
+		have unwanted consequences
+
+----------------------------------------------------------------------
+
+PSLIDE States and rates (Deterministic)
+
+DIAGRAM SIR_model_family/sirbd.three.pdf
+
+DIAGRAM SIR_model_family/sirbdodes.pdf
+
+----------------------------------------------------------------------
+
+States and rates (Demographic)
+
+DIAGRAM SIR_model_family/sirbd.three.pdf
+
+DIAGRAM SIR_model_family/sirbdrates.pdf
+
+----------------------------------------------------------------------
+
+Analogy
+
+	The demographic model is an exact analogue of the deterministic one
+
+		Conceptually
+
+		In the limit as $N\to\infty$
+
+
+----------------------------------------------------------------------
+
+SEC Analyzing
+
+----------------------------------------------------------------------
+
+Realizations and ensembles
+
+	How do we think about the behavior of a stochastic process?
+
+		A single example of how the process could go (e.g., from a
+		stochastic simulation) is called a {\em realization}
+
+		The universe of possible realizations is called the {\em
+		ensemble}.
+
+		The probability distribution that describes what state we expect
+		the population to be in at time $t$ is called the {\em ensemble
+		distribution}
+
+----------------------------------------------------------------------
+
+Some techniques
+
+	Simulate one or many realizations
+
+	Simulate the ensemble distribution
+
+		Requires one state variable for each possible state of the system
+
+	Solve the ensemble distribution dynamics exactly!
+
+		Rarely possible
+
+	Analytic approximations to the ensemble distribution
+
+----------------------------------------------------------------------
+
+
+PSLIDE Deterministic model
+
+LANDFIG SIR_model_family/comp0.pdf
+
+--------------------------------------------------------------------
+
+Demographic model
+
+LANDFIG SIR_model_family/comp.pdf
+
+--------------------------------------------------------------------
+
+Questions
+
+	What kind of questions do we want to ask with a stochastic model?
+
+		How does stochasticity affect disease dynamics?
+
+			Spatial distribution
+
+			Establishment
+
+			Persistence
+
+		How much variance do we expect stochasticity to cause?
+
+		Under what circumstances can we eliminate or eradicate a disease?
+
+----------------------------------------------------------------------
+
+The fate of infectious disease
+
+	Fizzle
+
+		Disease fails to ``establish'' 
+
+		We will make this precise later
+
+	Burn-out
+
+		Disease goes extinct after first epidemic
+
+	Fade-out
+
+		Disease goes extinct after system approaches quasi-equilibrium
+
+		Can take a {\em long} time
+
+----------------------------------------------------------------------
+
+SEC Analytic methods
+
+----------------------------------------------------------------------
+
+Linearization
+
+	Two of the most useful tools for understanding deterministic disease
+	models are linearizations:
+
+		{\bf Disease-free equilibrium:} what factors control whether the
+		disease can invade and persist?
+
+		{\bf Endemic equilibrium:} tendency to cycle, damping or
+		persistence of cycles
+
+	Both of these methods have analogues in demographic models
+
+----------------------------------------------------------------------
+
+Linear birth-death process
+
+	We do an invasion analysis by asking how the number of infectives
+	behaves in the limit where we assume that virtually the whole
+	population is susceptible.
+
+	This corresponds to a demographic model with the state determined by
+	the number of infectious individuals $I$ 
+	
+	This system has only two events:
+
+		Infection at rate $R_0 I$
+
+		Recovery at rate $I$
+
+----------------------------------------------------------------------
+
+Long-term behavior
+
+	Unlike the finite systems discussed before, the probability of
+	eventual extinction in this system is not one!
+
+	Why not?
+
+		Probability of extinction given persistence goes to zero, as
+		expected number of infectious individuals goes to $\infty$
+
+----------------------------------------------------------------------
+
+Extinction probability
+
+	Chains of infection are independent in this model
+
+	We can use this fact to solve directly for the probability of
+	extinction when starting from $I$ infections, $E_I$
+
+		$\displaystyle E_I = R_0^{-I}$, when $R_0>1$
+
+		$1$, otherwise
+
+	We can define this as the `fizzle' probability: the disease would
+	have gone extinct even without depleting any susceptibles.
+
+----------------------------------------------------------------------
+
+Moment calculations
+
+	Ask: what is the expected behavior of the mean, variance, \ldots of
+	the ensemble?
+
+	Define: $\ds \mu = \sum_I	{I p_i}$
+
+	How does $\mu$ change through time?
+
+		$\ds \dot \mu = \sum_I	{I \dot p_I}$
+
+		$\ds = \sum_I	{(b_I	-	m_I)	p_I}$, where	$b(I) = R_0I$ is the
+		`birth' rate, and $m(I) = I$ is the `death' rate
+
+	These equations can be solved in the linear system, or approximated
+	(by ``moment closure") for non-linear systems
+
+----------------------------------------------------------------------
+
+Diffusion approximations
+
+	We can approximate the discrete-valued demographic system with a
+	real-valued system that reflects the mean {\em and variance} of the
+	demographic system
+
+		Thus we can incorporate demographic stochasticity in a continuous
+		system
+
+		An excellent approximation except when some values are very small
+
+	In a linear (or linearized) system, we can solve the equilibrium
+	distribution of the continuous equations, and thus approximate
+	the quasi-equilibrium distribution
+
+		Disease persistence
+
+		Size of demographic fluctuations
+
+----------------------------------------------------------------------
+
+Diffusion approximations
+
+	We linearize about the endemic equilibrium, in exact analogy to Jacobian
+	methods for stability in deterministic models
+
+	Diffusion (and thus demographic stochasticity) is relatively
+	unimportant when the square of the number infected is large compared
+	to the demographic variance
+
+		Number infected at equilibrium: $\ds \frac{(R_0-1)\rho N}{R}$
+
+			$\ds \approx \rho N$
+
+		Demographic variance: $\approx N$
+
+	Diffusion index $\ds \approx \rho^2 N$.  If $\rho$ is small,
+	demographic stochasticity can be important even for very large
+	populations.
+
+----------------------------------------------------------------------
+
+TSEC Conclusions
+
+	Treating individuals as individuals can have dramatic effects on
+	models of disease transmission
+
+		Acquired immunity is an important part of this phenomenon
+
+	Stochastic models are hard, and we usually combine techniques to
+	understand them:
+
+		Analytic approximation
+
+		Simulating ensemble distributions
+
+		Simulating realizations
+
+	Remember: People are individuals $\implies$ demographic stochasticity is real!
+TSEC Summary
