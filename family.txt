@@ -71,7 +71,7 @@ REP DIAGRAM SIR_model_family/sir.three.pdf
 
 ----------------------------------------------------------------------
 
-EXTRA PSLIDE Conceptual modeling
+Conceptual modeling
 
 DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -152,6 +152,31 @@ REP DIAGRAM SIR_model_family/sir.three.pdf
 	S/N$
 
 	Population-level transmission rate is ${\cal T} = \beta SI/N$
+
+----------------------------------------------------------------------
+
+Conceptual modeling
+
+DIAGRAM SIR_model_family/sir.three.pdf
+
+PIC HFIG 0.55 SIR_model_family/thinker.jpg
+
+----------------------------------------------------------------------
+
+The basic reproductive number
+
+	$\Ro$ is the number of people who would be infected by an
+	infectious individual \emph{in a fully susceptible population.}
+
+	$\Ro = \beta/\gamma = \beta D = (cp) D$
+
+		$c$: Contact Rate
+
+		$p$: Probability of transmission (infectivity)
+
+		$D$: Average duration of infection
+
+	A disease can invade a population if and only if $\Ro>1$.
 
 ----------------------------------------------------------------------
 
