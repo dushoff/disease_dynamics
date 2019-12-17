@@ -155,6 +155,7 @@ stochastic.push:
 individual.final.pdf: individual.txt
 individual.draft.pdf: individual.txt
 individual.handouts.pdf: individual.txt
+individual.complete.pdf: individual.txt
 individual.html: individual.step
 individual.push:
 

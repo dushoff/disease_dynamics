@@ -17,6 +17,14 @@ SEC Introduction
 
 Goals
 
+	Introduce the idea of individual-based models
+
+	Discuss the need for stochasticity
+
+	Work through some pedagogical examples
+
+	Talk about how to investigate stochastic models
+
 ----------------------------------------------------------------------
 
 Modelling individual events
@@ -88,6 +96,8 @@ SEC A discrete-time example
 
 Model world
 
+BCC
+
 	Fixed \Ro
 
 	Model spread by disease generation
@@ -96,11 +106,26 @@ Model world
 
 	No recovery, birth or death
 
-		ANS Maybe disease is too fast
+		ANS Maybe epidemic is fast enough that these don't matter
 
-ADD Model world graphic
+NCC
 
-ADD Practical simulation chaos graphic
+PIC HFIG 0.4 my_images/modelWorld.png
+
+EC
+
+
+----------------------------------------------------------------------
+
+Practical simulation
+
+PIC FIG webpix/stooges.jpg
+
+----------------------------------------------------------------------
+
+REPSLIDE Model taxonomy
+
+FIG taxon.jpg
 
 ----------------------------------------------------------------------
 
@@ -220,9 +245,19 @@ Model world
 
 ----------------------------------------------------------------------
 
-EXTRA A practical simulation
+Practical simulation
 
-	ADD Chaos graphic
+PIC WIDEFIG webpix/napkin.jpg
+
+PRESENT HREF https://tinyurl.com/DAIDD-SIRboth-2019 Spreadsheet with event-based simulation
+
+NOTES HREF https://tinyurl.com/DAIDD-SIRboth-2019 Spreadsheet with event-based simulation
+
+----------------------------------------------------------------------
+
+REPSLIDE Model taxonomy
+
+FIG taxon.jpg
 
 ----------------------------------------------------------------------
 
