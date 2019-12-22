@@ -28,7 +28,7 @@ NOFRAME
 
 \newcommand{\jdtitle}{Heterogeneity, contact patterns and modeling options}
 \newcommand{\jdsub}{}
-\newcommand{\years}{2013--2018}
+\newcommand{\years}{2013--2019}
 
 ----------------------------------------------------------------------
 
@@ -643,7 +643,9 @@ PIC WFIG 0.32 tmpfigs/crowd.jpg
 		Diseases in heterogeneous populations are likely to be more robust to
 		change than expected from homogeneous models
 
-	More complicated models can help address relevant detail
+	More complicated models will often be necessary
+
+		And it may be helpful to build complexity gradually
 
 ----------------------------------------------------------------------
 

@@ -124,6 +124,7 @@ foundations.handouts.pdf: foundations.txt
 heterogeneity.final.pdf: heterogeneity.txt
 heterogeneity.draft.pdf: heterogeneity.txt
 heterogeneity.handouts.pdf: heterogeneity.txt
+heterogeneity.slides.pdf: heterogeneity.txt
 heterogeneity.push:
 
 ### Fitting (Williams/Hargrove/Pulliam)
