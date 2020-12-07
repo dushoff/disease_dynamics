@@ -1,55 +1,8 @@
-projdirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates stats
-
-colddirs += $(projdirs)
-
-pardirs += $(projdirs)
-
-Ignore += $(pardirs)
-
-## This shouldn't be needed‽
-alldirs += $(pardirs) makestuff
 
 ## This should be, but apparently isn't, obviated by colddirs
 ## Other pardirs seem to be cold, though
 SIR_model_family/%.pdf:
 	$(makethere)
-
-######################################################################
-
-# make files
-
-Sources += Makefile README.md LICENSE.md notes.txt
-
--include makestuff/newtalk.def
--include makestuff/perl.def
--include makestuff/repos.def
-
-##################################################################
-
-# Theme for whatever lectures are now being prepared
-# .tmp files not here will be made from talkdir
-Sources += beamer.tmp notes.tmp
-
-######################################################################
-
-imageDrop = ~/Dropbox/disease_model_lectures/
-Sources += $(wildcard *.step)
-
-data.html: data.step
-
-######################################################################
-
-Sources += local.txt.format
-
-## Copyright not integrated into make system yet
-Sources += copy.tex
-
-Sources += $(wildcard *.txt)
-
-%.push: %.slides.pdf.gp %.handouts.pdf.gp ;
-
-%.slides.pdf: %.draft.pdf
-	$(copy)
 
 ######################################################################
 
@@ -61,6 +14,8 @@ Sources += $(wildcard *.txt)
 dynamics.final.pdf: dynamics.txt
 dynamics.draft.pdf: dynamics.txt
 dynamics.handouts.pdf: dynamics.txt
+
+######################################################################
 
 Ignore += tmpfigs
 tmpfigs:
@@ -74,10 +29,6 @@ tmpfigs/%: ~/Dropbox/HIV_presentations/images/%
 
 ## Cribbing on airplane, see dynamics.txt
 
-### ICI3D model family lectures
-family.draft.pdf: family.txt
-family.handouts.pdf: family.txt
-family.final.pdf: family.txt
 family.push: 
 
 ### Ebola-themed talk for Hiroshi
@@ -161,20 +112,6 @@ TREE_crop.jpg: webpix/TREE.jpg
 
 ######################################################################
 
-## Taxonomy template
-
-Sources += taxonomy.jpg
-Ignore += taxon.jpg
-taxon.jpg: taxonomy.jpg Makefile
-	convert -crop 960x560+0+100 $< $@
-
-######################################################################
-
-## New DAIDD intro lecture 2019 Dec 13 (Fri)
-
-## data.final.pdf: data.txt
-## data.draft.pdf: data.txt
-## data.handouts.pdf: data.txt
 
 ######################################################################
 

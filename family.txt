@@ -228,7 +228,11 @@ DBFIG 0.8 SIR_model_family/exp.Rout-0.pdf 0.8 SIR_model_family/exp.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-EXTRA (Hargrove does not want) Scripts vs.\ spreadsheets
+EXTRA Suppressed when given by Hargrove Scripts vs.\ spreadsheets
+
+----------------------------------------------------------------------
+
+Scripts vs.\ spreadsheets
 
 PIC DBFIG 0.7 SIR_model_family/gd.png 0.8 SIR_model_family/R.png
 
