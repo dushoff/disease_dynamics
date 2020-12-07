@@ -53,16 +53,6 @@ foundations.final.pdf: foundations.txt
 foundations.draft.pdf: foundations.txt
 foundations.handouts.pdf: foundations.txt
 
-### Heterogeneity
-# https://github.com/dushoff/disease_model_talks/tree/master/git_push/heterogeneity.draft.pdf 
-
-### NTU 2016-3
-heterogeneity.final.pdf: heterogeneity.txt
-heterogeneity.draft.pdf: heterogeneity.txt
-heterogeneity.handouts.pdf: heterogeneity.txt
-heterogeneity.slides.pdf: heterogeneity.txt
-heterogeneity.push:
-
 ### Fitting (Williams/Hargrove/Pulliam)
 ### NTU 2016-4
 confront.draft.pdf: confront.txt
@@ -111,21 +101,6 @@ TREE_crop.jpg: webpix/TREE.jpg
 	convert -crop 300x240+40+100 $< $@
 
 ######################################################################
-
-
-######################################################################
-
-## science/What19.pdf ##
-## science/Pearson18.pdf ##
-## https://docs.google.com/presentation/d/1eEFe-SVc1LMBU85wrrHl5fuolo-alg3yk0EeqhdxOHI/
-## science/WilliamsReflections.pdf ##
-## science/Williams17.pdf ##
-Ignore += science
-science: dir=~/Dropbox/iciScience
-science:
-	$(linkdirname)
-science/%:
-	$(MAKE) science
 
 ## If we're going to cannibalize, it would be good to have a link here to a public version of the original slides, but this is not available
 

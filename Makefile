@@ -28,8 +28,6 @@ Sources += beamer.tmp notes.tmp
 
 ######################################################################
 
-######################################################################
-
 Sources += local.txt.format
 
 Sources += copy.tex
@@ -46,10 +44,19 @@ family.draft.pdf: family.txt
 family.handouts.pdf: family.txt
 family.final.pdf: family.txt
 
-## DAIDD intro lecture introduce 2019 Dec 13 (Fri)
+## DAIDD intro lecture introduced 2019 Dec 13 (Fri)
+## Look for machinery in content
 ## data.final.pdf: data.txt
-data.draft.pdf: data.txt
+## data.draft.pdf: data.txt
 ## data.handouts.pdf: data.txt
+
+### Heterogeneity ### NTU 2016-3
+# https://github.com/dushoff/disease_model_talks/tree/master/git_push/heterogeneity.draft.pdf 
+heterogeneity.final.pdf: heterogeneity.txt
+heterogeneity.draft.pdf: heterogeneity.txt
+heterogeneity.handouts.pdf: heterogeneity.txt
+heterogeneity.slides.pdf: heterogeneity.txt
+heterogeneity.push:
 
 ######################################################################
 
@@ -65,6 +72,32 @@ data.html: data.step
 Ignore += taxon.jpg
 taxon.jpg: my_images/taxonomy.jpg
 	convert -crop 960x560+0+100 $< $@
+
+## Craziness!
+## These figures need to be moved to a Dropbox, maybe merge with my_images
+Ignore += tmpfigs
+tmpfigs:
+	$(mkdir)
+
+%.png: %.svg
+	$(convert)
+
+######################################################################
+
+## Cannibalization stuff from DAIDD19
+## Not understood, and there is more in content.mk
+
+## science/What19.pdf ## Hargrove lecture
+## science/Pearson18.pdf ##
+## ##  https://docs.google.com/presentation/d/1eEFe-SVc1LMBU85wrrHl5fuolo-alg3yk0EeqhdxOHI/
+## science/WilliamsReflections.pdf ##
+## science/Williams17.pdf ##
+Ignore += science
+science: dir=~/Dropbox/iciScience
+science:
+	$(linkdirname)
+science/%:
+	$(MAKE) science
 
 ######################################################################
 
