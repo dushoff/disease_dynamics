@@ -10,7 +10,6 @@ target = Makefile
 -include target.mk
 target: $(target)
 
-
 ######################################################################
 
 ### Makestuff
