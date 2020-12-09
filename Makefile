@@ -49,6 +49,7 @@ family.final.pdf: family.txt
 ## data.final.pdf: data.txt
 ## data.draft.pdf: data.txt
 ## data.handouts.pdf: data.txt
+## data.html: data.step
 
 ### Heterogeneity ### NTU 2016-3
 # https://github.com/dushoff/disease_model_talks/tree/master/git_push/heterogeneity.draft.pdf 
@@ -65,7 +66,8 @@ heterogeneity.push:
 imageDrop = ~/Dropbox/disease_model_lectures/
 Sources += $(wildcard *.step)
 
-data.html: data.step
+## Other 
+pix.html: pix.step
 
 ## Taxonomy template
 
@@ -77,7 +79,8 @@ taxon.jpg: my_images/taxonomy.jpg
 ## These figures need to be moved to a Dropbox, maybe merge with my_images
 Ignore += tmpfigs
 tmpfigs:
-	$(mkdir)
+	(ls ~/Dropbox/hetfigs && ln -s ~/Dropbox/hetfigs tmpfigs) \
+	|| (echo You need to put tmpfigs here or link to Dropbox)
 
 %.png: %.svg
 	$(convert)
