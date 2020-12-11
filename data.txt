@@ -3,7 +3,7 @@ NOFRAME
 
 \newcommand{\jdtitle}{Data, models and science}
 \newcommand{\jdsub}{}
-\newcommand{\years}{2019}
+\newcommand{\years}{2019--\thisyear}
 
 ----------------------------------------------------------------------
 

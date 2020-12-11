@@ -10,6 +10,9 @@ target = Makefile
 -include target.mk
 target: $(target)
 
+vim_session:
+	bash -cl "vmt content.mk"
+
 ######################################################################
 
 ## Directories
@@ -58,6 +61,57 @@ heterogeneity.draft.pdf: heterogeneity.txt
 heterogeneity.handouts.pdf: heterogeneity.txt
 heterogeneity.slides.pdf: heterogeneity.txt
 heterogeneity.push:
+
+######################################################################
+
+## Smoking example
+## What are the various places I have this??
+Sources += archive/fev.csv
+Ignore += fev.csv
+archive/fev.csv: 
+	wget -O $@ "http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/FEV.csv"
+fev.csv: archive/fev.csv
+	$(link)
+
+smoking.Rout: fev.csv smoking.R
+smoke_effects.Rout: smoking.Rout smoke_effects.R
+
+######################################################################
+
+## Cannibalize other versions
+
+## If we're going to cannibalize, it would be good to have a link here to a public version of the original slides, but this is not available
+
+## my_images/africaMAP.png ##
+Ignore += pearson*.*
+pearson.pages: science/Pearson18.pdf
+	convert $< pearson.png
+	touch $@
+
+## This is wasteful
+## pearson-11.main.png:
+pearson-%.main.png: pearson-%.png Makefile
+	convert $< $@
+
+## This is terrible
+## pearson-15.loop.jpg:
+pearson-%.pdf: science/Pearson18.pdf
+	pdfjam --landscape -o $@ $< $*
+pearson-%.loop.jpg: pearson-%.pdf Makefile
+	convert -crop 800x440+20+40 $< $@
+
+Ignore += snow*.pdf
+snow0.pdf: science/Williams17.pdf
+	pdfjam --landscape -o $@ $< 45
+
+snow_pumps.pdf: science/Williams17.pdf
+	pdfjam --landscape -o $@ $< 46
+
+Farr.Rout: science/farr.tsv Farr.R
+
+## My own version of the Semmelweiss
+
+maternal.Rout: science/mat1.csv maternal.R
 
 ######################################################################
 
