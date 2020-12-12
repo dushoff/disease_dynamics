@@ -23,6 +23,8 @@ colddirs += $(pardirs)
 
 alldirs += $(pardirs)
 
+Ignore += $(pardirs)
+
 ######################################################################
 
 # Theme for whatever lectures are now being prepared
@@ -53,6 +55,7 @@ family.final.pdf: family.txt
 ## data.draft.pdf: data.txt
 ## data.handouts.pdf: data.txt
 ## data.html: data.step
+data.lecture: data.handouts.pdf.op data.draft.pdf.op
 
 ### Heterogeneity ### NTU 2016-3
 # https://github.com/dushoff/disease_model_talks/tree/master/git_push/heterogeneity.draft.pdf 
@@ -90,11 +93,13 @@ pearson.pages: science/Pearson18.pdf
 
 ## This is wasteful
 ## pearson-11.main.png:
+.PRECIOUS: pearson-%.main.png
 pearson-%.main.png: pearson-%.png Makefile
 	convert $< $@
 
 ## This is terrible
 ## pearson-15.loop.jpg:
+.PRECIOUS: pearson-%.pdf pearson-%.loop.jpg
 pearson-%.pdf: science/Pearson18.pdf
 	pdfjam --landscape -o $@ $< $*
 pearson-%.loop.jpg: pearson-%.pdf Makefile

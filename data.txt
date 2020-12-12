@@ -60,10 +60,9 @@ ADD Did not work (pix not right size)
 
 SEC Public health
 
-
 ----------------------------------------------------------------------
 
-TSEC Maternal mortality
+TSS Maternal mortality
 
 ----------------------------------------------------------------------
 
@@ -191,6 +190,11 @@ EC
 
 ----------------------------------------------------------------------
 
+SS Classical epidemiology
+
+----------------------------------------------------------------------
+
+
 Classical example
 
 FIG smoking.Rout-0.pdf
@@ -215,15 +219,15 @@ FIG smoke_effects.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-Dynamical examples
+TSS Dynamical epidemiology
 
 DIAGRAM SIR_model_family/sir.three.pdf
 
 ----------------------------------------------------------------------
 
-PSLIDE Rubella
+PSLIDE Polio
 
-WFIG 0.8 webpix/rubella_pink.jpg
+WFIG 0.8 webpix/polio_pink.jpg
 
 ----------------------------------------------------------------------
 
@@ -233,9 +237,9 @@ WFIG 0.8 webpix/measles_pink.jpg
 
 ----------------------------------------------------------------------
 
-PSLIDE Polio
+PSLIDE Rubella
 
-WFIG 0.8 webpix/polio_pink.jpg
+WFIG 0.8 webpix/rubella_pink.jpg
 
 ----------------------------------------------------------------------
 
