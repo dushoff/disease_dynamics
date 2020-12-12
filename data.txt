@@ -63,17 +63,21 @@ SEC Public health
 
 ----------------------------------------------------------------------
 
-TSS Maternal mortality
-
-	Igor Semmelweiss
-
-	Vienna general hospital
-
-	ADD Odds ratios
+TSEC Maternal mortality
 
 ----------------------------------------------------------------------
 
 PICSLIDE DIAGRAM maternal.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Observation and action
+
+	In 1840, medical students stopped visiting Clinic 1
+
+	In 1847, a surgeon died from infection following a scalpel injury
+
+		Igor Semmelweiss made medical students wash their hands
 
 ----------------------------------------------------------------------
 
@@ -84,6 +88,19 @@ PICSLIDE DIAGRAM maternal.Rout-1.pdf
 DIAGRAM maternal.Rout-2.pdf
 
 ----------------------------------------------------------------------
+
+NSLIDE Looking at the data
+
+	ANS Why was Clinic 1 so dangerous in the 40s?
+
+	ANS \ldots and so safe in 1851 and 1852?
+
+	ANS What can we learn from modern statistics?
+
+	ANS And what can't we learn without more data?
+
+----------------------------------------------------------------------
+
 
 DIAGRAM maternal.Rout-3.pdf
 
@@ -117,54 +134,12 @@ PIC FIG snow_pumps.pdf
 
 ----------------------------------------------------------------------
 
-SS Other examples
-
-----------------------------------------------------------------------
-
-Yellow fever and malaria
+TSS Yellow fever and malaria
 
 	Ross determined the cause of malaria primarily by experiments on mosquitoes
 
 	Reed determined the cause of yellow fever primarily by experiments on human
 	volunteers
-
-----------------------------------------------------------------------
-
-PSLIDE Rubella
-
-WFIG 0.8 webpix/rubella_pink.jpg
-
-----------------------------------------------------------------------
-
-PSLIDE Measles
-
-WFIG 0.8 webpix/measles_pink.jpg
-
-----------------------------------------------------------------------
-
-PSLIDE Polio
-
-WFIG 0.8 webpix/polio_pink.jpg
-
-----------------------------------------------------------------------
-
-PSLIDE Influenza
-
-WFIG 0.8 webpix/flu_pink.jpg
-
-----------------------------------------------------------------------
-
-NOTES Other viruses
-
-Pictures from CDC Pink book \url{https://www.cdc.gov/vaccines/pubs/pinkbook/index.html}
-
-	Rubella
-
-	Measles
-
-	Polio
-
-	Influenza
 
 ----------------------------------------------------------------------
 
@@ -240,9 +215,47 @@ FIG smoke_effects.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-Dynamical example
+Dynamical examples
 
 DIAGRAM SIR_model_family/sir.three.pdf
+
+----------------------------------------------------------------------
+
+PSLIDE Rubella
+
+WFIG 0.8 webpix/rubella_pink.jpg
+
+----------------------------------------------------------------------
+
+PSLIDE Measles
+
+WFIG 0.8 webpix/measles_pink.jpg
+
+----------------------------------------------------------------------
+
+PSLIDE Polio
+
+WFIG 0.8 webpix/polio_pink.jpg
+
+----------------------------------------------------------------------
+
+PSLIDE Influenza
+
+WFIG 0.8 webpix/flu_pink.jpg
+
+----------------------------------------------------------------------
+
+NSLIDE Other viruses
+
+Pictures from CDC Pink book \url{https://www.cdc.gov/vaccines/pubs/pinkbook/index.html}
+
+	Rubella
+
+	Measles
+
+	Polio
+
+	Influenza
 
 ----------------------------------------------------------------------
 
@@ -273,6 +286,4 @@ TSEC Summary
 		When mechanisms are complex
 
 	We should work to combine dynamics with statistical approaches
-
-		But not this week
 
