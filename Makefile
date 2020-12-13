@@ -65,6 +65,26 @@ heterogeneity.handouts.pdf: heterogeneity.txt
 heterogeneity.slides.pdf: heterogeneity.txt
 heterogeneity.push:
 
+### Pitch slide
+### Introduced DAIDD 2017
+
+Sources += pitch.tex
+pitch.pdf: pitch.tex
+
+######################################################################
+
+## Rabies. Moved here for 2018 public talk
+## It's been all over (including its own Workshops module??)
+## Using .step for this talk, but I think not most of the others here yet
+
+rabies.final.pdf: rabies.txt
+rabies.draft.pdf: rabies.txt
+rabies.html: rabies.step
+
+Ignore += TREE_crop.jpg
+TREE_crop.jpg: webpix/TREE.jpg
+	convert -crop 300x240+40+100 $< $@
+
 ######################################################################
 
 ## Smoking example

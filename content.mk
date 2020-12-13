@@ -58,12 +58,6 @@ foundations.handouts.pdf: foundations.txt
 confront.draft.pdf: confront.txt
 confront.handouts.pdf: confront.txt
 
-### Pitch slide
-### Intro DAIDD 2017
-
-Sources += pitch.tex
-pitch.pdf: pitch.tex
-
 ######################################################################
 
 ## Stochastic stuff
@@ -87,15 +81,3 @@ individual.html: individual.step
 individual.push:
 
 ######################################################################
-
-## Rabies. Moved here for 2018 public talk
-## It's been all over (including its own Workshops module??)
-## Using .step for this talk, but I think not most of the others here yet
-
-rabies.final.pdf: rabies.txt
-rabies.draft.pdf: rabies.txt
-rabies.html: rabies.step
-
-Ignore += TREE_crop.jpg
-TREE_crop.jpg: webpix/TREE.jpg
-	convert -crop 300x240+40+100 $< $@
