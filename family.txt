@@ -276,7 +276,7 @@ Population sizes
 
 ----------------------------------------------------------------------
 
-EXTRA PSLIDE Population sizes
+REPSLIDE Population sizes
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -284,7 +284,7 @@ DIAGRAM SIR_model_family/sirodes.const.pdf
 
 ----------------------------------------------------------------------
 
-EXTRA RHEAD Population sizes
+Population sizes
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -292,7 +292,7 @@ DIAGRAM SIR_model_family/sirodes.pdf
 
 ----------------------------------------------------------------------
 
-EXTRA FIG SIR_model_family/beta.Rout-0.pdf
+FIG SIR_model_family/beta.Rout-0.pdf
 
 	$\beta(N) = \beta_0$
 
@@ -302,17 +302,17 @@ EXTRA FIG SIR_model_family/beta.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-EXTRA FIG SIR_model_family/beta.Rout-1.pdf
+FIG SIR_model_family/beta.Rout-1.pdf
 
-	$\beta(N) = \beta_1 N$
+	$\beta(N) = \alpha_0 N$
 
-	${\cal T} = \beta_1 SI$
+	${\cal T} = \alpha_0 SI$
 
 	Also known as \emph{density-dependent} transmission
 
 ----------------------------------------------------------------------
 
-EXTRA FIG SIR_model_family/beta.Rout-3.pdf
+FIG SIR_model_family/beta.Rout-3.pdf
 
 	Per-capita rate:
 
@@ -332,11 +332,9 @@ Digression -- units
 
 		$\beta/\gamma = \beta D: [1]$
 
-	NOTES Components of $\beta$ may have different units
+	${\cal T} = \alpha SI: [\mathrm{ppl}/\mathrm{time}]$
 
-		NOTES Standard incidence, $\beta_0: [1/\mathrm{time}]$
-
-		NOTES Mass-action incidence, $\beta_1: [1/(\mathrm{people} \cdot \mathrm{time})]$
+		Mass-action incidence, $\alpha: [1/(\mathrm{people} \cdot \mathrm{time})]$
 
 ----------------------------------------------------------------------
 
@@ -373,7 +371,7 @@ LANDFIG SIR_model_family/comp.pdf
 
 ----------------------------------------------------------------------
 
-EXTRA PSLIDE Model taxonomy
+REPSLIDE Model taxonomy
 
 FIG taxon.jpg
 

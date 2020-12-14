@@ -43,11 +43,13 @@ Sources += $(wildcard *.txt)
 
 ### Lectures
 ### There are still some lectures in content.mk
+%.lecture: %.handouts.pdf.op %.draft.pdf.op ;
 
 ### ICI3D model family lectures
 family.draft.pdf: family.txt
 family.handouts.pdf: family.txt
 family.final.pdf: family.txt
+family.lecture:
 
 ## DAIDD intro lecture introduced 2019 Dec 13 (Fri)
 ## Look for machinery in content
