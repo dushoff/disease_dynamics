@@ -365,7 +365,9 @@ Equilibrium calculations
 
 		$\Reffec = \sigma\tau c D S/N$
 
-		Equilibrium $S/N = 1 - 1/\Ro$
+		Equilibrium $S/N = 1/\Ro$
+
+		Proportion affected: $1 - 1/\Ro$
 
 ----------------------------------------------------------------------
 
@@ -389,7 +391,7 @@ RHEAD Equilibrium calculations with heterogeneity
 	$\Reffec = \sigma_S\tau_I c_x D_I S/N$
 	measured at \emph{equilibrium}
 
-	Equilibrium $S/N \neq 1 - 1/\Ro$
+	Equilibrium $S/N \neq 1/\Ro$
 
 ----------------------------------------------------------------------
 
@@ -471,7 +473,7 @@ Equilibrium analysis
 
 		Susceptible pool is the most resistant, or least exposed group
 
-		Infectious pool moves looks more like the general population.
+		Infectious pool looks more like the general population.
 
 	$\rightarrow$ lower proportion affected \emph{for a given value of
 	\Ro.}

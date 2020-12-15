@@ -65,7 +65,7 @@ heterogeneity.final.pdf: heterogeneity.txt
 heterogeneity.draft.pdf: heterogeneity.txt
 heterogeneity.handouts.pdf: heterogeneity.txt
 heterogeneity.slides.pdf: heterogeneity.txt
-heterogeneity.push:
+## heterogeneity.lecture:
 
 ### Pitch slide
 ### Introduced DAIDD 2017
