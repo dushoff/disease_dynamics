@@ -114,13 +114,13 @@ pearson.pages: science/Pearson18.pdf
 	touch $@
 
 ## This is wasteful
-## pearson-11.main.png:
+Ignore +=  pearson-11.main.png
 .PRECIOUS: pearson-%.main.png
 pearson-%.main.png: pearson-%.png Makefile
 	convert $< $@
 
 ## This is terrible
-## pearson-15.loop.jpg:
+Ignore += pearson-15.loop.jpg:
 .PRECIOUS: pearson-%.pdf pearson-%.loop.jpg
 pearson-%.pdf: science/Pearson18.pdf
 	pdfjam --landscape -o $@ $< $*
