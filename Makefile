@@ -45,6 +45,19 @@ Sources += $(wildcard *.txt)
 ### There are still some lectures in content.mk
 %.lecture: %.handouts.pdf.op %.draft.pdf.op ;
 
+## template testing
+Ignore += example.tex
+example.tex:
+	$(LN) LatexTemplates/example.tex
+example.pdf: example.tex
+
+### public health, epi and models (started by Jim)
+public.draft.pdf: public.txt
+public.handouts.pdf: public.txt
+public.final.pdf: public.txt
+public.lecture:
+public.html: public.step
+
 ### ICI3D model family lectures
 family.draft.pdf: family.txt
 family.handouts.pdf: family.txt
@@ -104,6 +117,24 @@ smoke_effects.Rout: smoking.Rout smoke_effects.R
 ######################################################################
 
 ## Cannibalize other versions
+
+## Using libre to pull from phem
+#  https://figshare.com/articles/journal_contribution/Public_Health_Epidemiology_and_Models/5038769
+
+libre: dir=~/.config/libreoffice/4/user/gallery
+libre:
+	$(linkdirname)
+
+jsPubHealth.update:
+	- mv libre/*.png libre/*.jpg jsPubHealth
+
+jsPubHealth: dir=~/Dropbox/resources
+jsPubHealth:
+	$(linkdir)
+
+######################################################################
+
+## DAIDD craziness
 
 ## If we're going to cannibalize, it would be good to have a link here to a public version of the original slides, but this is not available
 
@@ -199,7 +230,7 @@ makestuff/Makefile:
 -include makestuff/os.mk
 
 -include makestuff/newtalk.mk
--include makestuff/texdeps.mk
+-include makestuff/texi.mk
 -include makestuff/wrapR.mk
 -include makestuff/webpix.mk
 -include makestuff/hotcold.mk

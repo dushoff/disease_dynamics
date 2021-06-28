@@ -1,0 +1,452 @@
+
+EXTRA
+
+	Started remodeling Jim's famous lecture _way_ too late in the game
+
+	Jim's public health pix
+
+	Participant scrambling technology
+
+----------------------------------------------------------------------
+
+NOFRAME
+
+\newcommand{\jdtitle}{Public health, epidemiology and modeling}
+\newcommand{\jdsub}{}
+\newcommand{\years}{2021} 
+
+----------------------------------------------------------------------
+
+ICI3DTHEME
+
+----------------------------------------------------------------------
+
+Goals
+
+	Define public health
+
+		Compare and contrast with medicine
+
+	Define epidemiology
+
+	Discuss the role of dynamical modeling
+
+----------------------------------------------------------------------
+
+PICSLIDE HFIG 1.05 jsPubHealth/wedding.png
+
+----------------------------------------------------------------------
+
+
+TSEC What is public health?
+
+BC
+
+	The science of preventing disease, prolonging life, and promoting  physical
+	health and efficiency through organized community efforts… 
+
+	CREDIT Winslow 1920 \url{https://zenodo.org/record/1448241}
+
+	CREDIT \url{https://www.youtube.com/watch?v=t\_eWESXTnic}
+
+NC
+
+	Works at the population level
+
+	\emph{Prevention} comes first
+
+SIDEFIG jsPubHealth/ppp.png
+
+EC
+
+----------------------------------------------------------------------
+
+Examples
+
+	What are some public health interventions?
+
+----------------------------------------------------------------------
+
+PICSLIDE 
+
+FRAMEFIG jsPubHealth/vaccine.png
+
+----------------------------------------------------------------------
+
+PICSLIDE 
+
+FRAMEFIG jsPubHealth/water.png
+
+----------------------------------------------------------------------
+
+PICSLIDE 
+
+FRAMEFIG webpix/smog.png
+
+----------------------------------------------------------------------
+
+PICSLIDE 
+
+FRAMEFIG jsPubHealth/vaccine.png
+
+----------------------------------------------------------------------
+
+PICSLIDE 
+
+FRAMEFIG jsPubHealth/this.png
+
+----------------------------------------------------------------------
+
+PICSLIDE \vspace{-2ex}
+
+FRAMEFIG jsPubHealth/improvements.png
+
+CREDIT Jim Scott
+
+----------------------------------------------------------------------
+
+Public-health intervention framework
+
+BCC
+
+	Define the problem
+
+	Determine risk factors
+
+	Develop interventions 
+
+	Implementation
+
+	Maintenance
+
+NCC
+
+PIC HIGHFIG jsPubHealth/smallpox.png
+
+EC
+
+----------------------------------------------------------------------
+
+Barriers 
+
+	Economic
+
+	Moral/religious
+
+	Individual freedom
+
+	Political
+
+----------------------------------------------------------------------
+
+TSS Public health vs.~medicine
+
+BCC
+
+	Medicine
+
+		individual focus
+
+		diagnosis
+
+		treatment
+
+NCC
+
+	Public health 
+
+		community focus
+
+		investigation (epidemiology)
+
+		intervention (policy)
+
+EC
+
+----------------------------------------------------------------------
+
+Medical interventions
+
+	ANS Drugs
+
+		ANS Antibiotics, blood pressure, anti-cancer
+
+	ANS Surgery
+
+----------------------------------------------------------------------
+
+Joint interventions
+
+	Vaccinations
+
+	Treatment as prevention
+
+----------------------------------------------------------------------
+
+Conflicts
+
+	Do the individual and population perspectives ever conflict?
+
+----------------------------------------------------------------------
+
+Antibiotics
+
+	For most patients the safer choice is aggressive, broad-spectrum
+	treatment
+
+	What's the problem?
+
+		ANS Drug resistance
+
+		ANS Cost
+
+----------------------------------------------------------------------
+
+HIV treatment beliefs
+
+	1980s: treating with AZT is better for the patient but might be worse for
+	the community
+
+	2000s: Early treatment with highly active combination therapy is better for
+	the community but might be worse for the patient
+
+	Now: Ever-improving treatments are better for everyone
+
+----------------------------------------------------------------------
+
+COVID testing
+
+	Public-health people like widely deployed, low-accuracy fast tests
+
+		They provide useful population-level information for policy and
+		response
+
+	Many medical people disllike them
+
+		ANS They provide confusing and unreliable information for diagnosis and
+		treatment
+
+----------------------------------------------------------------------
+
+Clinical trials
+
+	Randomized clinical trials are good for society
+
+	ANS But being randomized to a placebo can be bad for my patient
+
+----------------------------------------------------------------------
+
+PRESLIDE Inoculation
+
+PIC DBFIG 0.7 jsPubHealth/inoculation.jpg 0.7 jsPubHealth/pesthouse.jpg
+
+	pest houses are good for the population, but maybe bad for my patient
+
+	CREDIT Wikimedia Commons
+
+----------------------------------------------------------------------
+
+Health care
+
+	Health care $\neq$ medical care
+
+	Health care = medical care + public health
+
+	Public health and economic improvements dominate health progress
+
+----------------------------------------------------------------------
+
+TSEC What is epidemiology?
+
+	The study of the 
+
+		distribution and 
+
+		determinants 
+
+		of health-related states or events 
+
+		in specified populations
+
+	and the application of this study to control health problems
+	
+	CREDIT J. Last, Dictionary of Epidemiology \url{https://academic.oup.com/aje/article/154/1/93/117432}
+
+----------------------------------------------------------------------
+
+PICSLIDE FIG jsPubHealth/parish.png
+
+----------------------------------------------------------------------
+
+Getting answers
+
+	Classic epidemiology
+
+		Who, what, when, where?
+
+	Analytic epidemiology
+
+		Why and how?
+
+	of disease patterns at the population level
+
+----------------------------------------------------------------------
+
+Determinants of disease
+
+PIC WFIG 0.7 jsPubHealth/sfhealth.png
+
+PIC WFIG 0.8 jsPubHealth/sftable.png
+
+More partners $\to$ greater likelihood of HIV
+
+----------------------------------------------------------------------
+
+PRESLIDE Determinants of disease
+
+WFIG 0.8 jsPubHealth/beerhead.png
+
+RESTING DOUBLEFIG jsPubHealth/beergraph.png jsPubHealth/beerexp.png
+
+DBFIG 0.6 jsPubHealth/beergraph.png 0.8 jsPubHealth/beerexp.png
+
+----------------------------------------------------------------------
+
+Observational studies
+
+Is it OK to use observational studies to shape policy?
+
+PIC FRAMEFIG jsPubHealth/crossover.png
+
+----------------------------------------------------------------------
+
+Classical epidemiology
+
+When do we need to know why?
+
+PIC WIDEFIG jsPubHealth/nomech.png
+
+	Many interventions were implemented long before they were understood
+
+	CREDIT R. Bertollini, Policy Implications of Our Understanding of the East-West Life Expectancy Gap (DOI broken!)
+
+----------------------------------------------------------------------
+
+Testing interventions
+
+PIC WFIG 0.75 jsPubHealth/1265head.png
+
+PIC WFIG 1 jsPubHealth/1265table.png
+
+Circumcision reduces male HIV incidence by $~60%$
+
+----------------------------------------------------------------------
+
+SEC Where does modeling come in?
+
+----------------------------------------------------------------------
+
+Risk factors for heart disease
+
+	Fatty diet
+
+	Poor exercise
+
+	Genetics
+
+	Stress
+
+----------------------------------------------------------------------
+
+Risk factors for tuberculosis
+
+	Poor nutrition
+
+	Crowded living conditions
+
+	Stress
+
+	ANS Bacteria!
+
+----------------------------------------------------------------------
+
+Risk factors for measles
+
+	Poor nutrition
+
+	Crowded living conditions
+
+	Stress
+
+	ANS Vaccines
+
+	ANS Viruses!!!!!
+
+----------------------------------------------------------------------
+
+Dynamics
+
+	You are at risk if your neighbors have the disease
+
+	Your neighbors are at risk if \emph{their} neighbors have the disease
+
+	Their neighbors are at risk \ldots
+
+	Dynamical models are the tool for understanding this
+
+----------------------------------------------------------------------
+
+Thresholds for control
+
+	Ronald Ross: if we reduce the number of mosquitoes beyond a critical level,
+	yellow fever should not be able to persist
+
+----------------------------------------------------------------------
+
+Predicting dynamical impacts
+
+BC
+
+PIC HIGHFIG jsPubHealth/granTable.png
+
+NC
+
+	Studied universal testing and treatment for HIV
+
+	Direct benefits
+
+	Indirect benefits
+
+	CREDIT Granich et al., 2009 \url{https://pubmed.ncbi.nlm.nih.gov/19038438/}
+
+EC
+
+----------------------------------------------------------------------
+
+PICSLIDE
+
+HFIG 0.65 jsPubHealth/bernCalc.png
+
+HFIG 0.35 jsPubHealth/bernWish.png
+
+----------------------------------------------------------------------
+
+Summary
+
+	Public health
+
+		Population level view; the complement of medicine
+
+		Prevention first!
+
+	Epidemiology
+
+		the cornerstone of public health
+
+		distribution and determinants of disease
+
+	Models
+
+		Understand dynamical disease processes 
+
+		Investigate dynamical effects of changes
