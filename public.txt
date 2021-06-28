@@ -65,11 +65,7 @@ Examples
 
 	What are some public health interventions?
 
-----------------------------------------------------------------------
-
-PICSLIDE 
-
-FRAMEFIG jsPubHealth/vaccine.png
+		NOANS
 
 ----------------------------------------------------------------------
 
@@ -187,6 +183,8 @@ Conflicts
 
 	Do the individual and population perspectives ever conflict?
 
+		NOANS
+
 ----------------------------------------------------------------------
 
 Antibiotics
@@ -239,6 +237,8 @@ Clinical trials
 PRESLIDE Inoculation
 
 PIC DBFIG 0.7 jsPubHealth/inoculation.jpg 0.7 jsPubHealth/pesthouse.jpg
+
+\vspace{3ex} 
 
 	pest houses are good for the population, but maybe bad for my patient
 
