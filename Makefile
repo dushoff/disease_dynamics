@@ -121,6 +121,7 @@ smoke_effects.Rout: smoking.Rout smoke_effects.R
 ## Using libre to pull from phem
 #  https://figshare.com/articles/journal_contribution/Public_Health_Epidemiology_and_Models/5038769
 
+Ignore += libre
 libre: dir=~/.config/libreoffice/4/user/gallery
 libre:
 	$(linkdirname)
@@ -128,6 +129,7 @@ libre:
 jsPubHealth.update:
 	- mv libre/*.png libre/*.jpg jsPubHealth
 
+Ignore += jsPubHealth
 jsPubHealth: dir=~/Dropbox/resources
 jsPubHealth:
 	$(linkdir)
@@ -147,7 +149,7 @@ pearson.pages: science/Pearson18.pdf
 ## This is wasteful
 Ignore +=  pearson-11.main.png
 .PRECIOUS: pearson-%.main.png
-pearson-%.main.png: pearson-%.png Makefile
+pearson-%.main.png: pearson-%.png
 	convert $< $@
 
 ## This is terrible
@@ -155,7 +157,7 @@ Ignore += pearson-15.loop.jpg:
 .PRECIOUS: pearson-%.pdf pearson-%.loop.jpg
 pearson-%.pdf: science/Pearson18.pdf
 	pdfjam --landscape -o $@ $< $*
-pearson-%.loop.jpg: pearson-%.pdf Makefile
+pearson-%.loop.jpg: pearson-%.pdf
 	convert -crop 800x440+20+40 $< $@
 
 Ignore += snow*.pdf
@@ -218,7 +220,7 @@ science/%:
 
 ### Makestuff
 
-Sources += Makefile content.mk
+Sources += Makefile content.mk README.md
 
 Ignore += makestuff
 msrepo = https://github.com/dushoff
