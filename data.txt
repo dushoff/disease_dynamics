@@ -277,11 +277,100 @@ Bridging
 
 ----------------------------------------------------------------------
 
+Building knowledge from data
+
+	We must have communication up and down the analysis pipeline
+
+		Data are collected in the field
+
+		Organized and documented
+
+		Protected (for confidentiality, and often for the rights of collectors)
+
+		Summarized
+
+		Modeled
+
+----------------------------------------------------------------------
+
+Example: COVID incidence
+
+	Positive test results but no negative test results
+
+		Can't correct for testing intensity
+
+	Positive and negative test results, but no individual identifiers
+
+		Can't correct for multiple testing of the same people
+
+	Test results, but not reason for testing
+
+		Can't correct for testing focus
+
+----------------------------------------------------------------------
+
+Example: COVID variants
+
+	Mutational screens not linked to invididuals
+
+		We can estimate mutations, but not variants
+
+	Reasons for screening or sequencing not provided
+
+		Can't correct for selection bias
+
+	Personal information not provided
+
+		Can't look for geographical patterns, vaccine effectiveness, \ldots
+
+----------------------------------------------------------------------
+
+Example: West Africa Ebola Outbreak
+
+	Medical vs.~public-health priorities
+
+		Am I responsible if my data request increases the pressure on a
+		front-line responder?
+
+	Individual-level vs.~population considerations
+
+		When it is OK to randomize people to receive a placebo vaccine or
+		treatment?
+
+----------------------------------------------------------------------
+
+Example: Microbiome studies
+
+	In some fields, the amount of apparently high-quality data is far
+	outstripping the ability to understand it
+
+	Lots of reasonably intelligent experiments (or observational designs)
+
+	Huge lists of taxonomic (or metagenomic) communities
+
+----------------------------------------------------------------------
+
+Data vs.~models
+
+	Models can teach us a lot, but good data with a simplistic model is usually
+	better than poor (or poorly contextualized) data with a good model
+
+	Sometimes, the most valuable thing about the model is that it helps us
+	figure out what data we need
+
+		ANS Value-of-information models
+
+----------------------------------------------------------------------
+
 TSEC Summary
 
 	Science is an ongoing process
 
 	Models are the way that we bridge between theory and reality
+
+	We can only bridge to reality if we can measure reality
+
+		Collect and curate good data
 
 	Dynamical models have a key role
 
