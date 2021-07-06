@@ -167,6 +167,10 @@ snow0.pdf: science/Williams17.pdf
 snow_pumps.pdf: science/Williams17.pdf
 	pdfjam --landscape -o $@ $< 46
 
+######################################################################
+
+Sources += $(wildcard *.R)
+
 Farr.Rout: science/farr.tsv Farr.R
 
 ## My own version of the Semmelweiss
