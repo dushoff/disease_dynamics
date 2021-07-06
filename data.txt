@@ -80,6 +80,10 @@ Observation and action
 
 ----------------------------------------------------------------------
 
+PICSLIDE DIAGRAM maternal.Rout-0.pdf
+
+----------------------------------------------------------------------
+
 PICSLIDE DIAGRAM maternal.Rout-1.pdf
 
 ----------------------------------------------------------------------
@@ -88,7 +92,7 @@ DIAGRAM maternal.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-NSLIDE Looking at the data
+Looking at the data
 
 	ANS Why was Clinic 1 so dangerous in the 40s?
 
@@ -99,7 +103,6 @@ NSLIDE Looking at the data
 	ANS And what can't we learn without more data?
 
 ----------------------------------------------------------------------
-
 
 DIAGRAM maternal.Rout-3.pdf
 
@@ -277,7 +280,7 @@ Bridging
 
 ----------------------------------------------------------------------
 
-Building knowledge from data
+TSS Building knowledge from data
 
 	We must have communication up and down the analysis pipeline
 
@@ -347,6 +350,12 @@ Example: Microbiome studies
 	Lots of reasonably intelligent experiments (or observational designs)
 
 	Huge lists of taxonomic (or metagenomic) communities
+
+----------------------------------------------------------------------
+
+PIC FIG my_images/notindependent.png
+
+CREDIT https://www.nature.com/articles/s41598-021-92400-y
 
 ----------------------------------------------------------------------
 
