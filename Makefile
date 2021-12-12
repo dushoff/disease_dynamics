@@ -29,6 +29,20 @@ Ignore += $(pardirs)
 
 # Theme for whatever lectures are now being prepared
 # .tmp files not here will be made from talkdir
+
+## Venues
+## THEMES themes Themes
+## Look at beamer.tmp manually
+## Automatically change the format rules (but not the template)
+## for different venues.
+## mmed.set:
+## daidd.set:
+## qmee.set:
+%.set: LatexTemplates/%.txt.format
+	touch $<
+	$(LNF) $< local.txt.format
+
+
 Sources += beamer.tmp notes.tmp
 
 ######################################################################
