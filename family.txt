@@ -14,7 +14,7 @@ NOFRAME
 
 \newcommand{\jdtitle}{Foundations of dynamic modeling:}
 \newcommand{\jdsub}{The SIR Model Family}
-\newcommand{\years}{2013--2019} 
+\newcommand{\years}{2013--2021} 
 
 ----------------------------------------------------------------------
 
