@@ -38,10 +38,9 @@ Ignore += $(pardirs)
 ## mmed.set:
 ## daidd.set:
 ## qmee.set:
-%.set: LatexTemplates/%.txt.format
+%.set: LatexTemplates/%.txt.format | LatexTemplates
 	touch $<
 	$(LNF) $< local.txt.format
-
 
 Sources += beamer.tmp notes.tmp
 
