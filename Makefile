@@ -115,6 +115,7 @@ TREE_crop.jpg: webpix/TREE.jpg
 
 ######################################################################
 
+## Is there a chaining problem with fev.csv 2022 Nov 06 (Sun)?
 ## Smoking example
 ## What are the various places I have this??
 Sources += archive/fev.csv
@@ -122,7 +123,7 @@ Ignore += fev.csv
 archive/fev.csv: 
 	wget -O $@ "http://biostat.mc.vanderbilt.edu/wiki/pub/Main/DataSets/FEV.csv"
 fev.csv: archive/fev.csv
-	$(link)
+	$(forcelink)
 
 smoking.Rout: fev.csv smoking.R
 smoke_effects.Rout: smoking.Rout smoke_effects.R
