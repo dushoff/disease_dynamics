@@ -1,0 +1,36 @@
+# Formatting rules for .fmt
+## @% is meant to escape the %
+## %% Takes whole rest of P.
+## %+ Uses P. without taking
+## %! Discards whole rest of P.
+## %| Takes "sentence"
+## %_ Takes optional line
+# %^ Takes optional word
+## %? Eats word
+## % Takes word
+
+!SLIDESEP ----------------+
+!TAB \t
+!PERC %
+
+BCC %!
+BC %!
+NCC %!
+NC %!
+EC %!
+
+CFIG ![](% "%%"){width=44@%}
+MFIG ![](% "%%"){width=60@%}
+FIG ![](% "%%"){width=80@%}
+
+## HREF is not easy in current paradigm (order problems)
+## HREF [%](%%)
+## Redo syntax and use %|, I guess
+
+SEC # %%
+DEFHEAD ## %%
+TSEC # %+ \n\n ## %%
+SUBH ### %%
+
+REPSLIDE ^DEFHEAD
+

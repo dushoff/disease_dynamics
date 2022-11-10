@@ -87,6 +87,7 @@ data.lecture: data.handouts.pdf.op data.draft.pdf.op
 
 ## Develop conversion machinery 2022 Nov 10 (Thu)
 Sources += md.fmt
+Ignore += data.md
 data.md: data.txt data.tmp md.fmt makestuff/newtalk/lect.pl
 	$(PUSHRO)
 
