@@ -1,6 +1,7 @@
 # disease_dynamics
 # CARRIED ON from disease_model_talks
 # Workshops/disease
+## Seems old and mostly ICI3D-focused
 
 ##################################################################
 
