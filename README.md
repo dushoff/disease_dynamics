@@ -31,13 +31,13 @@ public.txt
 
 ## NTU 2016
 
-confront.txt
-* HIV worksheet spinoff
-
 foundations.txt
 * NTU1? ODEs and exponentiality
 
 dynamics.txt
 * Invented as NTU2 (I think)
 * Repurposing for Taiwan 2023
+
+confront.txt
+* HIV worksheet spinoff
 

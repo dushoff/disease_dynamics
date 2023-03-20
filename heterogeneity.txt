@@ -59,13 +59,13 @@ BC
 
 1967: It's time to close the book on infectious diseases
 
-PIC WFIG 0.6 tmpfigs/smallpox.jpg
+PIC WFIG 0.6 my_images/smallpox.jpg
 
 NC
 
-PIC WFIG 0.6 tmpfigs/headlines.jpg
+PIC WFIG 0.6 my_images/headlines.jpg
 
-PIC WFIG 0.6 tmpfigs/book.jpg
+PIC WFIG 0.6 my_images/book.jpg
 
 EC
 
@@ -73,32 +73,32 @@ EC
 
 Pathogen evolution
 
-PIC WFIG 0.4 tmpfigs/influenza.jpg
+PIC WFIG 0.4 my_images/influenza.jpg
 
-PIC WFIG 0.4 tmpfigs/tb.jpg
+PIC WFIG 0.4 my_images/tb.jpg
 
 ----------------------------------------------------------------------
 
 Human heterogeneity
 
-PIC HFIG 0.42 tmpfigs/maasai.jpg
+PIC HFIG 0.42 my_images/maasai.jpg
 
-PIC WFIG 0.48 tmpfigs/inuit.jpg
+PIC WFIG 0.48 my_images/inuit.jpg
 
 ----------------------------------------------------------------------
 
 PSLIDE Human heterogeneity
 
-WIDEFIG tmpfigs/Lesotho_children.jpg
+WIDEFIG my_images/Lesotho_children.jpg
 
 ----------------------------------------------------------------------
 
 
 PSLIDE Human heterogeneity
 
-HFIG 0.42 tmpfigs/dump_workers.jpg
+HFIG 0.42 my_images/dump_workers.jpg
 
-HFIG 0.48 tmpfigs/bento.jpg
+HFIG 0.48 my_images/bento.jpg
 
 --------------------------------------------------------------
 
@@ -317,7 +317,7 @@ Heterogeneity in other diseases
 
 Large-scale heterogeneity
 
-PIC HFIG 0.64 tmpfigs/schisto.png
+PIC HFIG 0.64 my_images/schisto.png
 
 	For schistosomiasis, the worldwide average $\Ro<1$
 
@@ -444,7 +444,7 @@ WFIG 0.8 SIR_model_family/simpson.Rout-0.pdf
 
 Simpson's paradox
 
-PIC DBFIG 0.8 tmpfigs/farmers.jpg 0.8 tmpfigs/senate.jpg
+PIC DBFIG 0.8 my_images/farmers.jpg 0.8 my_images/senate.jpg
 
 	What happens when a peanut farmer is elected to the US Senate?
 
@@ -616,7 +616,7 @@ Multi-group models
 
 Individual-based models
 
-WFIG 0.8 tmpfigs/network.png
+WFIG 0.8 my_images/network.png
 
 	Allow many possibilities:
 	
@@ -632,7 +632,7 @@ WFIG 0.8 tmpfigs/network.png
 
 PSLIDE Summary
 
-PIC WFIG 0.4 tmpfigs/crowd.jpg
+PIC WFIG 0.4 my_images/crowd.jpg
 
 PIC DBFIG 0.8 Endemic_curves/propCurves.Rout-1.pdf 0.8 Endemic_curves/propCurves.Rout-2.pdf
 
@@ -640,7 +640,7 @@ PIC DBFIG 0.8 Endemic_curves/propCurves.Rout-1.pdf 0.8 Endemic_curves/propCurves
 
 Summary
 
-PIC WFIG 0.32 tmpfigs/crowd.jpg
+PIC WFIG 0.32 my_images/crowd.jpg
 
 	People are heterogeneous in many ways
 

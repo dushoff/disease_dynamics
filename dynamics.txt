@@ -1,30 +1,41 @@
 
-EXTRA Updating fig links on an airplane. Figure this out the next time you look.
+NOFRAME
 
-Search tmpfigs
+\newcommand{\jdtitle}{Data, models and science}
+\newcommand{\jdsub}{}
+\newcommand{\years}{2016--\thisyear}
 
 ----------------------------------------------------------------------
 
-Introduction to dynamical modeling
+Dynamical models of disease spread
 
 Jonathan Dushoff, McMaster University
 
-\url{http://lalashan.mcmaster.ca/DushoffLab}
+PRESENT \vfill
+
+PRESENT National Taiwan University College of Public Health
 
 PRESENT \vfill
 
-PRESENT 2016 Summer Course on Mathematical Modeling and Analysis of 
-Infectious Diseases
-
-PRESENT \vfill
-
-PRESENT National Taiwan University
+March 2023
 
 PRESENT \vfill
 
 ----------------------------------------------------------------------
 
-Goals
+EXTRA Notes
+
+COURSE is stuff used only for a longer course version (NTU Summer)
+
+----------------------------------------------------------------------
+
+EXTRA Abstract 2023 March
+
+I will talk about some principles of modeling the spread of infectious diseases, with examples from Ebola, HIV, rabies, COVID-19 and influenza. Dynamical modeling is an essential tool for studying diseases the spread through populations, but also has many limitations.
+
+----------------------------------------------------------------------
+
+COURSE Goals
 
 	This lecture will:
 
@@ -36,9 +47,13 @@ Goals
 
 ----------------------------------------------------------------------
 
+SEC What is dynamical modeling
+
+----------------------------------------------------------------------
+
 Dynamic modeling connects scales
 
-PIC DBFIG 0.7 tmpfigs/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
+PIC DBFIG 0.7 my_images/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
 
 	Start with rules about how things change in short time steps
 
@@ -50,7 +65,7 @@ PIC DBFIG 0.7 tmpfigs/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
 
 ----------------------------------------------------------------------
 
-Example: Dandelions
+COURSE Example: Dandelions
 
 BC
 
@@ -64,7 +79,7 @@ BC
 
 NC
 
-SIDEFIG tmpfigs/dandy_field.jpg
+SIDEFIG webpix/dandy_field.jpg
 
 EC
 
@@ -86,13 +101,13 @@ BC
 
 NC
 
-SIDEFIG tmpfigs/flat.png
+SIDEFIG webpix/flat.png
 
 EC
 
 ----------------------------------------------------------------------
 
-Model result
+COURSE Model result
 
 	If each individual is reproducing independently at each time step, the
 	population changes \emph{exponentially}
@@ -103,7 +118,7 @@ REP FIG Exponential_figures/ntu.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-Scales
+COURSE Scales
 
 	The difference between 1 and 10 is the same as the difference between 10
 	and what?
@@ -118,7 +133,7 @@ Scales
 
 ----------------------------------------------------------------------
 
-Scales
+COURSE Scales
 
 DOUBLEPDF Exponential_figures/ntu.Rout
 
@@ -128,7 +143,7 @@ DOUBLEPDF Exponential_figures/ntu.Rout
 
 ----------------------------------------------------------------------
 
-Exponential change
+COURSE Exponential change
 
 	We can have exponential \emph{growth} (population goes up)
 
@@ -139,7 +154,7 @@ Exponential change
 
 ----------------------------------------------------------------------
 
-Exponential decline
+COURSE Exponential decline
 
 DOUBLEFIG Exponential_figures/ntu.Rout-2.pdf Exponential_figures/ntu.Rout-3.pdf
 
@@ -201,7 +216,7 @@ BC
 
 NC
 
-SIDEFIG tmpfigs/violet_bacteria.jpg
+SIDEFIG webpix/violet_bacteria.jpg
 
 EC
 

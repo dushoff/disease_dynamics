@@ -13,7 +13,7 @@ target = Makefile
 target: $(target)
 
 vim_session:
-	bash -cl "vmt README.md content.mk"
+	bash -cl "vmt README.md"
 
 ######################################################################
 
@@ -40,6 +40,7 @@ Ignore += $(pardirs)
 ## mmed.set:
 ## daidd.set:
 ## qmee.set:
+## plain.set:
 %.set: LatexTemplates/%.txt.format | LatexTemplates
 	touch $<
 	$(LNF) $< local.txt.format
@@ -57,7 +58,6 @@ Sources += $(wildcard *.txt)
 ######################################################################
 
 ### Lectures
-### There are still some lectures in content.mk
 %.lecture: %.handouts.pdf.op %.draft.pdf.op ;
 
 ## template testing
@@ -83,8 +83,12 @@ family.handouts.pdf: family.txt
 family.final.pdf: family.txt
 family.lecture:
 
+dynamics.draft.pdf: dynamics.txt
+dynamics.handouts.pdf: dynamics.txt
+dynamics.final.pdf: dynamics.txt
+dynamics.lecture:
+
 ## DAIDD intro lecture introduced 2019 Dec 13 (Fri)
-## Look for machinery in content
 ## data.final.pdf: data.txt
 ## data.draft.pdf: data.txt
 ## data.handouts.pdf: data.txt
@@ -233,20 +237,18 @@ Ignore += taxon.jpg
 taxon.jpg: my_images/taxonomy.jpg
 	convert -crop 960x560+0+100 $< $@
 
-## Craziness!
-## These figures need to be moved to a Dropbox, maybe merge with my_images
-Ignore += tmpfigs
-tmpfigs:
-	(ls ~/Dropbox/hetfigs && ln -s ~/Dropbox/hetfigs tmpfigs) \
-	|| (echo You need to put tmpfigs here or link to Dropbox)
-
 %.png: %.svg
 	$(convert)
 
 ######################################################################
 
+## Rescue and upate
+
+changefigs:
+	perl -pi -e "s/tmpfigs/my_images/g" *.txt
+
 ## Cannibalization stuff from DAIDD19
-## Not understood, and there is more in content.mk
+## Not understood
 
 ## science/What19.pdf ## Hargrove lecture
 ## science/Pearson18.pdf ##
@@ -264,7 +266,7 @@ science/%:
 
 ### Makestuff
 
-Sources += Makefile content.mk README.md
+Sources += Makefile README.md
 
 Ignore += makestuff
 msrepo = https://github.com/dushoff
