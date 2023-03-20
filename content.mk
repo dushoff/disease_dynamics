@@ -1,22 +1,4 @@
 
-## This should be, but apparently isn't, obviated by colddirs
-## Other pardirs seem to be cold, though
-SIR_model_family/%.pdf:
-	$(makethere)
-
-######################################################################
-
-# Family/dynamics
-# Probably not worth trying to merge; good ICI3D stuff from Taiwan has largely been incorporated. The Taiwan stuff takes a wider perspective (dandelions and eigenvalues)
-
-### Dynamical models lecture debut NTU 2016
-### NTU 2016-1
-dynamics.final.pdf: dynamics.txt
-dynamics.draft.pdf: dynamics.txt
-dynamics.handouts.pdf: dynamics.txt
-
-######################################################################
-
 Ignore += tmpfigs
 tmpfigs:
 	$(mkdir)
@@ -27,25 +9,7 @@ tmpfigs:
 tmpfigs/%: ~/Dropbox/HIV_presentations/images/%
 	$(copy)
 
-## Cribbing on airplane, see dynamics.txt
-
-family.push: 
-
-### Ebola-themed talk for Hiroshi
-### Not done
-
-lessons.draft.pdf: lessons.txt
-lessons.handouts.pdf: lessons.txt
-lessons.final.pdf: lessons.txt
-lessons.push: 
-
 ######################################################################
-
-Sources += $(wildcard *.R)
-
-live.Rout: live.R
-
-##################################################################
 
 ### Dynamical foundations lecture debut NTU 2016
 ### Nice stuff about simple Jacobians and zooming, the idea of qualitative analysis …

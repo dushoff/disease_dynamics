@@ -2,6 +2,7 @@
 # CARRIED ON from disease_model_talks
 # Workshops/disease
 ## Seems old and mostly ICI3D-focused
+## 2023 Mar 20 (Mon) Now doing overview talks here, too
 
 ##################################################################
 
@@ -12,7 +13,7 @@ target = Makefile
 target: $(target)
 
 vim_session:
-	bash -cl "vmt content.mk"
+	bash -cl "vmt README.md content.mk"
 
 ######################################################################
 
@@ -71,6 +72,10 @@ public.handouts.pdf: public.txt
 public.final.pdf: public.txt
 public.lecture:
 public.html: public.step
+
+## Chinese
+chinese.pdf: chinese.tex
+	xelatex $<
 
 ### ICI3D model family lectures
 family.draft.pdf: family.txt

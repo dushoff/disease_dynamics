@@ -1,8 +1,0 @@
-* A lot of pulling to figure out where we are, I guess (like, why it says MMED in places)
-
-* survival.R seems to be an orphan (a nice picture of gamma-like survival; probably I just used something from the spreadsheets instead for the "confront" lecture.
-
-2019 Dec 15 (Sun)
-=================
-
-Now I've done a whole bunch of stuff (R, pulling, cribbing from old talks) here on a plane on the way to RSA. Need to rethink. In particular, I need a sensible place for stats examples like the smoking-volume thing: a directory that can be a service directory for the stats courses and for Workshops
