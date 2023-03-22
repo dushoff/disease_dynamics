@@ -9,10 +9,6 @@ More stats?
 
 Flu resonance at end of stochastic
 
-alpha wave
-
-Newton pic
-
 ADD markers
 
 ----------------------------------------------------------------------
@@ -562,6 +558,8 @@ NC
 
 SIDEFIG my_images/roulette.jpg
 
+EC
+
 ----------------------------------------------------------------------
 
 NOTES DEFHEAD Result: Pattern of outbreak sizes is related to \Rx
@@ -723,6 +721,7 @@ TSS Behavioural changes
 	I can calculate the motion of heavenly bodies, but not the madness of
 	people. – Isaac Newton
 
+WIDEFIG webpix/planets.png
 
 ----------------------------------------------------------------------
 
@@ -772,7 +771,7 @@ FIG webpix/mpox_uk.jpg
 
 Example: COVID awareness
 
-FIG webpix/awareness_box.jpg
+WIDEFIG webpix/awareness_box.jpg
 
 CREDIT Weitz et al. \url{https://www.pnas.org/doi/10.1073/pnas.2009911117}
 
