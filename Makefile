@@ -90,6 +90,9 @@ dynamics.lecture:
 
 ## overview.draft.pdf: overview.txt overview.md
 ## overview.final.pdf: overview.txt overview.md
+## overview.chinese.pdf: overview.txt overview.md
+overview.chinese.pdf: overview.final.tex
+	xelatex -jobname=overview.chinese $<
 
 ## DAIDD intro lecture introduced 2019 Dec 13 (Fri)
 ## data.final.pdf: data.txt
