@@ -91,6 +91,9 @@ dynamics.lecture:
 ## overview.draft.pdf: overview.txt overview.md
 ## overview.final.pdf: overview.txt overview.md
 ## overview.chinese.pdf: overview.txt overview.md
+
+## Work on this -- but there is a font problem
+Ignore += $(wildcard *.chinese.*)
 overview.chinese.pdf: overview.final.tex
 	xelatex -jobname=overview.chinese $<
 
