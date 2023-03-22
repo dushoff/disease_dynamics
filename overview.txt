@@ -1,0 +1,794 @@
+
+EXTRA
+
+More box diagrams; Ebola; generations
+
+HIV stuff; fill in Behavioural examples
+
+More stats?
+
+Flu resonance at end of stochastic
+
+alpha wave
+
+Newton pic
+
+ADD markers
+
+----------------------------------------------------------------------
+
+NOFRAME
+
+\newcommand{\jdtitle}{Data, models and science}
+\newcommand{\jdsub}{}
+\newcommand{\years}{2016--\thisyear}
+
+----------------------------------------------------------------------
+
+Dynamical models of disease spread
+
+Jonathan Dushoff, McMaster University
+
+PRESENT \vfill
+
+PRESENT National Taiwan University College of Public Health
+
+PRESENT \vfill
+
+March 2023
+
+PRESENT \vfill
+
+----------------------------------------------------------------------
+
+EXTRA Abstract 2023 March
+
+I will talk about some principles of modeling the spread of infectious diseases, with examples from Ebola, HIV, rabies, COVID-19 and influenza. Dynamical modeling is an essential tool for studying diseases the spread through populations, but also has many limitations.
+
+----------------------------------------------------------------------
+
+SEC What is dynamical modeling?
+
+----------------------------------------------------------------------
+
+Dynamic modeling connects scales
+
+PIC DBFIG 0.7 my_images/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
+
+	Start with rules about how things change in short time steps
+
+		Usually based on \emph{individuals}
+
+	Calculate results over longer time periods
+
+		Usually about \emph{populations}
+
+----------------------------------------------------------------------
+
+Model worlds
+
+BC
+
+	A dynamic model is based on a model world
+
+	The model world has \emph{enough} assumptions to allow us to calculate
+	dynamics
+
+	The model world is \emph{simpler} than the real world
+
+	Essentially, all models are wrong, but some are useful.  -- Box and
+	Draper (1987), \emph{Empirical Model Building \ldots}
+
+NC
+
+SIDEFIG webpix/flat.png
+
+EC
+
+----------------------------------------------------------------------
+
+Simple models of disease spread
+
+	Divide people into categories:
+
+DIAGRAM SIR_model_family/sir.np.three.pdf
+
+	Susceptible: can be infected
+
+	Infectious: can infect others
+
+	Recovered: cannot be infected
+
+----------------------------------------------------------------------
+
+PRESLIDE What determines transition rates?
+
+REP DIAGRAM SIR_model_family/sir.np.three.pdf
+
+----------------------------------------------------------------------
+
+What determines transition rates?
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+	People get better independently
+
+	People get infected by infectious people
+
+----------------------------------------------------------------------
+
+SEC Modeling approaches
+
+----------------------------------------------------------------------
+
+SS Conceptual modeling
+
+----------------------------------------------------------------------
+
+PSLIDE Conceptual modeling
+
+DIAGRAM SIR_model_family/sir.three.pdf
+
+HFIG 0.6 SIR_model_family/thinker.jpg
+
+----------------------------------------------------------------------
+
+TSS Conceptual modeling
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+	What is the final result?
+
+	How do disease levels change?
+
+	When does disease increase, decrease?
+
+----------------------------------------------------------------------
+
+Result: change tends to be exponential
+
+	The number of people recovering or becoming infected is \emph{proportional}
+	to the number infected
+
+		I infect three people, they each infect 3 people \ldots
+
+		How fast does disease grow?
+
+		How quickly do we need to respond?
+
+----------------------------------------------------------------------
+
+little $r$
+
+	We measure epidemic \emph{speed} using little $r$:
+
+		\emph{Units}: [1/time]
+
+		Disease increases like $e^{rt}$
+
+	Characteristic time scale is $C=1/r$
+
+		Closelr related to doubling time
+
+		COVID, $C \approx 1 \mathrm{month}$
+
+		HIV in SSA, $C \approx 18 \mathrm{month}$
+
+	Often focus on initial period (may also say $r_0$)
+
+----------------------------------------------------------------------
+
+Exponential growth
+
+FIG SIR_simulations/hiv_plot.Rout-4.pdf
+
+----------------------------------------------------------------------
+
+Result: disease does not always spread 
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+	If rate out of I is faster than the rate into I
+
+	I $\to$ 0 and the outbreak stops
+
+----------------------------------------------------------------------
+
+Example: Yellow fever
+
+	$\Rx$ is the number of people who would be infected by an
+	infectious individual \emph{in a fully susceptible population.}
+
+	$\Rx = \beta/\gamma = \beta D = (cp) D$
+
+		$c$: Contact Rate
+
+		$p$: Probability of transmission (infectivity)
+
+		$D$: Average duration of infection
+
+	A disease can invade a population if and only if $\Rx>1$.
+
+	Often focus on initial period (may also say $\Ro$)
+
+----------------------------------------------------------------------
+
+EXTRA RHEAD Homogeneous endemic curve
+
+BCC
+
+CFIG Endemic_curves/propCurves.Rout-0.pdf
+
+NCC
+
+	Threshold value
+
+	Sharp response to changes in factors underlying transmission 
+
+	Works -- sometimes
+
+		Sometimes predicts unrealistic sensitivity
+
+EC
+
+----------------------------------------------------------------------
+
+Yellow fever in Panama
+
+BC
+
+CFIG Endemic_curves/propCurves.Rout-0.pdf
+
+NC
+
+CFIG webpix/aedes.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+Example: Dengue (Taiwan CDC)
+
+Indigenous cases 
+
+\vspace{2.5ex}
+
+40,000
+
+\vspace{-4.5ex}
+
+WFIG 0.75 my_images/dengueTW_ind.jpg
+
+Imported cases 
+
+\vspace{2.5ex}
+
+500
+
+\vspace{-4.5ex}
+
+WFIG 0.75 my_images/dengueTW_imp.jpg
+
+NOTES \url{https://www.cdc.gov.tw/En/Category/ListContent/bg0g_VU_Ysrgkes_KRUDgQ?uaid=9_Oq7OYHa-l8B05iUwyVvQ}
+
+----------------------------------------------------------------------
+
+Result: not every one gets infected
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+	When S gets low, then I goes down and the outbreak stops
+
+	There is not always a reason why you didn't get infected!
+
+		Everyone in this model is assumed to be the same
+
+----------------------------------------------------------------------
+
+Going beyond
+
+	We can \emph{implement} the model and see what it's going to do
+
+	This requires more assumptions, for example:
+
+		Time steps or continuous time?
+
+		Deterministic or stochastic?
+
+----------------------------------------------------------------------
+
+SS Deterministic models
+
+----------------------------------------------------------------------
+
+Simulations
+
+WIDEFIG SIR_model_family/sir.three.pdf
+
+PAUSE
+
+\vspace{-8ex}
+
+DOUBLEFIG SIR_simulations/burnouts.plots.Rout-0.pdf SIR_simulations/burnouts.plots.Rout-4.pdf
+
+----------------------------------------------------------------------
+
+REPSLIDE Simulations
+
+FIG SIR_simulations/burnouts.plots.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+RHEAD Closing the circle
+
+WIDEFIG SIR_model_family/sirbd.three.pdf
+
+	ANS Births and deaths
+
+----------------------------------------------------------------------
+REPSLIDE Closing the circle
+
+FIG SIR_simulations/burnouts.plots.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+RHEAD Closing the circle
+
+WIDEFIG SIR_model_family/sirs.three.pdf
+
+	ANS Loss of immunity
+
+----------------------------------------------------------------------
+
+RHEAD Processes and rates
+
+PRESENT WIDEFIG SIR_model_family/sirs.three.pdf
+
+\vspace{-4ex}
+
+WIDEFIG SIR_model_family/sirsrates.pdf
+
+----------------------------------------------------------------------
+
+
+Result: Diseases tend to oscillate
+
+LANDFIG SIR_model_family/comp0.pdf
+
+----------------------------------------------------------------------
+
+Result: Oscillations tend to be damped
+
+PRESENT LANDFIG SIR_model_family/comp0.pdf
+
+----------------------------------------------------------------------
+
+REPSLIDE What is missing from our model world?
+
+BCC
+
+LFIG 0.7 SIR_model_family/comp0.pdf
+
+NCC
+
+CFIG Disease_data/ewmeas.Rout.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+What is missing from our model world?
+
+BC
+
+	Almost everything! So what's important?
+
+	ANS Seasonality
+
+	ANS Chinese New Year!
+
+	ANS School terms
+
+	ANS Randomness
+
+NC
+
+SIDEFIG webpix/flat.png
+
+EC
+
+\bigskip
+
+	ANS \emph{Any} of these things can interact with damped oscillations
+
+----------------------------------------------------------------------
+
+Example: Ebola transmission
+
+BC
+
+	How much Ebola spread occurs before vs.\ after death
+
+	Highly context dependent
+
+		Funeral practices, disease knowledge
+
+	CREDIT Weitz and Dushoff \emph{Scientific Reports} 5:8751.
+
+NC
+
+FIG webpix/burial_team.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+Model with latent period
+
+WIDEFIG SIR_model_family/seir.four.pdf
+
+----------------------------------------------------------------------
+
+Include post-death transmission
+
+WIDEFIG SIR_model_family/seird.four.pdf
+
+----------------------------------------------------------------------
+
+PRESLIDE Result: generation interval links \rR
+
+FIG my_images/weitz_full.pdf
+
+----------------------------------------------------------------------
+
+Result: generation interval links \rR
+
+BC
+
+	If we know \Rx, faster generations mean faster spread (bigger $r$)
+
+	If we know $r$, slower generations mean stronger spread (bigger \Rx)
+
+NC
+
+CFIG my_images/weitz_full.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+Example: COVID
+
+FIG my_images/flatten_ts.png
+
+----------------------------------------------------------------------
+
+RHEAD Example: COVID
+
+FIG my_images/flatten_bif.png
+
+----------------------------------------------------------------------
+
+Result: It is easier to reduce the peak than the total cases
+
+DBFIG 0.8 my_images/flatten_ts.png 0.8 my_images/flatten_bif.png
+
+----------------------------------------------------------------------
+
+PRESLIDE Example: COVID waves
+
+WIDEFIG my_images/macFeb21pre.png
+
+----------------------------------------------------------------------
+
+PRESLIDE Example: COVID waves
+
+WIDEFIG my_images/macFeb21res.png
+
+----------------------------------------------------------------------
+
+Example: COVID waves
+
+WIDEFIG my_images/macFeb21res.png
+
+----------------------------------------------------------------------
+
+PRESLIDE Example: COVID waves
+
+WIDEFIG my_images/macFeb21VOC.png
+
+----------------------------------------------------------------------
+
+Example: COVID waves
+
+BC
+
+	alpha variant was increasing even though total was decreasing
+
+	using a dynamical perspective allows us to project the effect of this
+
+NC
+
+CFIG my_images/macFeb21VOC.png
+
+EC
+----------------------------------------------------------------------
+
+TSS Stochastic models
+
+WIDEFIG SIR_model_family/sirsrates.pdf
+
+	We can add random changes to the rates
+
+		Contact rate ($\beta$), for example, may go up and down for reasons we
+		can't predict
+
+	We also get a stochastic model even by just treating individuals as
+	individuals!
+
+----------------------------------------------------------------------
+
+PSLIDE Deterministic spread
+
+LANDFIG SIR_model_family/onedet.pdf
+
+--------------------------------------------------------------------
+
+PSLIDE Demographic spread
+
+LANDFIG SIR_model_family/onesto.pdf
+
+----------------------------------------------------------------------
+
+Demographic spread
+
+LANDFIG SIR_model_family/onestoch.pdf
+
+	Demographic refers to the \emph{minimum} stochasticity corresponding to
+	treating individuals as individuals
+
+----------------------------------------------------------------------
+
+Result: outbreaks can die out at random
+
+BC
+
+	In simple models, the probability of a single introduction going extinct at
+	random is $1/\Rx$
+
+	If an introduction does not lead to an outbreak, there's not always a reason
+
+NC
+
+SIDEFIG my_images/roulette.jpg
+
+----------------------------------------------------------------------
+
+NOTES DEFHEAD Result: Pattern of outbreak sizes is related to \Rx
+
+----------------------------------------------------------------------
+
+REPSLIDE Result: Pattern of outbreak sizes is related to \Rx
+
+Indigenous cases 
+
+\vspace{2.5ex}
+
+40,000
+
+\vspace{-4.5ex}
+
+WFIG 0.75 my_images/dengueTW_ind.jpg
+
+Imported cases 
+
+\vspace{2.5ex}
+
+500
+
+\vspace{-4.5ex}
+
+WFIG 0.75 my_images/dengueTW_imp.jpg
+
+NOTES \url{https://www.cdc.gov.tw/En/Category/ListContent/bg0g_VU_Ysrgkes_KRUDgQ?uaid=9_Oq7OYHa-l8B05iUwyVvQ}
+
+
+----------------------------------------------------------------------
+
+PRESLIDE Result: stochasticity interacts with oscillations
+
+LANDFIG SIR_model_family/comp0.pdf
+
+----------------------------------------------------------------------
+
+Result: stochasticity interacts with oscillations
+
+LANDFIG SIR_model_family/comp.pdf
+
+----------------------------------------------------------------------
+
+TSS Statistical fitting
+
+FIG my_images/sierraLeone.hybrid.compare.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+RHEAD Statistical fitting
+
+BC
+
+	How certain or uncertain are our projections?
+
+	What else do we need to know?
+
+NC
+
+FIG my_images/sierraLeone.hybrid.compare.Rout-2.pdf
+
+EC
+----------------------------------------------------------------------
+
+SEC Limitations
+
+----------------------------------------------------------------------
+
+TSS Heterogeneity
+
+BC
+
+PIC WFIG 0.8 SIR_model_family/stirrer.jpg
+
+NC
+
+	Simple models treat the world like this cup
+
+	People are all the same
+
+	Perfectly mixed
+
+	\emph{Lots of people}
+
+		(for deterministic models)
+
+EC
+
+----------------------------------------------------------------------
+
+Human heterogeneity
+
+PIC HFIG 0.42 my_images/maasai.jpg
+
+PIC WFIG 0.48 my_images/inuit.jpg
+
+----------------------------------------------------------------------
+
+PSLIDE Human heterogeneity
+
+WIDEFIG my_images/Lesotho_children.jpg
+
+----------------------------------------------------------------------
+
+
+PSLIDE Human heterogeneity
+
+HFIG 0.42 my_images/dump_workers.jpg
+
+HFIG 0.48 my_images/bento.jpg
+
+----------------------------------------------------------------------
+
+Example: Gonorrhea
+
+FIG Endemic_curves/propCurves.Rout-0.pdf
+
+	Homogeneous model cannot explain global pattern
+
+----------------------------------------------------------------------
+
+RHEAD Example: Gonorrhea
+
+FIG Endemic_curves/propCurves.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+Result: heterogeneity makes incidence robust
+
+BCC
+
+	Disease levels are more resistant to change
+
+	Higher when averaged transmission is low
+
+	Lower when averaged transmission is high
+
+NC
+
+SIDEFIG Endemic_curves/propCurves.Rout-2.pdf
+
+EC
+
+
+----------------------------------------------------------------------
+
+Example: HIV
+
+FIG SIR_simulations/hiv_plot.Rout-4.pdf
+
+	If our model matches initial spread, it can't match later values
+
+----------------------------------------------------------------------
+
+TSS Behavioural changes
+
+	I can calculate the motion of heavenly bodies, but not the madness of
+	people. – Isaac Newton
+
+
+----------------------------------------------------------------------
+
+Example: COVID
+
+FIG my_images/flatten_ts.png
+
+----------------------------------------------------------------------
+
+Example: HIV
+
+FIG SIR_simulations/hiv_plot.Rout-4.pdf
+
+----------------------------------------------------------------------
+
+Example: Dengue (Taiwan CDC)
+
+Indigenous cases 
+
+\vspace{2.5ex}
+
+40,000
+
+\vspace{-4.5ex}
+
+WFIG 0.75 my_images/dengueTW_ind.jpg
+
+Imported cases 
+
+\vspace{2.5ex}
+
+500
+
+\vspace{-4.5ex}
+
+WFIG 0.75 my_images/dengueTW_imp.jpg
+
+NOTES \url{https://www.cdc.gov.tw/En/Category/ListContent/bg0g_VU_Ysrgkes_KRUDgQ?uaid=9_Oq7OYHa-l8B05iUwyVvQ}
+
+----------------------------------------------------------------------
+
+Example: monkeypox
+
+FIG webpix/mpox_uk.jpg
+
+----------------------------------------------------------------------
+
+Example: COVID awareness
+
+FIG webpix/awareness_box.jpg
+
+CREDIT Weitz et al. \url{https://www.pnas.org/doi/10.1073/pnas.2009911117}
+
+----------------------------------------------------------------------
+
+Summary
+
+	Dynamic models are an essential tool to link scales
+
+	Very simple models can provide useful insights
+
+	More complex models can provide more detail, but also require more
+	assumptions, and more choices
+
+		Statistical fitting can guide in interpretation
+
+	We can evaluate assumptions, and make better models
+
+----------------------------------------------------------------------

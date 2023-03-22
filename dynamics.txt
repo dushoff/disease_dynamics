@@ -15,6 +15,8 @@ PRESENT \vfill
 
 PRESENT National Taiwan University College of Public Health
 
+Branched this off; this is still mostly the NTU summer course version
+
 PRESENT \vfill
 
 March 2023
@@ -26,12 +28,6 @@ PRESENT \vfill
 EXTRA Notes
 
 COURSE is stuff used only for a longer course version (NTU Summer)
-
-----------------------------------------------------------------------
-
-EXTRA Abstract 2023 March
-
-I will talk about some principles of modeling the spread of infectious diseases, with examples from Ebola, HIV, rabies, COVID-19 and influenza. Dynamical modeling is an essential tool for studying diseases the spread through populations, but also has many limitations.
 
 ----------------------------------------------------------------------
 

@@ -53,7 +53,7 @@ Sources += local.txt.format
 
 Sources += copy.tex
 
-Sources += $(wildcard *.txt)
+Sources += $(wildcard *.txt *.md)
 
 ######################################################################
 
@@ -87,6 +87,9 @@ dynamics.draft.pdf: dynamics.txt
 dynamics.handouts.pdf: dynamics.txt
 dynamics.final.pdf: dynamics.txt
 dynamics.lecture:
+
+## overview.draft.pdf: overview.txt overview.md
+## overview.final.pdf: overview.txt overview.md
 
 ## DAIDD intro lecture introduced 2019 Dec 13 (Fri)
 ## data.final.pdf: data.txt

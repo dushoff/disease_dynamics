@@ -36,8 +36,12 @@ foundations.txt
 
 dynamics.txt
 * Invented as NTU2 (I think)
-* Repurposing for Taiwan 2023
+* Repurposing for Taiwan 2023 → overview
 
 confront.txt
 * HIV worksheet spinoff
 
+## Big overview talk (spun somewhat from above, pedagogical)
+
+overview.txt
+* Taiwan 2023 general disease-dynamics something
