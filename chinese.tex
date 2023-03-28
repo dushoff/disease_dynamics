@@ -1,13 +1,24 @@
 \documentclass{article}
 \usepackage{fontspec}
-\setmainfont{Noto Serif CJK TC}
-\setsansfont{Noto Sans CJK TC}
 
 \begin{document}
-Hello.
+CJK is tagged as obsolete; we're supposed to be using xetex or luatex.
+
+Chinese font messes up apostrophes in English; scope the font calls.
+
+{ \setmainfont{Noto Serif CJK TC}
+\setsansfont{Noto Sans CJK TC}
+Here's an example
+
 
 你有問題嗎？
 
 \sffamily
-Hello. 你有问题吗？
+你有問題嗎？
+}
+
+Here's another test
+
+Here is some inline 
+{ \setmainfont{Noto Serif CJK TC} 中文}. You's.
 \end{document}

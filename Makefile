@@ -74,6 +74,7 @@ public.lecture:
 public.html: public.step
 
 ## Chinese
+Sources += chinese.tex
 chinese.pdf: chinese.tex
 	xelatex $<
 
