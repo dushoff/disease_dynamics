@@ -11,6 +11,8 @@ Flu resonance at end of stochastic
 
 ADD markers
 
+https://bmcinfectdis.biomedcentral.com/articles/10.1186/s12879-018-3159-9 for dengue figures
+
 ----------------------------------------------------------------------
 
 NOFRAME
@@ -27,7 +29,7 @@ Jonathan Dushoff, McMaster University
 
 PRESENT \vfill
 
-PRESENT National Taiwan University College of Public Health
+PRESENT NEF Webinar
 
 PRESENT \vfill
 
