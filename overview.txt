@@ -1,20 +1,3 @@
-
-EXTRA
-
-More box diagrams; Ebola; generations
-
-HIV stuff; fill in Behavioural examples
-
-More stats?
-
-Flu resonance at end of stochastic
-
-ADD markers
-
-https://bmcinfectdis.biomedcentral.com/articles/10.1186/s12879-018-3159-9 for dengue figures
-
-----------------------------------------------------------------------
-
 NOFRAME
 
 \newcommand{\jdtitle}{Data, models and science}
@@ -25,17 +8,39 @@ NOFRAME
 
 Dynamical models of disease spread
 
-Jonathan Dushoff, McMaster University
+BC
+
+\vbox to \textheight{
 
 PRESENT \vfill
+
+Jonathan Dushoff, McMaster University
+
+PRESENT \bigskip
 
 PRESENT NEF Webinar
 
-PRESENT \vfill
+PRESENT \bigskip
 
 March 2023
 
+PRESENT \vfill\vfill
+
+}
+
+NC
+
+\vbox to \textheight{
+
 PRESENT \vfill
+
+CFIG webpix/nef.jpg
+
+PRESENT \vfill\vfill
+
+}
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -49,7 +54,7 @@ SEC What is dynamical modeling?
 
 ----------------------------------------------------------------------
 
-Dynamic modeling connects scales
+Dynamical modeling connects scales
 
 PIC DBFIG 0.7 my_images/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
 
@@ -61,13 +66,15 @@ PIC DBFIG 0.7 my_images/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
 
 		Usually about \emph{populations}
 
+	Also known as “mechanistic” or “mathematical”
+
 ----------------------------------------------------------------------
 
 Model worlds
 
 BC
 
-	A dynamic model is based on a model world
+	A dynamical model is based on a model world
 
 	The model world has \emph{enough} assumptions to allow us to calculate
 	dynamics
@@ -131,7 +138,7 @@ HFIG 0.6 SIR_model_family/thinker.jpg
 
 ----------------------------------------------------------------------
 
-TSS Conceptual modeling
+Conceptual modeling
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -166,7 +173,7 @@ little $r$
 
 	Characteristic time scale is $C=1/r$
 
-		Closelr related to doubling time
+		Closely related to doubling time
 
 		COVID, $C \approx 1 \mathrm{month}$
 
@@ -182,6 +189,12 @@ FIG SIR_simulations/hiv_plot.Rout-4.pdf
 
 ----------------------------------------------------------------------
 
+Exponential growth
+
+HFIG 0.85 coronaSpread/git_push/HBcorona.tsplot.Rout.pdf
+
+----------------------------------------------------------------------
+
 Result: disease does not always spread 
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
@@ -192,7 +205,7 @@ REP DIAGRAM SIR_model_family/sir.three.pdf
 
 ----------------------------------------------------------------------
 
-Example: Yellow fever
+Concept: reproductive number
 
 	$\Rx$ is the number of people who would be infected by an
 	infectious individual \emph{in a fully susceptible population.}
@@ -245,7 +258,7 @@ EC
 
 ----------------------------------------------------------------------
 
-Example: Dengue (Taiwan CDC) 登革熱
+Example: Dengue (Taiwan CDC) \chinese{登革熱}
 
 Indigenous cases 
 
@@ -279,11 +292,13 @@ REP DIAGRAM SIR_model_family/sir.three.pdf
 
 	There is not always a reason why you didn't get infected!
 
+		Remember the model world
+
 		Everyone in this model is assumed to be the same
 
 ----------------------------------------------------------------------
 
-Going beyond
+Next steps
 
 	We can \emph{implement} the model and see what it's going to do
 
@@ -295,7 +310,12 @@ Going beyond
 
 ----------------------------------------------------------------------
 
-SS Deterministic models
+TSS Deterministic models
+
+	For a given set of assumptions, a deterministic model always predicts the
+	same results
+
+	In other words, our model world \emph{determines} the outcome
 
 ----------------------------------------------------------------------
 
@@ -396,11 +416,11 @@ EC
 
 \bigskip
 
-	ANS \emph{Any} of these things can interact with damped oscillations
+	ANS \emph{Any} of these things can amplify damped oscillations
 
 ----------------------------------------------------------------------
 
-Example: Ebola transmission (埃博拉)
+Example: Ebola transmission \chinese{(埃博拉)}
 
 BC
 
@@ -417,6 +437,12 @@ NC
 FIG webpix/burial_team.jpg
 
 EC
+
+----------------------------------------------------------------------
+
+REPSLIDE Simple disease model
+
+WIDEFIG SIR_model_family/sir.np.three.pdf
 
 ----------------------------------------------------------------------
 
@@ -442,9 +468,11 @@ Result: generation interval links \rR
 
 BC
 
-	If we know \Rx, faster generations mean faster spread (bigger $r$)
+	Mechanistic view: If we know \Rx, faster generations mean faster spread
+	(bigger $r$)
 
-	If we know $r$, slower generations mean stronger spread (bigger \Rx)
+	Phenomenological view: If we know $r$, slower generations mean stronger
+	spread (bigger \Rx)
 
 NC
 
@@ -454,7 +482,7 @@ EC
 
 ----------------------------------------------------------------------
 
-Example: COVID
+Example: COVID: flatten the curve
 
 FIG my_images/flatten_ts.png
 
@@ -469,6 +497,14 @@ FIG my_images/flatten_bif.png
 Result: It is easier to reduce the peak than the total cases
 
 DBFIG 0.8 my_images/flatten_ts.png 0.8 my_images/flatten_bif.png
+
+----------------------------------------------------------------------
+
+More box models
+
+WIDEFIG webpix/stanford_diagram.png
+
+CREDIT Childs et al., http://covid-measures.stanford.edu/
 
 ----------------------------------------------------------------------
 
@@ -512,6 +548,20 @@ EC
 ----------------------------------------------------------------------
 
 TSS Stochastic models
+
+	For a given set of assumptions, a stochastic model predicts a variety of 
+	possible results
+
+	In other words, there is room for randomness (stochasticity) inside our
+	model world
+
+		We may think the world is really stochastic
+
+		Or simply that there are things we can't predict …
+
+----------------------------------------------------------------------
+
+Types of stochasticity
 
 WIDEFIG SIR_model_family/sirsrates.pdf
 
@@ -622,7 +672,7 @@ BC
 
 NC
 
-FIG my_images/sierraLeone.hybrid.compare.Rout-2.pdf
+CFIG my_images/sierraLeone.hybrid.compare.Rout-2.pdf
 
 EC
 ----------------------------------------------------------------------
@@ -764,7 +814,7 @@ NOTES \url{https://www.cdc.gov.tw/En/Category/ListContent/bg0g_VU_Ysrgkes_KRUDgQ
 
 ----------------------------------------------------------------------
 
-Example: mpox (猴痘)
+Example: mpox \chinese{(猴痘)}
 
 FIG webpix/mpox_uk.jpg
 
@@ -780,7 +830,7 @@ CREDIT Weitz et al. \url{https://www.pnas.org/doi/10.1073/pnas.2009911117}
 
 Summary
 
-	Dynamic models are an essential tool to link scales
+	Dynamical models are an essential tool to link scales
 
 	Very simple models can provide useful insights
 
@@ -789,6 +839,23 @@ Summary
 
 		Statistical fitting can guide in interpretation
 
-	We can evaluate assumptions, and make better models
+	We can evaluate assumptions
+
+		What was right, what was wrong?
+
+		What else do we need to know?
+
+----------------------------------------------------------------------
+
+Thanks
+
+	Organizers
+
+	Collaborators
+
+	Funders
+
+	Audience
+
 
 ----------------------------------------------------------------------

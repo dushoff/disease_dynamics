@@ -1,14 +1,16 @@
 \documentclass{beamer}
 
-\usepackage{fontspec}
-\setmainfont{Noto Serif CJK TC}
-\setsansfont{Noto Sans CJK TC}
+%% Put this in talkdir/chinese? Use scoping instead of $#@!ing around to deal with punctuation issues
+%% \usepackage{fontspec}
+%% \setmainfont{Noto Serif CJK TC}
+%% \setsansfont{Noto Sans CJK TC}
 
 %% \input{LatexTemplates/ici3dTemplate.tex}
 %% \input{LatexTemplates/ici3dCurrent.tex}
 \input{talkdir/bulletspace.tex}
 
 \usepackage{talkdir/slidecomm,talkdir/commands}
+\usepackage{talkdir/nochinese}
 \usepackage{graphicx,xspace}
 \usepackage{grffile}
 \usepackage{hyperref}

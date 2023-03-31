@@ -19,7 +19,7 @@ vim_session:
 
 ## Directories
 
-pardirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates stats
+pardirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates stats coronaSpread
 
 colddirs += $(pardirs)
 
@@ -60,6 +60,8 @@ Sources += $(wildcard *.txt *.md)
 ### Lectures
 %.lecture: %.handouts.pdf.op %.draft.pdf.op ;
 
+## all.html:
+
 ## template testing
 Ignore += example.tex
 example.tex:
@@ -89,9 +91,11 @@ dynamics.handouts.pdf: dynamics.txt
 dynamics.final.pdf: dynamics.txt
 dynamics.lecture:
 
-## overview.draft.pdf: overview.txt overview.md
+## overview.draft.pdf: overview.txt overview.md overview.notes
 ## overview.final.pdf: overview.txt overview.md
 ## overview.chinese.pdf: overview.txt overview.md
+
+page.draft.pdf: page.txt
 
 ## Work on this -- but there is a font problem
 Ignore += $(wildcard *.chinese.*)

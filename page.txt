@@ -1,0 +1,17 @@
+
+
+TSS Stochastic models
+
+	For a given set of assumptions, a stochastic model predicts a variety of 
+	possible results
+
+	In other words, there is room for randomness (stochasticity) inside our
+	model world
+
+		We may think the world is really stochastic
+
+		Or simply that there are things we can't predict …
+
+----------------------------------------------------------------------
+
+
