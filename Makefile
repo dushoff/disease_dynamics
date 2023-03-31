@@ -53,7 +53,7 @@ Sources += local.txt.format
 
 Sources += copy.tex
 
-Sources += $(wildcard *.txt *.md)
+Sources += $(wildcard *.txt *.notes *.md)
 
 ######################################################################
 
