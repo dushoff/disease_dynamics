@@ -9,8 +9,8 @@
 %% \input{LatexTemplates/ici3dCurrent.tex}
 \input{talkdir/bulletspace.tex}
 
+\usepackage{talkdir/chinese}
 \usepackage{talkdir/slidecomm,talkdir/commands}
-\usepackage{talkdir/nochinese}
 \usepackage{graphicx,xspace}
 \usepackage{grffile}
 \usepackage{hyperref}
