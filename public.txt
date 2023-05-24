@@ -37,7 +37,6 @@ PICSLIDE HFIG 1.05 jsPubHealth/wedding.png
 
 ----------------------------------------------------------------------
 
-
 TSEC What is public health?
 
 BC
