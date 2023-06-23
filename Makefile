@@ -110,6 +110,7 @@ overview.chinese.pdf: overview.final.tex
 data.lecture: data.handouts.pdf.op data.draft.pdf.op
 
 ## Develop conversion machinery 2022 Nov 10 (Thu)
+## Stopped in the middle, I think and now some pipeline weirdness
 Sources += md.fmt
 Ignore += data.md
 data.md: data.txt data.tmp md.fmt makestuff/newtalk/lect.pl
