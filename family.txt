@@ -310,6 +310,8 @@ FIG SIR_model_family/beta.Rout-1.pdf
 
 	Also known as \emph{density-dependent} transmission
 
+ADD Fix up these slides to fit and be consistent
+
 ----------------------------------------------------------------------
 
 FIG SIR_model_family/beta.Rout-3.pdf
