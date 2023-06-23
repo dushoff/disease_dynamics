@@ -1,9 +1,3 @@
----
-title: Exploratory visualization
-author: Jonathan Dushoff
-date: "September 2021"
----
-
 
 
 ## 
