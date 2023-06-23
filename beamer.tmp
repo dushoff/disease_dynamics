@@ -5,8 +5,8 @@
 %% \setmainfont{Noto Serif CJK TC}
 %% \setsansfont{Noto Sans CJK TC}
 
-%% \input{LatexTemplates/ici3dTemplate.tex}
-%% \input{LatexTemplates/ici3dCurrent.tex}
+\input{LatexTemplates/ici3dTemplate.tex}
+\input{LatexTemplates/ici3dCurrent.tex}
 \input{talkdir/bulletspace.tex}
 
 \usepackage{talkdir/chinese}
