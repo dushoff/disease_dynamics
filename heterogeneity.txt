@@ -28,11 +28,9 @@ NOFRAME
 
 \newcommand{\jdtitle}{Heterogeneity, contact patterns and modeling options}
 \newcommand{\jdsub}{}
-\newcommand{\years}{2013--2020}
+\newcommand{\years}{2013--\thisyear}
 
 ----------------------------------------------------------------------
-
-EXTRA
 
 ICI3DTHEME
 
@@ -618,7 +616,10 @@ Multi-group models
 
 Individual-based models
 
-WFIG 0.8 my_images/network.png
+
+CREDIT https://www.hindawi.com/journals/ipid/2011/284909/
+
+HFIG 0.4 my_images/network.png
 
 	Allow many possibilities:
 	

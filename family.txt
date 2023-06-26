@@ -1,6 +1,12 @@
 
 EXTRA
 
+	FIX Check on model taxonomy, probably DAIDD only
+
+----------------------------------------------------------------------
+
+EXTRA
+
 	This talk is given at DAIDD, and at MMED to the DAIDD-track types. 
 
 		There are currently no conceptual differences (only the words
@@ -71,7 +77,7 @@ REP DIAGRAM SIR_model_family/sir.three.pdf
 
 ----------------------------------------------------------------------
 
-Conceptual modeling
+PRESLIDE Conceptual modeling
 
 DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -155,7 +161,7 @@ REP DIAGRAM SIR_model_family/sir.three.pdf
 
 ----------------------------------------------------------------------
 
-Conceptual modeling
+REPSLIDE Conceptual modeling
 
 DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -188,13 +194,27 @@ DIAGRAM SIR_model_family/sirodes.const.pdf
 
 ----------------------------------------------------------------------
 
-EXTRA Spreadsheet implementation
+Spreadsheet implementation
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
-NOTES ADD Suppress for John's drafty version  \url{http://tinyurl.com/SIR-MMED-2018}
+\url{http://tinyurl.com/SIR-MMED-2023}
 
 ----------------------------------------------------------------------
+
+ODEs and mechanistic models
+
+	What is the relationship between the spreadsheet and the ODE model we
+	started with?
+
+		ANS The ODE is the limit when deltaT $\to 0$
+
+		ANS ODE methods allow us to do this without an infinite amount of
+		computer time
+
+----------------------------------------------------------------------
+
+DAIDD
 
 Model taxonomy
 
@@ -226,9 +246,7 @@ DBFIG 0.8 SIR_model_family/exp.Rout-0.pdf 0.8 SIR_model_family/exp.Rout-1.pdf
 
 	Rarely realistic
 
-----------------------------------------------------------------------
-
-EXTRA Suppressed when given by Hargrove Scripts vs.\ spreadsheets
+		but sometimes OK for a particular application
 
 ----------------------------------------------------------------------
 
@@ -259,6 +277,8 @@ NC
 	Sometimes this decomposition is clear
 
 	But usually it's not
+
+	So we often start by estimating $\beta$ directly
 
 EC
 
@@ -292,7 +312,7 @@ DIAGRAM SIR_model_family/sirodes.pdf
 
 ----------------------------------------------------------------------
 
-FIG SIR_model_family/beta.Rout-0.pdf
+SMALLFIG SIR_model_family/beta.Rout-0.pdf
 
 	$\beta(N) = \beta_0$
 
@@ -302,15 +322,13 @@ FIG SIR_model_family/beta.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-FIG SIR_model_family/beta.Rout-1.pdf
+SMALLFIG SIR_model_family/beta.Rout-1.pdf
 
 	$\beta(N) = \alpha_0 N$
 
 	${\cal T} = \alpha_0 SI$
 
 	Also known as \emph{density-dependent} transmission
-
-ADD Fix up these slides to fit and be consistent
 
 ----------------------------------------------------------------------
 
@@ -373,7 +391,7 @@ LANDFIG SIR_model_family/comp.pdf
 
 ----------------------------------------------------------------------
 
-REPSLIDE Model taxonomy
+DAIDD REPSLIDE Model taxonomy
 
 FIG taxon.jpg
 
