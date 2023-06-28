@@ -164,7 +164,8 @@ Equilibrium analysis
 	$\ds\Reffec =  \Ro  \frac SN = pcD \frac SN$
 
 	At equilibrium:
-		$\ds \Reffec = \Ro  \frac SN = 1. $
+
+		ANS $\ds \Reffec = \Ro  \frac SN = 1. $
 
 	Thus:
 		$\ds \frac SN = 1/R_0.  $
@@ -319,13 +320,15 @@ Large-scale heterogeneity
 
 PIC HFIG 0.64 my_images/schisto.png
 
-	For schistosomiasis, the worldwide average $\Ro<1$
+	For schistosomiasis (bilharzia), the worldwide average $\Ro<1$
 
 	Disease persists because of specific populations with $\Ro>1$.
 
 	This effect operates at many scales.
 
 ----------------------------------------------------------------------
+
+EXTRA
 
 TSEC Take break
 
@@ -379,7 +382,7 @@ Equilibrium calculations with heterogeneity
 	$\sigma$ applies to susceptible individuals $\rightarrow
 	\sigma_S$
 
-	$c$ is complicated $\rightarrow c_S c_I/\bar c$
+	$c$ is complicated $\rightarrow c_x = c_S c_I/\bar c$
 
 ----------------------------------------------------------------------
 
@@ -403,11 +406,11 @@ How does $\Rx$ change?
 	If the disease has just started spreading in the population, how do
 	$c_S$ and $c_I$ compare to $\bar c$?
 
-		$c_S \approx \bar c$; $c_I > \bar c$.
+		ANS $c_S \approx \bar c$; $c_I > \bar c$.
 
 	If the disease is very widespread in the population?
 
-		$c_S < \bar c$; $c_I \to \bar c$.
+		$ANS c_S < \bar c$; $c_I \to \bar c$.
 
 ----------------------------------------------------------------------
 
@@ -502,12 +505,12 @@ Heterogeneity and disease
 
 BC
 
-	Heterogeneity has a double-edged effect
+	Heterogeneity has a two countervailing effects
 
-		Effects of disease are \emph{lower} for a given value of \Ro.
-
-		But \Ro\ is \emph{higher} for given mean values of factors
+		\Ro\ is \emph{higher} for given mean values of factors
 		underlying transmission
+
+		But effects of disease are \emph{lower} for a given value of \Ro.
 
 NC
 
@@ -616,10 +619,7 @@ Multi-group models
 
 Individual-based models
 
-
-CREDIT https://www.hindawi.com/journals/ipid/2011/284909/
-
-HFIG 0.4 my_images/network.png
+BC
 
 	Allow many possibilities:
 	
@@ -631,6 +631,13 @@ HFIG 0.4 my_images/network.png
 
 	Individual-based approaches require stochastic models
 
+NC
+
+PIC CFIG webpix/iduNetwork.jpg
+
+PIC CREDIT \url{https://www.hindawi.com/journals/ipid/2011/284909/}
+
+EC
 ----------------------------------------------------------------------
 
 PSLIDE Summary
