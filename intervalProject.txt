@@ -1,0 +1,48 @@
+NOFRAME
+
+\newcommand{\jdtitle}{MMED Project Proposal}
+\newcommand{\jdsub}{Dynamically generated generation intervals}
+
+\newcommand{\wdate}{}
+\renewcommand{\jdauth}{}
+
+----------------------------------------------------------------------
+
+WORKSHOP
+
+----------------------------------------------------------------------
+
+Generation intervals link \Rx\ and growth rate
+
+BCC
+
+Heterogeneity:
+
+	increases R0
+
+	increases effects of stochasticity
+
+How do these trade off?
+
+NCC
+
+CFIG my_images/hetLab.png
+
+EC
+
+----------------------------------------------------------------------
+
+Simulation study
+
+	Code a simple model in R
+
+	Explore many different parameter combinations
+
+----------------------------------------------------------------------
+
+Compare with data
+
+	What is the evidence for heterogeneity in real behaviours and diseases?
+
+	Can we calibrate our models to match?
+

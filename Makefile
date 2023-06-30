@@ -138,8 +138,13 @@ heterogeneity.handouts.pdf: heterogeneity.txt
 heterogeneity.slides.pdf: heterogeneity.txt
 ## heterogeneity.lecture:
 
-### Pitch slide
+## Pitch slides
+hetProject.draft.pdf: hetProject.txt
+intervalProject.draft.pdf: intervalProject.txt
+
+### Dushoff pitch slide
 ### Introduced DAIDD 2017
+### No idea how the tex was generated... by hand???
 
 Sources += pitch.tex
 pitch.pdf: pitch.tex

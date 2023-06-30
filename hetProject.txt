@@ -1,0 +1,48 @@
+
+NOFRAME
+
+\newcommand{\jdtitle}{MMED Project Proposal}
+\newcommand{\jdsub}{Heterogeneity and disease invasion}
+\newcommand{\wdate}{}
+\renewcommand{\jdauth}{}
+
+----------------------------------------------------------------------
+
+WORKSHOP
+
+----------------------------------------------------------------------
+
+Countervailing effects
+
+BCC
+
+Heterogeneity:
+
+	increases R0
+
+	increases effects of stochasticity
+
+How do these trade off?
+
+NCC
+
+CFIG my_images/hetLab.png
+
+EC
+
+----------------------------------------------------------------------
+
+Simulation study
+
+	Code a simple model in R
+
+	Explore many different parameter combinations
+
+----------------------------------------------------------------------
+
+Compare with data
+
+	What is the evidence for heterogeneity in real behaviours and diseases?
+
+	Can we calibrate our models to match?
+
