@@ -14,7 +14,7 @@ NOFRAME
 \newcommand{\jdauth}{Jonathan Dushoff}
 \newcommand{\jdtitle}{Conceptual models of immunity}
 \newcommand{\jdsub}{}
-\newcommand{\years}{2023}
+\newcommand{\years}{PHAC/EMNID, Sep 2023}
 \newcommand{\wdate}{2023}
 
 ----------------------------------------------------------------------
@@ -55,6 +55,8 @@ What does it mean to be protected?
 
 	Transmission?
 
+	Measurable infection?
+
 	Immune response?
 
 ----------------------------------------------------------------------
@@ -90,7 +92,7 @@ Limitations
 
 		Unrealistic
 
-		But how fundamental is it?
+		But how intrinsic is this assumption?
 
 	Leaky approach ignores failed challenges
 
@@ -112,3 +114,82 @@ Leaky with boosting v.~polarized
 BSFIG boosting/boosting.pdf
 
 BSRFIG boosting/polarized.pdf
+
+----------------------------------------------------------------------
+
+Leaky vaccine
+
+FIG boosting/figure_simulations.Rout.tikz-0.pdf
+
+----------------------------------------------------------------------
+
+Polarized vaccine
+
+FIG boosting/figure_simulations.Rout.tikz-1.pdf
+
+----------------------------------------------------------------------
+
+Leaky vaccine with boosting
+
+FIG boosting/figure_simulations.Rout.tikz-2.pdf
+
+----------------------------------------------------------------------
+
+Vaccine effectiveness
+
+	Efficacy: how protective the vaccine is in theory with a controlled exposure
+
+	Effectiveness: how protective it will in a population
+
+	We can project theoretical effectiveness under different assumptions
+
+		Cumulative incidence
+
+		Instantaneous hazard
+
+----------------------------------------------------------------------
+
+Incidence-based effectiveness
+
+FIG boosting/efficacy_panels.Rout.tikz-0.pdf
+
+----------------------------------------------------------------------
+
+Hazard-based effectiveness
+
+FIG boosting/efficacy_panels.Rout.tikz-1.pdf
+
+----------------------------------------------------------------------
+
+Questions going forward
+
+	Vaccine vs~infection-driven immunity
+
+	Protection against what?
+
+	Immune waning
+
+	A broader view of leakiness
+
+----------------------------------------------------------------------
+
+Leakiness
+
+	We can define leakiness as any gap between efficacy and effectiveness
+
+		We can imagine different standard challenges for efficacy
+
+	Should we be thinking only about number of challenges?
+
+		What about dose-dependence?
+
+		Can these be cleanly disentangled?
+
+----------------------------------------------------------------------
+
+Connecticut correctional study
+
+WIDEFIG my_images/correctionalProtection.png
+
+CREDIT Lind et al., Nat Commun, 2023. \url{https://doi.org/10.1038/s41467-023-40750-8}
+
