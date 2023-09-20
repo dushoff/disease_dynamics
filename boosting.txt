@@ -14,8 +14,8 @@ NOFRAME
 \newcommand{\jdauth}{Jonathan Dushoff}
 \newcommand{\jdtitle}{Conceptual models of immunity}
 \newcommand{\jdsub}{}
-\newcommand{\years}{PHAC/EMNID, Sep 2023}
-\newcommand{\wdate}{2023}
+\newcommand{\wdate}{PHAC/EMNID, Sep 2023}
+\newcommand{\years}{2023}
 
 ----------------------------------------------------------------------
 
@@ -41,7 +41,7 @@ History of this work
 
 ----------------------------------------------------------------------
 
-What do we mean by vaccine efficacy?
+What do modelers assume about vaccines?
 
 	Leaky model: 80% efficacy means that each individual is 80% protected (20%
 	chance of infection relative to naive individual)
