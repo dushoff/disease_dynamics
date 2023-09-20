@@ -34,9 +34,8 @@ Ignore += $(pardirs)
 
 ## Venues
 ## THEMES themes Themes
+## These rules change the format rules (but not the template)
 ## Look at beamer.tmp manually
-## Automatically change the format rules (but not the template)
-## for different venues.
 ## mmed.set:
 ## daidd.set:
 ## qmee.set:
@@ -108,6 +107,16 @@ overview.chinese.pdf: overview.final.tex
 ## data.handouts.pdf: data.txt
 ## data.html: data.step
 data.lecture: data.handouts.pdf.op data.draft.pdf.op
+
+## Research lecture about boosting/status/leaky-ness whatever
+## boosting.final.pdf: boosting.txt
+## boosting.draft.pdf: boosting.txt
+## boosting.handouts.pdf: boosting.txt
+
+## Link as of 2023 Sep 19 (Tue)
+boosting: dir=../../research/status/outputs
+boosting:
+	$(linkdirname)
 
 ## Develop conversion machinery 2022 Nov 10 (Thu)
 ## Stopped in the middle, I think and now some pipeline weirdness

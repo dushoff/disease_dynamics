@@ -1,0 +1,114 @@
+
+EXTRA 
+
+Abstract for EMNID 2023 Sep
+
+Conceptual models of immunity
+
+I will discuss “leaky” and “polarized” conceptions of vaccination, the weaknesses of each, and how they are linked by immune bridging. I will also relate these to the “status-based” and “history-based” approaches to modeling both vaccination and viral-strain cross-protection
+
+----------------------------------------------------------------------
+
+NOFRAME
+
+\newcommand{\jdauth}{Jonathan Dushoff}
+\newcommand{\jdtitle}{Conceptual models of immunity}
+\newcommand{\jdsub}{}
+\newcommand{\years}{2023}
+\newcommand{\wdate}{2023}
+
+----------------------------------------------------------------------
+
+WORKSHOP
+
+----------------------------------------------------------------------
+
+History of this work
+
+	Innovative influenza cross-immunity models by Julia Gog
+
+	My attempts to understand conceptual under-pinnings
+
+	Michael Li asking practical questions that made me share my ideas
+
+	Daniel (Sang Woo) Park took the lead in making this a real project
+
+		With help from Jess Metcalf and Bryan Grenfell
+
+----------------------------------------------------------------------
+
+What do we mean by vaccine efficacy?
+
+	Leaky model: 80% efficacy means that each individual is 80% protected (20%
+	chance of infection relative to naive individual)
+
+	Polarized model: 80% efficacy means that 80% of individuals are completely
+	protected (20% are unprotected)
+
+----------------------------------------------------------------------
+
+What does it mean to be protected?
+
+	Against death?
+
+	Severe outcomes?
+
+	Transmission?
+
+	Immune response?
+
+----------------------------------------------------------------------
+
+How do we model immunity?
+
+	History-based
+
+		What exposures has an individual had?
+
+		Maps naturally to leaky immunity (vaxxed individuals are all the same)
+
+	Status-based
+
+		What is an individual immune to?
+
+		Maps naturally to polarized immunity
+
+----------------------------------------------------------------------
+
+Modeling immunity
+
+VSFIG boosting/leaky.pdf
+
+VSRFIG boosting/polarized.pdf
+
+----------------------------------------------------------------------
+
+Limitations
+
+	Polarized approach assumes that a substantial proportion of the population
+	is completely unprotected
+
+		Unrealistic
+
+		But how fundamental is it?
+
+	Leaky approach ignores failed challenges
+
+		These are challenges that would counter-factually infect with protection
+
+		But I could resist one today and succumb next week
+
+----------------------------------------------------------------------
+
+Leaky v.~polarized
+
+VSFIG boosting/leaky.pdf
+
+VSRFIG boosting/polarized.pdf
+----------------------------------------------------------------------
+
+Leaky with boosting v.~polarized
+
+BSFIG boosting/boosting.pdf
+
+BSRFIG boosting/polarized.pdf
