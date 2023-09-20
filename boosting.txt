@@ -27,6 +27,8 @@ History of this work
 
 	Innovative influenza cross-immunity models by Julia Gog
 
+		CREDIT \url{https://pubmed.ncbi.nlm.nih.gov/11942531/}
+
 	My attempts to understand conceptual under-pinnings
 
 	Michael Li asking practical questions that made me share my ideas
@@ -34,6 +36,8 @@ History of this work
 	Daniel (Sang Woo) Park took the lead in making this a real project
 
 		With help from Jess Metcalf and Bryan Grenfell
+
+	CREDIT \url{https://www.medrxiv.org/content/10.1101/2023.07.14.23292670}
 
 ----------------------------------------------------------------------
 
