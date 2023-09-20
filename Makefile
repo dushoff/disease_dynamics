@@ -114,6 +114,7 @@ data.lecture: data.handouts.pdf.op data.draft.pdf.op
 ## boosting.handouts.pdf: boosting.txt
 
 ## Link as of 2023 Sep 19 (Tue)
+Ignore += boosting
 boosting: dir=../../research/status/outputs
 boosting:
 	$(linkdirname)
