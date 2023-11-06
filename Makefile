@@ -52,7 +52,7 @@ Sources += local.txt.format
 
 Sources += copy.tex
 
-Sources += $(wildcard *.txt *.notes *.md)
+Sources += $(wildcard *.txt *.notes *.md *.lect)
 
 ######################################################################
 
@@ -109,6 +109,8 @@ overview.chinese.pdf: overview.final.tex
 data.lecture: data.handouts.pdf.op data.draft.pdf.op
 
 ## Research lecture about boosting/status/leaky-ness whatever
+## boosting.lect: abstracts and history
+## boosting.notes: Todo and thoughts
 ## boosting.final.pdf: boosting.txt
 ## boosting.draft.pdf: boosting.txt
 ## boosting.handouts.pdf: boosting.txt

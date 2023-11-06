@@ -31,7 +31,8 @@ History of this work
 
 	My attempts to understand conceptual under-pinnings
 
-	Michael Li asking practical questions that made me share my ideas
+	Michael (WZ) Li (PHAC) asking practical questions that made me share my
+	ideas
 
 	Daniel (Sang Woo) Park took the lead in making this a real project
 
@@ -111,6 +112,7 @@ Leaky v.~polarized
 VSFIG boosting/leaky.pdf
 
 VSRFIG boosting/polarized.pdf
+
 ----------------------------------------------------------------------
 
 Leaky with boosting v.~polarized

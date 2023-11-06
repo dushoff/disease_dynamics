@@ -1,0 +1,35 @@
+PHAC/EMNID, Sep 2023
+
+Conceptual models of immunity
+
+I will discuss “leaky” and “polarized” conceptions of vaccination, the weaknesses of each, and how they are linked by immune boosting. I will also relate these to the “status-based” and “history-based” approaches to modeling both vaccination and viral-strain cross-protection
+
+----------------------------------------------------------------------
+
+Bologna submission, Sep 2023 (talk still coming)
+
+# Conceptual models of cross-immunity, and practical applications
+## Background
+Better understanding of patterns and processes underlying cross-immunity is needed to better understand future dynamics and burden of important diseases, including COVID and influenza.
+
+Simple dynamical models of cross-immunity can often be classified as either history-based (classifying individuals by history of infections), or status-based (classifying individuals by what strains they are currently effectively immune to). There is a very strong analogy between these classifications and those of “leaky” and “polarized” vaccine models.
+
+In current work, we and our colleagues have explored how the mechanism of immune-boosting – that is, enhanced immune protection following an unsuccessful infection challenge – can bridge between these two paradigms.
+
+## Methods & results
+In this project, we construct and analyze multi-strain SIR models using a generalized framework that bridges between history-like and status-like assumptions, and can also incorporate a range of assumptions about immune boosting. We show that different conceptual assumptions can lead both to different estimates of the strength and duration of cross-immunity, and to different predictions about future dynamics and the probability of pathogen coexistence.
+
+## Implications
+This work is a potentially important step towards better characterizing the practical dynamical pathways of cross-immunity, leading to better parameter estimates, better future projections and a stronger framework for planning interventions.
+
+
+----------------------------------------------------------------------
+
+MfPH/Fields Nov 2023
+
+Conceptual models of immunity
+
+Better understanding of patterns and processes underlying cross-immunity is needed to better understand future dynamics and burden of important diseases. Simple dynamical models of cross-immunity can often be classified as either history-based (classifying individuals by history of infections), or status-based (classifying individuals by what strains they are currently effectively immune to). There is a very strong analogy between these classifications and those of “leaky” and “polarized” vaccine models.
+
+I will discuss how the mechanism of immune-boosting – that is, enhanced immune protection following an unsuccessful infection challenge – can bridge between these two paradigms. Our group has shown that different conceptual assumptions can lead both to different estimates of vaccine effectiveness, and different predictions about future dynamics.
+
