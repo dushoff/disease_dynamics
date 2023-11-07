@@ -143,11 +143,11 @@ FIG boosting/figure_simulations.Rout.tikz-2.pdf
 
 Vaccine effectiveness
 
-	Efficacy: how protective the vaccine is in theory with a controlled exposure
+	Efficacy: protection with a controlled exposure
 
-	Effectiveness: how protective it will in a population
+	Effectiveness: protection in a population
 
-	We can project theoretical effectiveness under different assumptions
+	Project effectiveness under different assumptions
 
 		Cumulative incidence
 
