@@ -114,7 +114,6 @@ data.lecture: data.handouts.pdf.op data.draft.pdf.op
 ## boosting.final.pdf: boosting.txt
 ## boosting.draft.pdf: boosting.txt
 ## boosting.handouts.pdf: boosting.txt
-## https://github.com/dushoff/disease_dynamics/blob/53d3089e14683d781b8647482459a7d051e12347/outputs/boosting.draft.pdf
 
 ## Link as of 2023 Sep 19 (Tue)
 Ignore += boosting

@@ -4,6 +4,8 @@ Conceptual models of immunity
 
 I will discuss “leaky” and “polarized” conceptions of vaccination, the weaknesses of each, and how they are linked by immune boosting. I will also relate these to the “status-based” and “history-based” approaches to modeling both vaccination and viral-strain cross-protection
 
+https://github.com/dushoff/disease_dynamics/blob/53d3089e14683d781b8647482459a7d051e12347/outputs/boosting.draft.pdf
+
 ----------------------------------------------------------------------
 
 Bologna submission, Sep 2023 (talk still coming)
@@ -21,7 +23,6 @@ In this project, we construct and analyze multi-strain SIR models using a genera
 
 ## Implications
 This work is a potentially important step towards better characterizing the practical dynamical pathways of cross-immunity, leading to better parameter estimates, better future projections and a stronger framework for planning interventions.
-
 
 ----------------------------------------------------------------------
 

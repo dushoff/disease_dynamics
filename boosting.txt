@@ -14,7 +14,7 @@ NOFRAME
 \newcommand{\jdauth}{Jonathan Dushoff}
 \newcommand{\jdtitle}{Conceptual models of immunity}
 \newcommand{\jdsub}{}
-\newcommand{\wdate}{PHAC/EMNID, Sep 2023}
+\newcommand{\wdate}{Fields Institute Colloquium on Mathematics for Public Health, Nov 2023}
 \newcommand{\years}{2023}
 
 ----------------------------------------------------------------------
