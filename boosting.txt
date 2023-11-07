@@ -141,6 +141,18 @@ FIG boosting/figure_simulations.Rout.tikz-2.pdf
 
 ----------------------------------------------------------------------
 
+FIG boosting/fs_pix.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+FIG boosting/fs_pix.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+FIG boosting/fs_pix.Rout-2.pdf
+
+----------------------------------------------------------------------
+
 Vaccine effectiveness
 
 	Efficacy: protection with a controlled exposure
@@ -179,6 +191,12 @@ Questions going forward
 
 ----------------------------------------------------------------------
 
+Transmission reduction
+
+FIG boosting/boosting.pdf
+
+----------------------------------------------------------------------
+
 Leakiness
 
 	We can define leakiness as any gap between efficacy and effectiveness
@@ -198,4 +216,51 @@ Connecticut correctional study
 WIDEFIG my_images/correctionalProtection.png
 
 CREDIT Lind et al., Nat Commun, 2023. \url{https://doi.org/10.1038/s41467-023-40750-8}
+
+----------------------------------------------------------------------
+
+Time scales of challenge
+
+	Challenges a week apart are likely antagonistic
+
+		Immune boosting, polarized-like dynamics
+
+	Challenges an hour apart are likely \emph{synergistic}
+
+		Potentially overwhelming, leaky-like dynamics
+
+----------------------------------------------------------------------
+
+
+EXTRA
+
+WIDEFIG my_images/LiWhiteboard.pdf
+
+CREDIT Michael WZ Li
+
+----------------------------------------------------------------------
+
+Immune waning (whiteboard)
+
+HFIG 0.85 my_images/LiLevels.png
+
+CREDIT Michael WZ Li, PHAC
+
+----------------------------------------------------------------------
+
+Cross immunity (whiteboard)
+
+WIDEFIG my_images/LiCross.png
+
+CREDIT Michael WZ Li, PHAC
+
+----------------------------------------------------------------------
+
+Thanks
+
+	Organizers and audience
+
+	Daniel, Mike and other collaborators
+
+	PHAC, CIHR
 
