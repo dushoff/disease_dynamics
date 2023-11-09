@@ -72,7 +72,8 @@ How do we model immunity?
 
 		What exposures has an individual had?
 
-		Maps naturally to leaky immunity (vaxxed individuals are all the same)
+		Maps naturally to leaky immunity (vaxxed individuals are all the
+		same)
 
 	Status-based
 
@@ -92,8 +93,8 @@ VSRFIG boosting/polarized.pdf
 
 Limitations
 
-	Polarized approach assumes that a substantial proportion of the population
-	is completely unprotected
+	Polarized approach assumes that a substantial proportion of the
+	population is completely unprotected
 
 		Unrealistic
 
@@ -101,7 +102,8 @@ Limitations
 
 	Leaky approach ignores failed challenges
 
-		These are challenges that would counter-factually infect with protection
+		These are challenges that would counter-factually infect with
+		protection
 
 		But I could resist one today and succumb next week
 
