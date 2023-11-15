@@ -296,9 +296,12 @@ science/%:
 
 ######################################################################
 
-texi = xelatex
-latex = xelatex
-texir = $(texi) $(job) $<
+## Need to fix this I guess for new make rules -- or just dump texi
+## 2023 Nov 15 (Wed)
+## Chinese not working now ☹ (commented out of beamer.tmp)
+## texi = xelatex
+## latex = xelatex
+## texir = $(texi) $(job) $<
 
 ######################################################################
 
