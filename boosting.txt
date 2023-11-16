@@ -195,11 +195,11 @@ Questions going forward
 
 Transmission reduction
 
-FIG boosting/boosting.pdf
+FIG boosting/full.pdf
 
 ----------------------------------------------------------------------
 
-Leakiness
+Doses and timing
 
 	We can define leakiness as any gap between efficacy and effectiveness
 
@@ -231,8 +231,9 @@ Time scales of challenge
 
 		Potentially overwhelming, leaky-like dynamics
 
-----------------------------------------------------------------------
+	These are questions for Jane!
 
+----------------------------------------------------------------------
 
 EXTRA
 
