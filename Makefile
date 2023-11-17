@@ -115,11 +115,21 @@ data.lecture: data.handouts.pdf.op data.draft.pdf.op
 ## boosting.draft.pdf: boosting.txt
 ## boosting.handouts.pdf: boosting.txt
 
+######################################################################
+## Service directories. Remake as pardirs, but point to outputs somehow.
 ## Link as of 2023 Sep 19 (Tue)
 Ignore += boosting
 boosting: dir=../../research/status/outputs
 boosting:
 	$(linkdirname)
+
+## This might be the better paradigm
+
+boxes: dir=SIR_model_family/outputs
+boxes:
+	$(linkdirname)
+
+######################################################################
 
 ## Develop conversion machinery 2022 Nov 10 (Thu)
 ## Stopped in the middle, I think and now some pipeline weirdness

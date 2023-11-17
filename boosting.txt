@@ -3,7 +3,7 @@ EXTRA
 
 Abstract for EMNID 2023 Sep
 
-Conceptual models of immunity
+* Conceptual models of immunity
 
 I will discuss “leaky” and “polarized” conceptions of vaccination, the weaknesses of each, and how they are linked by immune bridging. I will also relate these to the “status-based” and “history-based” approaches to modeling both vaccination and viral-strain cross-protection
 
@@ -12,9 +12,9 @@ I will discuss “leaky” and “polarized” conceptions of vaccination, the w
 NOFRAME
 
 \newcommand{\jdauth}{Jonathan Dushoff}
-\newcommand{\jdtitle}{Conceptual models of immunity}
+\newcommand{\jdtitle}{* Conceptual models of immunity}
 \newcommand{\jdsub}{}
-\newcommand{\wdate}{Fields Institute Colloquium on Mathematics for Public Health, Nov 2023}
+\newcommand{\wdate}{BIRS Canmod meeting, Nov 2023}
 \newcommand{\years}{2023}
 
 ----------------------------------------------------------------------
@@ -240,6 +240,24 @@ EXTRA
 WIDEFIG my_images/LiWhiteboard.pdf
 
 CREDIT Michael WZ Li
+
+----------------------------------------------------------------------
+
+Dose dependence
+
+WIDEFIG boosting/leakier.pdf
+
+----------------------------------------------------------------------
+
+Interacting strains
+
+HIGHFIG boxes/hist.33.pdf
+
+----------------------------------------------------------------------
+
+Interacting strains
+
+HIGHFIG boxes/statHist.33.pdf
 
 ----------------------------------------------------------------------
 
