@@ -125,6 +125,7 @@ boosting:
 
 ## This might be the better paradigm
 
+Ignore += boxes
 boxes: dir=SIR_model_family/outputs
 boxes:
 	$(linkdirname)
