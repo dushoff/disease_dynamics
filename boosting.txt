@@ -12,9 +12,10 @@ I will discuss “leaky” and “polarized” conceptions of vaccination, the w
 NOFRAME
 
 \newcommand{\jdauth}{Jonathan Dushoff}
-\newcommand{\jdtitle}{* Conceptual models of immunity}
-\newcommand{\jdsub}{}
-\newcommand{\wdate}{BIRS Canmod meeting, Nov 2023}
+\newcommand{\jdtitle}{Conceptual models of cross-immunity, and practical applications}
+
+\newcommand{\jdsub}{McMaster University}
+\newcommand{\wdate}{Epidemics9, Nov 2023}
 \newcommand{\years}{2023}
 
 ----------------------------------------------------------------------
