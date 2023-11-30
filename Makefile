@@ -112,6 +112,7 @@ data.lecture: data.handouts.pdf.op data.draft.pdf.op
 ## boosting.lect: abstracts and history
 ## boosting.notes: Todo and thoughts
 ## boosting.final.pdf: boosting.txt
+## boosting.draft.tex ## boosting.draft.log
 ## boosting.draft.pdf: boosting.txt
 ## boosting.handouts.pdf: boosting.txt
 
@@ -123,7 +124,18 @@ boosting: dir=../../research/status/outputs
 boosting:
 	$(linkdirname)
 
-## This might be the better paradigm
+Ignore += rsv
+rsv/%: | rsv ;
+rsv: dir=../../research/rsv/figure
+rsv:
+	$(linkdirname)
+
+## Park Bologna boosting-coexistence
+Ignore += bc
+bc/%: | bc ;
+bc: dir=../../research/boost/figure
+bc:
+	$(linkdirname)
 
 Ignore += boxes
 boxes: dir=SIR_model_family/outputs

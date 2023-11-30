@@ -9,14 +9,21 @@ I will discuss “leaky” and “polarized” conceptions of vaccination, the w
 
 ----------------------------------------------------------------------
 
+EXTRA
+
+ADD Re-do some figures
+
+----------------------------------------------------------------------
+
+
 NOFRAME
 
-\newcommand{\jdauth}{Jonathan Dushoff}
+\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
 \newcommand{\jdtitle}{Conceptual models of cross-immunity, and practical applications}
-
-\newcommand{\jdsub}{McMaster University}
 \newcommand{\wdate}{Epidemics9, Nov 2023}
 \newcommand{\years}{2023}
+
+\newcommand{\jdsub}{}
 
 ----------------------------------------------------------------------
 
@@ -24,67 +31,103 @@ WORKSHOP
 
 ----------------------------------------------------------------------
 
-History of this work
+Conceptual talk with practical goals
 
-	Innovative influenza cross-immunity models by Julia Gog
+	How should we incorporate partial immunity into population-level modeling?
+
+	Why does it matter?
+
+	How much does it matter?
+
+----------------------------------------------------------------------
+
+Model goals
+
+BC
+
+	Theoretical
+
+	Inference
+
+	Forecasting
+
+	Strategic
+
+NC
+
+CFIG my_images/lesslerPurpose.png
+
+EC
+
+
+----------------------------------------------------------------------
+
+Some history
+
+	Halloran, Longini and others (1991-93): Leaky and “polarized” vaccines
+
+		CREDIT \url{https://pubmed.ncbi.nlm.nih.gov/1899778/}
+
+	Gog and Swinton (2002): status-based and history-based perspectives
 
 		CREDIT \url{https://pubmed.ncbi.nlm.nih.gov/11942531/}
 
-	My attempts to understand conceptual under-pinnings
+	Gabriela Gomes (2005): reinfection thresholds
 
-	Michael (WZ) Li (PHAC) asking practical questions that made me share my
-	ideas
+		CREDIT \url{https://pubmed.ncbi.nlm.nih.gov/15967188/}
 
-	Daniel (Sang Woo) Park took the lead in making this a real project
+----------------------------------------------------------------------
+
+This project
+
+	Dormant in my files for decades
+
+	Jump-started by practical Covid questions from Michael (WZ) Li (Public
+	Health Agency of Canada)
+
+	Driven forward by Daniel (Sang Woo) Park
 
 		With help from Jess Metcalf and Bryan Grenfell
 
-	CREDIT \url{https://www.medrxiv.org/content/10.1101/2023.07.14.23292670}
+		CREDIT \url{https://www.medrxiv.org/content/10.1101/2023.07.14.23292670}
 
 ----------------------------------------------------------------------
 
-What do modelers assume about vaccines?
+Partial protection
 
-	Leaky model: 80% efficacy means that each individual is 80% protected (20%
-	chance of infection relative to naive individual)
+	Against which outcome?
 
-	Polarized model: 80% efficacy means that 80% of individuals are completely
-	protected (20% are unprotected)
+		Death or severe disease
 
-----------------------------------------------------------------------
+		Clinically attended disease
 
-What does it mean to be protected?
+		Measurable infection
 
-	Against death?
+		\emph{Transmission}
 
-	Severe outcomes?
-
-	Transmission?
-
-	Measurable infection?
-
-	Immune response?
+		\emph{Immune response}
 
 ----------------------------------------------------------------------
 
-How do we model immunity?
+Modeling partial protection
 
-	History-based
+	Biological
 
-		What exposures has an individual had?
+		Leaky vs.~polarized
 
-		Maps naturally to leaky immunity (vaxxed individuals are all the
-		same)
+	Dynamical
 
-	Status-based
+		History-based vs.~status-based
 
-		What is an individual immune to?
+	Link
 
-		Maps naturally to polarized immunity
+		With leaky protection we care what you've seen in the past (history)
+
+		With polarized protection, we care what your current state is (status)
 
 ----------------------------------------------------------------------
 
-Modeling immunity
+Modeling partial immunity
 
 VSFIG boosting/leaky.pdf
 
@@ -92,29 +135,86 @@ VSRFIG boosting/polarized.pdf
 
 ----------------------------------------------------------------------
 
-Limitations
+Why does it matter?
 
-	Polarized approach assumes that a substantial proportion of the
-	population is completely unprotected
+	Prediction
 
-		Unrealistic
+	Parameter estimation
 
-		But how intrinsic is this assumption?
-
-	Leaky approach ignores failed challenges
-
-		These are challenges that would counter-factually infect with
-		protection
-
-		But I could resist one today and succumb next week
+	Planning
 
 ----------------------------------------------------------------------
 
-Leaky v.~polarized
+FIG boosting/fs_pix.Rout-3.pdf
 
-VSFIG boosting/leaky.pdf
+----------------------------------------------------------------------
 
-VSRFIG boosting/polarized.pdf
+Polarized model
+
+BC
+
+	Also known as “all or none”:
+
+		Assumes that a substantial proportion of the population is completely
+		unprotected
+
+	Can be seen as a limit of broad distribution of susceptibilities
+
+NC
+
+CFIG my_images/zachresonAbs.png
+
+EC
+
+----------------------------------------------------------------------
+
+Leaky model
+
+BCC
+
+	The problem of phantom challenges
+
+	We assume that these challenges happen, are beaten off, and have no effect
+
+	I actively resist the flu, and then succumb to the same challenge next week!
+
+	What if we don't do that?
+
+NCC
+
+CFIG boosting/leaky.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+Leaky
+
+WIDEFIG boosting/leaky.pdf
+
+----------------------------------------------------------------------
+
+Leaky with boosting
+
+WIDEFIG boosting/boosting.pdf
+
+----------------------------------------------------------------------
+
+Leaky with partial boosting
+
+WIDEFIG boosting/boosting.pdf
+
+----------------------------------------------------------------------
+
+The dynamicist's perspective
+
+	Dynamical systems have shortcuts and dualities
+
+	If your immunity is leaky, but is reliably boosted by challenges \ldots
+
+	The modeler can “decide” your fate when you recover
+
+		This is a system with equivalent dynamics
 
 ----------------------------------------------------------------------
 
@@ -126,19 +226,19 @@ BSRFIG boosting/polarized.pdf
 
 ----------------------------------------------------------------------
 
-Leaky vaccine
+EXTRA Leaky vaccine
 
 FIG boosting/figure_simulations.Rout.tikz-0.pdf
 
 ----------------------------------------------------------------------
 
-Polarized vaccine
+EXTRA Polarized vaccine
 
 FIG boosting/figure_simulations.Rout.tikz-1.pdf
 
 ----------------------------------------------------------------------
 
-Leaky vaccine with boosting
+EXTRA Leaky vaccine with boosting
 
 FIG boosting/figure_simulations.Rout.tikz-2.pdf
 
@@ -156,61 +256,133 @@ FIG boosting/fs_pix.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-Vaccine effectiveness
+Transmission reduction
 
-	Efficacy: protection with a controlled exposure
+BCC
 
-	Effectiveness: protection in a population
+CFIG boosting/full.pdf
 
-	Project effectiveness under different assumptions
+NCC
 
-		Cumulative incidence
+	If all breakthrough infections go through the $I_v$ box, but only transmit a
+	fraction $q$, dynamics are unchanged
 
-		Instantaneous hazard
+	In the deterministic case!
+
+EC
 
 ----------------------------------------------------------------------
 
-Incidence-based effectiveness
+Interacting strains
+
+HIGHFIG boxes/hist.33.pdf
+
+----------------------------------------------------------------------
+
+Interacting strains with boosting
+
+HIGHFIG boxes/statHist.33.pdf
+
+----------------------------------------------------------------------
+
+EXTRA
+
+ADD boxes/boost.33.pdf
+
+----------------------------------------------------------------------
+
+Deterministic coexistence
+
+	As long as both strains can invade: 
+
+		$$R_\mathrm{inv} ( 1/R_\mathrm{res} + \varepsilon (1-1/R_\mathrm{res}) > 1$$
+
+	Depends only on parameters (not on paradigm) …
+
+	but how are they estimated?
+
+----------------------------------------------------------------------
+
+Stochastic coexistence
+
+	Leaky dynamics lead to giant epidemics
+
+	Lots of overshoot
+
+	Greater likelihood of stochastic extinction
+
+	Probably
+
+----------------------------------------------------------------------
+
+Estimating parameters is practically hard
+
+BC
+
+	Cobey presentation
+
+		Antigenic evolution is extremely complicated
+
+		Immune responses as well
+
+NC
+
+CFIG my_images/Cobey_abstract.png
+
+EC
+
+----------------------------------------------------------------------
+
+Estimating parameters from population-level data is intrinsically hard
+
+FIG rsv/figure_confint_simulate_cpp.pdf
+
+----------------------------------------------------------------------
+
+Individual-level inference depends on paradigm
+
+	Co-existence doesn't depend on leaky vs.~ polarized \emph{once parameters
+	are known}
+
+	But \emph{effective} cross immunity will differ
+
+	So \emph{estimates} will depend on immune assumptions
+
+		Leaky protection matches instantaneous hazard
+
+		Polarized protection matches cumulative hazard
+
+----------------------------------------------------------------------
+
+Incidence-based cross-protection
 
 FIG boosting/efficacy_panels.Rout.tikz-0.pdf
 
 ----------------------------------------------------------------------
 
-Hazard-based effectiveness
+Hazard-based cross-protection
 
 FIG boosting/efficacy_panels.Rout.tikz-1.pdf
 
 ----------------------------------------------------------------------
 
-Questions going forward
+Skimming the surface
 
-	Vaccine vs~infection-driven immunity
+	Relationship to serology
 
-	Protection against what?
+	Different outcomes (severe illness)
 
 	Immune waning
 
-	A broader view of leakiness
-
 ----------------------------------------------------------------------
 
-Transmission reduction
+Thanks
 
-FIG boosting/full.pdf
+	Organizers and audience
 
-----------------------------------------------------------------------
+	Daniel, Mike and other collaborators
 
-Doses and timing
-
-	We can define leakiness as any gap between efficacy and effectiveness
-
-		We can imagine different standard challenges for efficacy
-
-	Should we be thinking only about number of challenges?
-
-		What about dose-dependence?
-
-		Can these be cleanly disentangled?
+	PHAC, CIHR
 
 ----------------------------------------------------------------------
 
@@ -232,33 +404,19 @@ Time scales of challenge
 
 		Potentially overwhelming, leaky-like dynamics
 
-	These are questions for Jane!
+	Work on getting lessons from individual-level models
 
 ----------------------------------------------------------------------
 
-EXTRA
+Coronavirus fits
 
-WIDEFIG my_images/LiWhiteboard.pdf
-
-CREDIT Michael WZ Li
+WIDEFIG bc/figure_beta_hcov.pdf 
 
 ----------------------------------------------------------------------
 
 Dose dependence
 
 WIDEFIG boosting/leakier.pdf
-
-----------------------------------------------------------------------
-
-Interacting strains
-
-HIGHFIG boxes/hist.33.pdf
-
-----------------------------------------------------------------------
-
-Interacting strains
-
-HIGHFIG boxes/statHist.33.pdf
 
 ----------------------------------------------------------------------
 
@@ -277,12 +435,3 @@ WIDEFIG my_images/LiCross.png
 CREDIT Michael WZ Li, PHAC
 
 ----------------------------------------------------------------------
-
-Thanks
-
-	Organizers and audience
-
-	Daniel, Mike and other collaborators
-
-	PHAC, CIHR
-
