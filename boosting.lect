@@ -45,6 +45,15 @@ BIRS
 
 https://github.com/dushoff/disease_dynamics/blob/2131df30539a4a1e8d28650f47fd48e090eb8729/outputs/boosting.draft.pdf
 
+Title changed from submission.
+
+Retrospective abstract (for report)
+
+\title{Conceptual models of immunity}
+
+Better understanding of patterns and processes underlying cross-immunity is needed to better understand future dynamics and burden of important diseases. Simple dynamical models of cross-immunity can often be classified as either history-based (classifying individuals by history of infections), or status-based (classifying individuals by what strains they are currently effectively immune to). There is a very strong analogy between these classifications and those of “leaky” and “polarized” vaccine models.
+
+The talk discussed the importance of immune-boosting – that is, enhanced immune protection following an unsuccessful infection challenge, and demonstrated that a model with boosting provides a practical way to bridge between the dynamics of these two paradigms, while arguing that this mechanism is highly biologically relevant. Differences in such conceptual assumptions can lead both to different estimates of vaccine effectiveness, and different predictions about future dynamics.
 
 ----------------------------------------------------------------------
 

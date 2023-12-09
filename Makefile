@@ -2,7 +2,7 @@
 # CARRIED ON from disease_model_talks
 # Workshops/disease
 ## Seems old and mostly ICI3D-focused
-## 2023 Mar 20 (Mon) Now doing overview talks here, too
+## 2023 Mar 20 (Mon, Taiwan) Now doing overview talks here, too
 
 ##################################################################
 
