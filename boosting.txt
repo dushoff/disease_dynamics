@@ -200,9 +200,9 @@ WIDEFIG boosting/boosting.pdf
 
 ----------------------------------------------------------------------
 
-Leaky with partial boosting
+Leaky with partial boosting [corrected]
 
-WIDEFIG boosting/boosting.pdf
+WIDEFIG boosting/partial.pdf
 
 ----------------------------------------------------------------------
 
