@@ -116,6 +116,8 @@ data.lecture: data.handouts.pdf.op data.draft.pdf.op
 ## boosting.draft.pdf: boosting.txt
 ## boosting.handouts.pdf: boosting.txt
 
+## pdfjam -o ~/Downloads/midDiagram.pdf outputs/boosting.draft.pdf 23
+
 ######################################################################
 ## Service directories. Remake as pardirs, but point to outputs somehow.
 ## Link as of 2023 Sep 19 (Tue)
