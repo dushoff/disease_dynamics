@@ -29,13 +29,15 @@ Ignore += $(pardirs)
 
 ######################################################################
 
+## This could be a .mk file in LatexTemplates!
+
 # Theme for whatever lectures are now being prepared
 # .tmp files not here will be made from talkdir
 
 ## Venues
 ## THEMES themes Themes
 ## These rules change the format rules (but not the template)
-## Look at beamer.tmp manually
+## Look at LatexTemplates lines in beamer.tmp
 ## mmed.set:
 ## daidd.set:
 ## qmee.set:
