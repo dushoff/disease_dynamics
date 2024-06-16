@@ -50,6 +50,14 @@ I will talk about some principles of modeling the spread of infectious diseases,
 
 ----------------------------------------------------------------------
 
+EXTRA History
+
+Started in Taiwan (probably 2024 Feb, when I was living there), has some Chinese which might be hard to rescue right now.
+
+Gave as an invited Next Einstein Foundation webinar 2024 Mar.
+
+----------------------------------------------------------------------
+
 SEC What is dynamical modeling?
 
 ----------------------------------------------------------------------

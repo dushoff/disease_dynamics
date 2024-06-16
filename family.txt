@@ -1,7 +1,31 @@
 
-EXTRA
+EXTRA Todo
 
-	FIX Check on model taxonomy, probably DAIDD only
+Fill in SUPP stuff (slides added for MMED 2024; not to be done with old intro lecture, daidd, etc)
+* Currently SUPP is not even working? wtf
+
+----------------------------------------------------------------------
+
+EXTRA MMED multiple-choice questions
+
+R0 = beta D is important because it predicts:
+How quickly a disease will spread initially
+How quickly a disease will spread at any given time
+Whether a disease will increase or decrease initially
+Whether a disease will increase or decrease at any given time
+
+In our simplest compartmental model, R-effective = beta D S/N can decrease:
+When the proportion of susceptibles decreases
+When the government imposes movement restrictions
+When infectious people choose to reduce their contacts
+All of the above
+
+What are the incidence of disease prevalence shown on our spreadsheet?
+[1] (unitless)
+[people]
+[1/time]
+[people/time]
+2
 
 ----------------------------------------------------------------------
 
@@ -57,7 +81,32 @@ REP DBFIG 0.7 SIR_model_family/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
 
 ----------------------------------------------------------------------
 
-Compartmental models
+Dynamical modeling is a bridge
+
+REP DBFIG 0.7 SIR_model_family/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
+
+	If we see (or change) actions, how can we predict population-level outcomes?
+
+	If we observe population-level outcomes (or their changes), what can we
+	infer about individual-level actions?
+
+----------------------------------------------------------------------
+
+REPSLIDE Compartmental models
+
+SUBH Divide people into categories:
+
+DIAGRAM SIR_model_family/sirlin.three.pdf
+
+	Susceptible $\to$ Infectious $\to$ Recovered
+
+	How well does this reflect the simple transmission model?
+
+	What's missing?
+
+----------------------------------------------------------------------
+
+REPSLIDE Compartmental models
 
 SUBH Divide people into categories:
 
@@ -171,7 +220,7 @@ PIC HFIG 0.55 SIR_model_family/thinker.jpg
 
 The basic reproductive number
 
-	$\Ro$ is the number of people who would be infected by an
+	$\Ro$ is the expected number of people infected by an
 	infectious individual \emph{in a fully susceptible population.}
 
 	$\Ro = \beta/\gamma = \beta D = (cp) D$
@@ -198,9 +247,46 @@ Spreadsheet implementation
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
-\url{http://tinyurl.com/SIR-MMED-2023}
+\url{http://tinyurl.com/SIR-MMED-2024}
 
 ----------------------------------------------------------------------
+
+What have we learned?
+
+	Why does the number of infected decline?
+
+		ANS In our model world, the only reason for change is that we have fewer
+		susceptibles
+
+		ANS In the real world, there may be other reasons
+
+	$\Ro$ is the expected number of people infected by an
+	infectious individual \emph{in a fully susceptible population.}
+
+	\Reff\ is the expected number of people infected by an
+	infectious individual
+
+		ANS \emph{In this model} $\Reff = \Ro S/N$
+
+----------------------------------------------------------------------
+
+What is our graph showing?
+
+	Prevalence?
+
+		ANS The number (or proportion) of the population currently infected
+
+	Incidence?
+
+		ANS The number (or proportion) of the population currently \emph{getting}
+		infected \emph{per unit time}
+
+	ANS The graph shows prevalence (number in box $I$))
+
+	ANS Incidence is found in our transmission column
+
+----------------------------------------------------------------------
+
 
 ODEs and mechanistic models
 
@@ -209,8 +295,7 @@ ODEs and mechanistic models
 
 		ANS The ODE is the limit when deltaT $\to 0$
 
-		ANS ODE methods allow us to do this without an infinite amount of
-		computer time
+		ANS We need technical software to do this well
 
 ----------------------------------------------------------------------
 
@@ -222,7 +307,7 @@ FIG taxon.jpg
 
 ----------------------------------------------------------------------
 
-ODE assumptions
+Simple model assumptions (population)
 
 BC
 
@@ -238,19 +323,79 @@ EC
 
 ----------------------------------------------------------------------
 
-ODE assumptions
+Simple model assumptions (time)
 
 DBFIG 0.8 SIR_model_family/exp.Rout-0.pdf 0.8 SIR_model_family/exp.Rout-1.pdf
 
-	Waiting times are exponentially distributed
+	Probability of leaving does not depend on time-in-box
+
+		$\to$ Waiting times are exponentially distributed
 
 	Rarely realistic
 
 		but sometimes OK for a particular application
 
+		We will talk more about “model worlds”
+
 ----------------------------------------------------------------------
 
-Scripts vs.\ spreadsheets
+Simple model assumptions (structure)
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+	How realistic is this picture?
+
+		ANS Infected people are not always sick
+
+		ANS Infected people are not always \emph{infectious}
+
+----------------------------------------------------------------------
+
+Delayed infectiousness
+
+DIAGRAM SIR_model_family/seir.four.pdf
+
+----------------------------------------------------------------------
+
+Ebola \chinese{伊波拉}
+
+DIAGRAM SIR_model_family/seird.four.pdf
+
+----------------------------------------------------------------------
+
+COVID-19
+
+WIDEFIG my_images/stanford_diagram.png
+
+CREDIT Childs et al., http://covid-measures.stanford.edu/
+
+----------------------------------------------------------------------
+
+Time distributions
+
+BC
+
+CFIG my_images/shedding.png
+
+NC
+
+	Latent period is time until disease can spread
+
+	Incubation period is time until symptoms start
+
+	The relationship between them is very important! Why?
+
+EC
+
+----------------------------------------------------------------------
+
+Time distributions
+
+WIDEFIG my_images/latentIncuTable.png
+
+----------------------------------------------------------------------
+
+TRACKED Scripts vs.\ spreadsheets
 
 PIC DBFIG 0.7 SIR_model_family/gd.png 0.8 SIR_model_family/R.png
 
@@ -260,7 +405,7 @@ PIC DBFIG 0.7 SIR_model_family/gd.png 0.8 SIR_model_family/R.png
 
 ----------------------------------------------------------------------
 
-More about transmission
+TRACKED More about transmission
 
 BC
 
@@ -284,7 +429,7 @@ EC
 
 ----------------------------------------------------------------------
 
-Population sizes
+TRACKED Population sizes
 
 	How does $\beta$ change with population size?
 
@@ -296,7 +441,7 @@ Population sizes
 
 ----------------------------------------------------------------------
 
-REPSLIDE Population sizes
+TRACKED REPSLIDE Population sizes
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -304,7 +449,7 @@ DIAGRAM SIR_model_family/sirodes.const.pdf
 
 ----------------------------------------------------------------------
 
-Population sizes
+TRACKED Population sizes
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -312,7 +457,7 @@ DIAGRAM SIR_model_family/sirodes.pdf
 
 ----------------------------------------------------------------------
 
-SMALLFIG SIR_model_family/beta.Rout-0.pdf
+TRACKED SMALLFIG SIR_model_family/beta.Rout-0.pdf
 
 	$\beta(N) = \beta_0$
 
@@ -322,7 +467,7 @@ SMALLFIG SIR_model_family/beta.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-SMALLFIG SIR_model_family/beta.Rout-1.pdf
+TRACKED SMALLFIG SIR_model_family/beta.Rout-1.pdf
 
 	$\beta(N) = \alpha_0 N$
 
@@ -332,7 +477,7 @@ SMALLFIG SIR_model_family/beta.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-FIG SIR_model_family/beta.Rout-3.pdf
+TRACKED FIG SIR_model_family/beta.Rout-3.pdf
 
 	Per-capita rate:
 
@@ -342,7 +487,7 @@ FIG SIR_model_family/beta.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
-Digression -- units
+TRACKED Digression -- units
 
 	${\cal T} = \beta SI/N: [\mathrm{ppl}/\mathrm{time}]$
 
@@ -381,6 +526,8 @@ LANDFIG SIR_model_family/comp0.pdf
 ----------------------------------------------------------------------
 
 With individuality
+
+\vspace{-3ex}
 
 LANDFIG SIR_model_family/comp.pdf
 
