@@ -52,13 +52,528 @@ ICI3DTHEME
 
 ----------------------------------------------------------------------
 
-Making slides
+Goals
 
-	I would like some bullet points
+	I would like to type simple bullet points
 
-	Editor should be easy to use and see
+	In a fast robust, editor
 
-		points should always be perfectly formatted
+	They should always:
 
-		Navigating should be fast!
+		come out the same and beautifully
 
+		Be able to incorporate math easily! $\exp(i\tau) = 1$
+
+
+----------------------------------------------------------------------
+
+Real goals
+
+	This lecture will:
+
+		introduce the idea of dynamical modeling
+
+		explain why dynamical modeling is a key tool for understanding infectious
+		disease
+
+		discuss and demonstrate simple dynamical models from the SIR model family
+
+		investigate some insights that can be gained from these models
+
+----------------------------------------------------------------------
+
+Dynamical modeling connects scales
+
+REP DBFIG 0.7 SIR_model_family/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
+
+	Start with rules about how things change in short time steps
+
+		Usually based on \emph{individuals}
+
+	Calculate results over longer time periods
+
+		Usually about \emph{populations}
+
+----------------------------------------------------------------------
+
+Dynamical modeling is a bridge
+
+REP DBFIG 0.7 SIR_model_family/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
+
+	If we see (or change) actions, how can we predict population-level outcomes?
+
+	If we observe population-level outcomes (or their changes), what can we
+	infer about individual-level actions?
+
+----------------------------------------------------------------------
+
+REPSLIDE Compartmental models
+
+SUBH Divide people into categories:
+
+DIAGRAM SIR_model_family/sirlin.three.pdf
+
+	Susceptible $\to$ Infectious $\to$ Recovered
+
+	How well does this reflect the simple transmission model?
+
+	What's missing?
+
+----------------------------------------------------------------------
+
+REPSLIDE Compartmental models
+
+SUBH Divide people into categories:
+
+DIAGRAM SIR_model_family/sir.three.pdf
+
+	Susceptible $\to$ Infectious $\to$ Recovered
+
+----------------------------------------------------------------------
+
+What determines transition rates?
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+	People get better independently
+
+	People get infected by infectious people
+
+----------------------------------------------------------------------
+
+PRESLIDE Conceptual modeling
+
+DIAGRAM SIR_model_family/sir.three.pdf
+
+PIC HFIG 0.55 SIR_model_family/thinker.jpg
+
+----------------------------------------------------------------------
+
+Conceptual modeling
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+	What is the final result?
+
+	When does disease increase, decrease?
+
+----------------------------------------------------------------------
+
+Dynamic implementation
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+	Requires assumptions about recovery and transmission
+
+	The \emph{conceptually simplest} implementation uses
+	Ordinary Differential Equations (ODEs)
+
+		Other options may be more realistic
+
+		Or simpler in practice
+
+----------------------------------------------------------------------
+
+Recovery
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+	Infectious people recover at \emph{per capita}
+	rate $\gamma$
+
+		Total recovery rate is $\gamma I$
+
+		Mean time infectious is $D = 1/\gamma$
+
+----------------------------------------------------------------------
+
+Transmission
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+	Susceptible people get infected by:
+
+		Going around and contacting people (rate $c$)
+
+		Some of these people are infectious (proportion $I/N$)
+
+		Some of these contacts are effective (proportion $p$)
+
+	Per capita rate of becoming infected is $c p I/N \equiv \beta
+	I/N$
+
+	Population-level transmission rate is ${\cal T} = \beta SI/N$
+
+----------------------------------------------------------------------
+
+Another perspective on transmission
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+	Infectious people infect others by:
+
+		Going around and contacting people (rate $c$)
+
+		Some of these people are susceptible (proportion $S/N$)
+
+		Some of these contacts are effective (proportion $p$)
+
+	Per capita rate of infecting others is $c p S/N \equiv \beta
+	S/N$
+
+	Population-level transmission rate is ${\cal T} = \beta SI/N$
+
+----------------------------------------------------------------------
+
+REPSLIDE Conceptual modeling
+
+DIAGRAM SIR_model_family/sir.three.pdf
+
+PIC HFIG 0.55 SIR_model_family/thinker.jpg
+
+----------------------------------------------------------------------
+
+The basic reproductive number
+
+	$\Ro$ is the expected number of people infected by an
+	infectious individual \emph{in a fully susceptible population.}
+
+	$\Ro = \beta/\gamma = \beta D = (cp) D$
+
+		$c$: Contact Rate
+
+		$p$: Probability of transmission (infectivity)
+
+		$D$: Average duration of infection
+
+	A disease can invade a population if and only if $\Ro>1$.
+
+----------------------------------------------------------------------
+
+ODE implementation
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+DIAGRAM SIR_model_family/sirodes.const.pdf
+
+----------------------------------------------------------------------
+
+Spreadsheet implementation
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+\url{http://tinyurl.com/SIR-MMED-2024}
+
+----------------------------------------------------------------------
+
+What have we learned?
+
+	Why does the number of infected decline?
+
+		ANS In our model world, the only reason for change is that we have fewer
+		susceptibles
+
+		ANS In the real world, there may be other reasons
+
+	$\Ro$ is the expected number of people infected by an
+	infectious individual \emph{in a fully susceptible population.}
+
+	\Reff\ is the expected number of people infected by an
+	infectious individual
+
+		ANS \emph{In this model} $\Reff = \Ro S/N$
+
+----------------------------------------------------------------------
+
+What is our graph showing?
+
+	Prevalence?
+
+		ANS The number (or proportion) of the population currently infected
+
+	Incidence?
+
+		ANS The number (or proportion) of the population currently \emph{getting}
+		infected \emph{per unit time}
+
+	ANS The graph shows prevalence (number in box $I$))
+
+	ANS Incidence is found in our transmission column
+
+----------------------------------------------------------------------
+
+
+ODEs and mechanistic models
+
+	What is the relationship between the spreadsheet and the ODE model we
+	started with?
+
+		ANS The ODE is the limit when deltaT $\to 0$
+
+		ANS We need technical software to do this well
+
+----------------------------------------------------------------------
+
+DAIDD
+
+Model taxonomy
+
+FIG taxon.jpg
+
+----------------------------------------------------------------------
+
+Simple model assumptions (population)
+
+BC
+
+PIC WFIG 0.8 SIR_model_family/stirrer.jpg
+
+NC
+
+	Lots and lots of people
+
+	Perfectly mixed
+
+EC
+
+----------------------------------------------------------------------
+
+Simple model assumptions (time)
+
+DBFIG 0.8 SIR_model_family/exp.Rout-0.pdf 0.8 SIR_model_family/exp.Rout-1.pdf
+
+	Probability of leaving does not depend on time-in-box
+
+		$\to$ Waiting times are exponentially distributed
+
+	Rarely realistic
+
+		but sometimes OK for a particular application
+
+		We will talk more about “model worlds”
+
+----------------------------------------------------------------------
+
+Simple model assumptions (structure)
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+	How realistic is this picture?
+
+		ANS Infected people are not always sick
+
+		ANS Infected people are not always \emph{infectious}
+
+----------------------------------------------------------------------
+
+Delayed infectiousness
+
+DIAGRAM SIR_model_family/seir.four.pdf
+
+----------------------------------------------------------------------
+
+Ebola \chinese{伊波拉}
+
+DIAGRAM SIR_model_family/seird.four.pdf
+
+----------------------------------------------------------------------
+
+COVID-19
+
+WIDEFIG my_images/stanford_diagram.png
+
+CREDIT Childs et al., http://covid-measures.stanford.edu/
+
+----------------------------------------------------------------------
+
+Time distributions
+
+BC
+
+CFIG my_images/shedding.png
+
+NC
+
+	Latent period is time until disease can spread
+
+	Incubation period is time until symptoms start
+
+	The relationship between them is very important! Why?
+
+EC
+
+----------------------------------------------------------------------
+
+Time distributions
+
+WIDEFIG my_images/latentIncuTable.png
+
+----------------------------------------------------------------------
+
+TRACKED Scripts vs.\ spreadsheets
+
+PIC DBFIG 0.7 SIR_model_family/gd.png 0.8 SIR_model_family/R.png
+
+	Scripts are more transparent, less redundant
+
+	Spreadsheets are more intuitive for simple problems
+
+----------------------------------------------------------------------
+
+TRACKED More about transmission
+
+BC
+
+SIDEFIG my_images/trans.jpg
+
+NC
+
+	$\beta = pc$
+
+		What is a contact?
+
+		What is the probability of transmission?
+
+	Sometimes this decomposition is clear
+
+	But usually it's not
+
+	So we often start by estimating $\beta$ directly
+
+EC
+
+----------------------------------------------------------------------
+
+TRACKED Population sizes
+
+	How does $\beta$ change with population size?
+
+	We can make different assumptions about this
+
+		It may increase with population size, or not
+
+	If population size changes we have to \emph{consider} the question
+
+----------------------------------------------------------------------
+
+TRACKED REPSLIDE Population sizes
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+DIAGRAM SIR_model_family/sirodes.const.pdf
+
+----------------------------------------------------------------------
+
+TRACKED Population sizes
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+DIAGRAM SIR_model_family/sirodes.pdf
+
+----------------------------------------------------------------------
+
+TRACKED SMALLFIG SIR_model_family/beta.Rout-0.pdf
+
+	$\beta(N) = \beta_0$
+
+	${\cal T} = \frac{\beta_0 SI}{N}$
+
+	Also known as \emph{frequency-dependent} transmission
+
+----------------------------------------------------------------------
+
+TRACKED SMALLFIG SIR_model_family/beta.Rout-1.pdf
+
+	$\beta(N) = \alpha_0 N$
+
+	${\cal T} = \alpha_0 SI$
+
+	Also known as \emph{density-dependent} transmission
+
+----------------------------------------------------------------------
+
+TRACKED FIG SIR_model_family/beta.Rout-3.pdf
+
+	Per-capita rate:
+
+		May not go to zero when $N$ does
+
+		May not go to $\infty$ when $N$ does
+
+----------------------------------------------------------------------
+
+TRACKED Digression -- units
+
+	${\cal T} = \beta SI/N: [\mathrm{ppl}/\mathrm{time}]$
+
+	$\beta: [1/\mathrm{time}]$
+
+		The true $\beta$ always has people in the numerator and the denominator
+
+		$\beta/\gamma = \beta D: [1]$
+
+	${\cal T} = \alpha SI: [\mathrm{ppl}/\mathrm{time}]$
+
+		Mass-action incidence, $\alpha: [1/(\mathrm{people} \cdot \mathrm{time})]$
+
+----------------------------------------------------------------------
+
+Closing the circle
+
+DIAGRAM SIR_model_family/sirs.three.pdf
+
+DIAGRAM SIR_model_family/sirbd.three.pdf
+
+----------------------------------------------------------------------
+
+Tendency to oscillate
+
+LANDFIG SIR_model_family/comp0.pdf
+
+	Many susceptibles 
+	$\rightarrow$ many infections 
+	$\rightarrow$ few susceptibles 
+	$\rightarrow$ few infections 
+	$\rightarrow$ \ldots
+
+	Oscillations in simple models tend to be ``damped"
+
+----------------------------------------------------------------------
+
+With individuality
+
+\vspace{-3ex}
+
+LANDFIG SIR_model_family/comp.pdf
+
+	Treating individuals as individuals can produce substantial oscillations
+	even in large populations
+
+	Interaction between random effects and the different time scales (of infection and recovery)
+
+----------------------------------------------------------------------
+
+DAIDD REPSLIDE Model taxonomy
+
+FIG taxon.jpg
+
+----------------------------------------------------------------------
+
+Summary
+
+	Dynamic models are an essential tool because they allow us to link between
+	scales
+
+	There are many ways to construct and implement dynamic models
+
+	Very simple models can provide useful insights
+
+		Reproductive numbers and thresholds
+
+		Tendency for oscillation (and tendency for damping)
+
+	More complex models can provide more detail, but also require more
+	assumptions, and more choices
+
+	Understanding simple models can help guide our understanding of more
+	complicated models
