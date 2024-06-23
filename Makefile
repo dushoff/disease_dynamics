@@ -183,6 +183,7 @@ heterogeneity.draft.pdf: heterogeneity.txt
 heterogeneity.handouts.pdf: heterogeneity.txt
 heterogeneity.slides.pdf: heterogeneity.txt
 
+Sources += mentimeter.pl
 ## heterogeneity.mm.tsv: heterogeneity.mm mentimeter.pl
 
 ## Pitch slides
