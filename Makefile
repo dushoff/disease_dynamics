@@ -10,6 +10,7 @@
 current: target
 target = Makefile
 -include target.mk
+-include makestuff/perl.def
 target: $(target)
 
 vim_session:
@@ -22,6 +23,7 @@ vim_session:
 pardirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates stats coronaSpread
 
 colddirs += $(pardirs)
+## hotdirs += $(pardirs)
 
 alldirs += $(pardirs)
 
@@ -55,6 +57,9 @@ Sources += local.txt.format
 Sources += copy.tex
 
 Sources += $(wildcard *.txt *.notes *.md *.lect)
+
+## Mentimeter
+Sources += $(wildcard *.mm)
 
 ######################################################################
 
@@ -177,7 +182,8 @@ heterogeneity.final.pdf: heterogeneity.txt
 heterogeneity.draft.pdf: heterogeneity.txt
 heterogeneity.handouts.pdf: heterogeneity.txt
 heterogeneity.slides.pdf: heterogeneity.txt
-## heterogeneity.lecture:
+
+## heterogeneity.mm.tsv: heterogeneity.mm mentimeter.pl
 
 ## Pitch slides
 hetProject.draft.pdf: hetProject.txt
@@ -322,6 +328,12 @@ science:
 	$(linkdirname)
 science/%:
 	$(MAKE) science
+
+######################################################################
+
+Ignore += *.mm.tsv
+%.mm.tsv: %.mm mentimeter.pl
+	$(PUSH)
 
 ######################################################################
 

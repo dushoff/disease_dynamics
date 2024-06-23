@@ -1,19 +1,23 @@
 
 EXTRA Todo
 
+* Yellow lines
+
 * Logistic scales for proportion affected plots
 
-* Look into figure paradigm (still getting webfigs from SIR_model_family, for example)
+● Explain dotted horizontal line as soon as it appears and what intersection means
+
+● With more time spend some on rescaling from R to c
+
+● Show model matching eq and not growth on slide 21 as well as vice versa
+
+This did not actually work, and could be interesting to follow up. There are new, “long” simulations in the terribly old-fashioned SIR_simulations directory. This model crashes more than you would expect, for reasons that are not sufficiently clear to me.
 
 ----------------------------------------------------------------------
 
-EXTRA MMED 2017 Notes (deleted those dealt with fully!)
+EXTRA MMED 2024 
 
-● Explain dotted horizontal line as soon as it appears and what intersection means
-● Show model matching eq and not growth on slide 21 as well as vice versa
-
-● Needs more time, probably 10 min
-● With more time spend some on rescaling from R to c
+See heterogeneity.mm for quiz questions
 
 ----------------------------------------------------------------------
 
@@ -33,6 +37,12 @@ NOFRAME
 ----------------------------------------------------------------------
 
 ICI3DTHEME
+
+----------------------------------------------------------------------
+
+Roadmap
+
+WIDEFIG my_images/road_map24.pdf
 
 ----------------------------------------------------------------------
 
@@ -138,13 +148,53 @@ The basic reproductive number
 
 ----------------------------------------------------------------------
 
+Equilibrium analysis
+
+	What is an equilibrium?
+
+		NOANS
+
+	Does an equilibrium have to be stable?
+
+		ANS If we are \emph{at} an equilibrium, we stay there
+
+		ANS If we are \emph{near} an stable equilibrium, we \emph{go} there
+
+	How many equilibria does a coin on a table have?
+
+		ANS Heads up, tails up, on edge
+
+		Mathematically incorrect, but you get the idea
+
+			ANS If you can balance on edge, that's a locally stable equilibrium
+
+----------------------------------------------------------------------
+
 Equilibrium
 
 LANDFIG SIR_model_family/comp.pdf
 
-	Equilibrium is worth knowing even if the disease doesn't reach equilibrium
+	Do diseases usually reach equilibrium?
 
-	System will move around the equilibrium
+----------------------------------------------------------------------
+
+The importance of equilibrium
+
+BC
+
+	Do diseases usually reach equilibrium?
+
+		ANS No, but …
+
+	Equilibrium is worth knowing even if the disease doesn't reach it
+
+		ANS System will typically move \emph{around} a stable equilibrium
+
+NC
+
+LCFIG SIR_model_family/comp.pdf
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -347,15 +397,18 @@ Heterogeneity among hosts
 	We often consider transmission probability as the product of two
 	components:
 
-		The "infector" has tendency to infect $\tau$
+		The “infector” has tendency to infect $\tau$
 
-		The "recipient" has susceptibility $\sigma$
+		The “recipient” has susceptibility $\sigma$
 
 	Then $\Ro = p c D = (\sigma \tau) c D$,
 
-	Why do we assume this is multiplicative?
+	Is it clear why we multiply $\sigma$ and $\tau$? 
 
-		ANS Convenience, question this assumption
+		ANS Not biologically.
+
+		ANS This is an assumption we make for convenience, and should be
+		questioned!
 
 ----------------------------------------------------------------------
 
@@ -370,7 +423,7 @@ Equilibrium calculations
 
 		Equilibrium $S/N = 1/\Ro$
 
-		Proportion affected: $1 - 1/\Ro$
+		Proportion affected (at equilibrium): $1 - 1/\Ro$
 
 ----------------------------------------------------------------------
 
@@ -382,7 +435,10 @@ Equilibrium calculations with heterogeneity
 	$\sigma$ applies to susceptible individuals $\rightarrow
 	\sigma_S$
 
-	$c$ is complicated $\rightarrow c_x = c_S c_I/\bar c$
+	$c$ affects both groups (under the standard assumption.
+
+	There is a cool calculation to show that the appropriate value is $c_x = c_S
+	c_I/\bar c$
 
 ----------------------------------------------------------------------
 
@@ -401,7 +457,9 @@ RHEAD Equilibrium calculations with heterogeneity
 How does $\Rx$ change?
 
 	Imagine a disease spread by people who differ only in their
-	effective mixing rates
+	mixing rates
+
+		Assume these don't change as the disease spreads, at least at first
 
 	If the disease has just started spreading in the population, how do
 	$c_S$ and $c_I$ compare to $\bar c$?
@@ -410,7 +468,21 @@ How does $\Rx$ change?
 
 	If the disease is very widespread in the population?
 
-		$ANS c_S < \bar c$; $c_I \to \bar c$.
+		ANS $c_S < \bar c$; $c_I \to \bar c$.
+
+----------------------------------------------------------------------
+
+Effective mixing rate
+
+	To account for other parameters, we define the “effective” mixing rate
+
+		If we had only one group: $\Ro = (\sigma \tau) c D$,
+
+		We define $R_c$ for a group to be this value (the reproductive number if
+		everyone were in this group
+
+	We define $\Rnull$ as the population average of $R_c$. How will this relate
+	to \Ro?
 
 ----------------------------------------------------------------------
 
@@ -432,7 +504,7 @@ WFIG 0.8 SIR_model_family/simpson.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-Mid (50% infection)
+Late (50% infection)
 
 WFIG 0.8 SIR_model_family/simpson.Rout-3.pdf
 
@@ -443,7 +515,6 @@ REPSLIDE Simulated population
 WFIG 0.8 SIR_model_family/simpson.Rout-0.pdf
 
 ----------------------------------------------------------------------
-
 
 Simpson's paradox
 
@@ -467,6 +538,7 @@ The basic reproductive number
 	$\Ro$ is typically greater than you would expect from a homogeneous
 	model
 
+		$\Ro > \Rnull$
 
 ----------------------------------------------------------------------
 
@@ -510,7 +582,7 @@ BC
 		\Ro\ is \emph{higher} for given mean values of factors
 		underlying transmission
 
-		But effects of disease are \emph{lower} for a given value of \Ro.
+		But equilibrium levels of disease are \emph{lower} for a given value of \Ro.
 
 NC
 
@@ -647,6 +719,26 @@ PIC WFIG 0.4 my_images/crowd.jpg
 PIC DBFIG 0.8 Endemic_curves/propCurves.Rout-1.pdf 0.8 Endemic_curves/propCurves.Rout-2.pdf
 
 ----------------------------------------------------------------------
+
+Obstacle or opportunity
+
+	Heterogeneity makes diseases seem harder to eliminate (i.e., for a given
+	level of observed disease)
+
+	But they also provide opportunity for targeting:
+
+		Find and protect the most vulnerable people or most important transmitters
+
+	People have historically been bad at this
+
+		Tuberculosis
+
+	But we may be getting better
+
+		mpox
+
+----------------------------------------------------------------------
+
 
 Summary
 
