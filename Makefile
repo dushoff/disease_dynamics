@@ -323,6 +323,9 @@ Sources += resources.mkd
 
 positivity.draft.pdf: positivity.txt
 
+-include guidance.mk
+## guidance.png: guidance.mk
+
 ######################################################################
 
 ## Need to fix this I guess for new make rules -- or just dump texi

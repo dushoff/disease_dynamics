@@ -111,3 +111,18 @@ Interactions
 		Non-specific immunity
 
 		Staying home
+
+----------------------------------------------------------------------
+
+Guidance
+
+HFIG 0.8 guidance.png
+
+CREDIT \url{https://www.who.int/publications/i/item/who-2019-ncov-adjusting-ph-measures-2023.1}
+
+----------------------------------------------------------------------
+
+Incidence
+
+	Incidence is not an end in itself
+
