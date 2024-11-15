@@ -10,6 +10,7 @@
 current: target
 target = Makefile
 -include target.mk
+-include makestuff/perl.def
 target: $(target)
 
 vim_session:
@@ -22,6 +23,7 @@ vim_session:
 pardirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates stats coronaSpread
 
 colddirs += $(pardirs)
+## hotdirs += $(pardirs)
 
 alldirs += $(pardirs)
 
@@ -29,13 +31,15 @@ Ignore += $(pardirs)
 
 ######################################################################
 
+## This could be a .mk file in LatexTemplates!
+
 # Theme for whatever lectures are now being prepared
 # .tmp files not here will be made from talkdir
 
 ## Venues
 ## THEMES themes Themes
 ## These rules change the format rules (but not the template)
-## Look at beamer.tmp manually
+## Look at LatexTemplates lines in beamer.tmp
 ## mmed.set:
 ## daidd.set:
 ## qmee.set:
@@ -53,6 +57,9 @@ Sources += local.txt.format
 Sources += copy.tex
 
 Sources += $(wildcard *.txt *.notes *.md *.lect)
+
+## Mentimeter
+Sources += $(wildcard *.mm)
 
 ######################################################################
 
@@ -90,6 +97,8 @@ dynamics.handouts.pdf: dynamics.txt
 dynamics.final.pdf: dynamics.txt
 dynamics.lecture:
 
+## Temporarily disabling chinese here in this file 2024 Jun 16 (Sun)
+## It's also broken in general see talkdir/chinese.sty
 ## overview.draft.pdf: overview.txt overview.md overview.notes
 ## overview.final.pdf: overview.txt overview.md
 ## overview.chinese.pdf: overview.txt overview.md
@@ -115,6 +124,8 @@ data.lecture: data.handouts.pdf.op data.draft.pdf.op
 ## boosting.draft.tex ## boosting.draft.log
 ## boosting.draft.pdf: boosting.txt
 ## boosting.handouts.pdf: boosting.txt
+
+## pdfjam -o ~/Downloads/midDiagram.pdf outputs/boosting.draft.pdf 23
 
 ######################################################################
 ## Service directories. Remake as pardirs, but point to outputs somehow.
@@ -152,7 +163,13 @@ heterogeneity.final.pdf: heterogeneity.txt
 heterogeneity.draft.pdf: heterogeneity.txt
 heterogeneity.handouts.pdf: heterogeneity.txt
 heterogeneity.slides.pdf: heterogeneity.txt
-## heterogeneity.lecture:
+
+## Make questions for Faikah
+Sources += mentimeter.pl
+## heterogeneity.mm.tsv: heterogeneity.mm mentimeter.pl
+Ignore += *.mm.tsv
+%.mm.tsv: %.mm mentimeter.pl
+	$(PUSH)
 
 ## Pitch slides
 hetProject.draft.pdf: hetProject.txt

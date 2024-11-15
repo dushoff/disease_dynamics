@@ -341,7 +341,7 @@ FIG rsv/figure_confint_simulate_cpp.pdf
 
 Individual-level inference depends on paradigm
 
-	Co-existence doesn't depend on leaky vs.~ polarized \emph{once parameters
+	Co-existence doesn't depend on leaky vs.~polarized \emph{once parameters
 	are known}
 
 	But \emph{effective} cross immunity will differ
