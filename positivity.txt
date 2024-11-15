@@ -1,0 +1,39 @@
+
+EXTRA Brin 2024
+
+Interpreting data for acute respiratory infections: what can we infer from viral testing data?
+
+Interpreting patterns of respiratory infections is greatly complicated by patterns of testing. What does it mean, for example, when the number of positive flu tests is increasing while the percent positivity is decreasing? What factors affect testing rates, what subset of people get tested, and what information can be used to disentangle patterns of disease incidence from patterns of care-seeking and testing? I will discuss some COVID-era patterns, and some possible approaches.
+
+----------------------------------------------------------------------
+
+NOFRAME
+
+\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
+\newcommand{\jdtitle}{
+	Interpreting data for acute respiratory infections:
+	What can we infer from viral testing data?
+}
+\newcommand{\wdate}{
+	Brin MRC: Disease Dynamics and Human Behavior
+}
+\newcommand{\years}{2024}
+
+\newcommand{\jdsub}{}
+
+----------------------------------------------------------------------
+
+WORKSHOP
+
+----------------------------------------------------------------------
+
+Goals
+
+----------------------------------------------------------------------
+
+Data streams
+
+----------------------------------------------------------------------
+
+Testing data
+
