@@ -325,7 +325,7 @@ positivity.draft.pdf: positivity.txt
 
 Sources += guidance.mk
 -include guidance.mk
-Ignore += *.png
+Ignore += *.png *.pdf
 ## guidance.png: guidance.mk
 
 ######################################################################
