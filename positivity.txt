@@ -27,13 +27,87 @@ WORKSHOP
 
 ----------------------------------------------------------------------
 
-Goals
+Goals for post-COVID era
+
+	Better short-term predictions for health-care demand of ARIs
+
+	Better understanding of mortality and morbidity burdens for prioritization
+
+	Readiness to detect and respond to the next new ARI threat
 
 ----------------------------------------------------------------------
 
 Data streams
 
+	Virological tests
+
+	Serological tests
+
+	Coded physician visits, hospital admissions, deaths
+
 ----------------------------------------------------------------------
 
-Testing data
+Serological testing data
 
+	What do we think if testing goes up but positivity remains level?
+
+		ANS Nothing has probably changed in the population
+
+----------------------------------------------------------------------
+
+Virological testing data
+
+	What do we think if testing goes up but positivity remains level?
+
+		ANS It depends!
+
+	Maybe tests have become available in a wider geographic area
+
+		ANS no evidence for increase in incidence 
+
+	Maybe there's a huge demand for tests because of symptoms
+
+		ANS if positivity is level, this means incidence has increased
+
+----------------------------------------------------------------------
+
+Patterns in data
+
+----------------------------------------------------------------------
+
+Why did I get a flu test?
+
+	Because I had flu-like symptoms
+
+		Due to flu or other virus?
+
+	Because I had a close contact diagnosed with flu
+
+		Virologically or otherwise?
+
+	Because I took a multiplex test!
+
+	Modifiers
+
+		Is there a flu scare going on?
+
+		Is it flu season?
+
+----------------------------------------------------------------------
+
+Interactions
+
+	The flu outbreak increases the number of RSV \emph{tests}
+
+		Decreases positivity
+
+		Is it expected to increase the number of positives??
+
+			ANS Maybe I get tested because my household has flu, but I come out
+			positive for RSV.
+
+	Flu outbreak may also decrease the actual amount of RSV!
+
+		Non-specific immunity
+
+		Staying home

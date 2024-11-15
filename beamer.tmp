@@ -5,11 +5,12 @@
 %% \setmainfont{Noto Serif CJK TC}
 %% \setsansfont{Noto Sans CJK TC}
 
-\input{LatexTemplates/ici3dTemplate.tex}
-\input{LatexTemplates/ici3dCurrent.tex}
+%% 2024 Nov 15 (Fri) Something weird going on with these templates
+%% \input{LatexTemplates/ici3dTemplate.tex}
+%% \input{LatexTemplates/ici3dCurrent.tex}
 \input{talkdir/bulletspace.tex}
 
-\usepackage{talkdir/chinese}
+%% \usepackage{talkdir/chinese}
 \usepackage{talkdir/slidecomm,talkdir/commands}
 \usepackage{graphicx,xspace}
 \usepackage{grffile}
@@ -23,6 +24,6 @@
 
 ----------------------------------------------------------------------
 
-\input{LatexTemplates/ici3dClose.tex}
+%% \input{LatexTemplates/ici3dClose.tex}
 
 \end{document}
