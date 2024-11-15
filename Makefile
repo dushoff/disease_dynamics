@@ -18,6 +18,11 @@ vim_session:
 
 ######################################################################
 
+testsetup:
+	$(mirrorGet)
+
+######################################################################
+
 ## Directories
 
 pardirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates stats coronaSpread
