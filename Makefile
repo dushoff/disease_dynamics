@@ -18,6 +18,12 @@ vim_session:
 
 ######################################################################
 
+testsetup: 
+	- rmdir $(mirrors)
+	ln -s $(mirrors:%=../%) .
+
+######################################################################
+
 ## Directories
 
 pardirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates stats coronaSpread
@@ -322,6 +328,11 @@ mirrors += resources
 Sources += resources.mkd
 
 positivity.draft.pdf: positivity.txt
+
+Sources += guidance.mk
+-include guidance.mk
+Ignore += *.png *.pdf
+## guidance.png: guidance.mk
 
 ######################################################################
 
