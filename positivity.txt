@@ -7,7 +7,7 @@ Interpreting patterns of respiratory infections is greatly complicated by patter
 
 ----------------------------------------------------------------------
 
-NOFRAME
+NOFRAME Headers
 
 \newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
 \newcommand{\jdtitle}{
@@ -20,6 +20,14 @@ NOFRAME
 \newcommand{\years}{2024}
 
 \newcommand{\jdsub}{}
+
+----------------------------------------------------------------------
+
+NOFRAME Prob commands
+
+\newcommand{\psub}[1]{\ensuremath{P_{\mathrm{#1}}}}
+\newcommand{\hsub}[1]{\ensuremath{H_{\mathrm{#1}}}}
+\newcommand{\lsub}[1]{\ensuremath{\ell_{\mathrm{#1}}}}
 
 ----------------------------------------------------------------------
 
@@ -125,4 +133,156 @@ CREDIT \url{https://www.who.int/publications/i/item/who-2019-ncov-adjusting-ph-m
 Incidence
 
 	Incidence is not an end in itself
+
+		Incidence $\times$ severity to predict burden
+
+		Incidence $\times$ immunogenicity to predict short-term protection,
+		dynamics
+
+		Incidence * immunity kernel to predict longer-term protection
+
+----------------------------------------------------------------------
+
+Some modeling approaches
+
+	Direct estimation
+
+		Infer incidence from positivity and cases each week
+
+	Phenomenological fitting
+
+		Make use of smooth latent curves through time
+
+	Mechanistic fitting
+
+		Make use of dynamical models underlying latent variables
+
+		SIR, information flow, policy changes
+
+----------------------------------------------------------------------
+
+Top-down approach
+
+	Inspired by early COVID; limited tests, active discussion of how to use them
+
+	Imagine risk prioritization; people in each risk class have a certain
+	probability of testing positive
+
+		The \emph{mean} of this distribution corresponds to prevalence in the
+		population
+
+		\emph{Variation} corresponds to the information gained by risk
+		prioritization
+
+----------------------------------------------------------------------
+
+Beta-distributed risk
+
+FIG posTests/betaIllus.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Beta-distributed risk
+
+FIG posTests/betaIllus.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Beta-distributed risk
+
+FIG posTests/betaIllus.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+Beta-distributed risk
+
+FIG posTests/betaIllus.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+Bottom-up approach
+
+	Model the probability of people seeking care for various reasons
+
+	Corresponds better to seasonal epidemics
+
+		Policy shifts could be modeled as parameter changes
+
+----------------------------------------------------------------------
+
+Hazard approach
+
+	$ \psub{talk} = 1 - (1 - \psub{remember}) (1 -\psub{airplane}) (1 -\psub{venue})$
+
+	Define: $H = -\log(1-P)$
+
+	$\hsub{event} = \sum_{\mathrm{components}}{\hsub{c}}$
+
+	e.g., $\hsub{test} = \hsub{focalSymptoms} + \hsub{focalContact} + \hsub{nonfocalSymptoms} + \hsub{nonfocalContact}$
+
+----------------------------------------------------------------------
+
+Hazard response
+
+FIG sandbox/ohComp.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Hazard response
+
+FIG sandbox/ohComp.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Log odds approach
+
+	The odds corresponding a probability $P$ is $\theta = P/(1-P)$
+
+		$\ell = \log(P/(1-P))$
+
+	Principled justification for adding on the log scale in many cases
+
+		But not quite in this one
+
+	e.g., $\lsub{posterior} = \lsub{prior} + \mathrm{BayesFactor}$
+
+		Probability positive given positive test
+
+		Prop of positives among test seekers
+
+----------------------------------------------------------------------
+
+Log-odds response
+
+FIG sandbox/ohComp.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+Log-odds response
+
+FIG sandbox/ohComp.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+Constant odds ratio
+
+FIG posTests/orCurves.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Constant odds ratio
+
+FIG posTests/orCurves.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Constant odds ratio
+
+FIG posTests/orCurves.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+Constant odds ratio
+
+FIG posTests/orCurves.Rout-3.pdf
 

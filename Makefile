@@ -159,7 +159,19 @@ boxes: dir=SIR_model_family/outputs
 boxes:
 	$(linkdirname)
 
-## A bunch of craziness that kicked off my data principles talk (angry face)
+hotdirs += sandbox
+Ignore += sandbox
+sandbox: dir=../../research/sandbox
+sandbox:
+	$(linkdirname)
+
+hotdirs += posTests
+Ignore += posTests
+posTests: dir=../../research/betaTesting
+posTests:
+	$(linkdirname)
+
+## A bunch of craziness for early versions of my ICI3D data principles talk (angry face)
 Sources += data.mk
 
 ######################################################################
