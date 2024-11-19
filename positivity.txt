@@ -1,4 +1,6 @@
 
+----------------------------------------------------------------------
+
 EXTRA Brin 2024
 
 Interpreting data for acute respiratory infections: what can we infer from viral testing data?
@@ -79,7 +81,53 @@ Virological testing data
 
 ----------------------------------------------------------------------
 
+The talk that goes wrong
+
+WIDEFIG webpix/wrong.jpg
+
+----------------------------------------------------------------------
+
+What is the best proxy for incidence?
+
+	Observed cases?
+
+		Number of positive tests
+
+		Early in the COVID alpha wave, in some places
+
+	Test positivity
+
+		Proportion of positive tests
+
+		Omicron wave
+
+	Some combination
+
+----------------------------------------------------------------------
+
 Patterns in data
+
+	\url{https://www.canada.ca/en/public-health/services/surveillance/respiratory-virus-detections-canada.html}
+
+	\url{https://github.com/dajmcdon/rvdss-canada}
+
+----------------------------------------------------------------------
+
+Example: 2014
+
+FIG posTests/2014.twopath.firstplot.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Example: 2014
+
+FIG posTests/2014.twopath.firstplot.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Example: 2014
+
+FIG posTests/2014.twopath.secondplot.Rout.pdf
 
 ----------------------------------------------------------------------
 
@@ -103,7 +151,7 @@ Why did I get a flu test?
 
 ----------------------------------------------------------------------
 
-Interactions
+Interactions between pathogens
 
 	The flu outbreak increases the number of RSV \emph{tests}
 
@@ -212,7 +260,7 @@ Bottom-up approach
 
 Hazard approach
 
-	$ \psub{talk} = 1 - (1 - \psub{remember}) (1 -\psub{airplane}) (1 -\psub{venue})$
+	$ \psub{missingConference} = 1 - (1 -\psub{forgetting})(1 - \psub{missingAirplane}) (1 -\psub{gettingLost})$
 
 	Define: $H = -\log(1-P)$
 
@@ -266,23 +314,122 @@ FIG sandbox/ohComp.Rout-3.pdf
 
 Constant odds ratio
 
-FIG posTests/orCurves.Rout-0.pdf
+FIG posTests/orGrid.compPlots.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
 Constant odds ratio
 
-FIG posTests/orCurves.Rout-1.pdf
+FIG posTests/orGrid.compPlots.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
 Constant odds ratio
 
-FIG posTests/orCurves.Rout-2.pdf
+FIG posTests/orGrid.compPlots.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
 Constant odds ratio
 
-FIG posTests/orCurves.Rout-3.pdf
+FIG posTests/orGrid.compPlots.Rout-3.pdf
 
+----------------------------------------------------------------------
+
+Interpreting observations
+
+FIG posTests/orConv.compPlots.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Interpreting observations
+
+FIG posTests/orConv.compPlots.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Interpreting observations
+
+FIG posTests/orConv.compPlots.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+Interpreting observations
+
+FIG posTests/orConv.compPlots.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+Prevalence-incidence gap
+
+	We are thinking about the asymptotic properties of these tests as measuring
+	prevalence when we test the whole population
+
+	But what we're trying to measure is incidence of new cases
+
+	Consider the population we consider eligible to take these tests
+
+		Does not include people with recent positives
+
+		Although sometimes they do take it
+
+----------------------------------------------------------------------
+
+Modeling approaches
+
+	Top-down models to fit a beta shape parameter together with disease dynamics
+
+		Could also use odds ratios and a single shape parameter to describe
+		relationship between testing propensities in groups
+
+	Bottom-up models to fit to likelihood of observed testing numbers and
+	observed positives
+
+	False-negative and false-positive results
+
+----------------------------------------------------------------------
+
+Combine with other data streams when possible
+
+	Medical screening, hospital discharge
+
+	ILI surveillance reports
+
+	Seroprevalence
+
+----------------------------------------------------------------------
+
+Simulation-based validation
+
+	Simulate scenarios with realistic sources of variation
+
+	Test how well different modeling approaches can fit
+
+----------------------------------------------------------------------
+
+Data curation
+
+	Work with provincial and federal health agencies to improve connections
+	between models and data
+
+	How data are collected:
+
+		e.g., what multiplex tests do people take?
+
+	How data are shared
+
+		Bringing models to data
+
+		Make shareable products as part of the research project
+
+----------------------------------------------------------------------
+
+Thanks for your patience!
+
+	Also:
+
+		Meeting organizers
+
+		Key collaborators: Bolker, Brown, Champredon, Li, Zhao
+
+		CIHR, PHAC, NSERC

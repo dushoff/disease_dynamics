@@ -340,6 +340,7 @@ mirrors += resources
 Sources += resources.mkd
 
 positivity.draft.pdf: positivity.txt
+positivity.final.pdf: positivity.txt
 
 Sources += guidance.mk
 -include guidance.mk
