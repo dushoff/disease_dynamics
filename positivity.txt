@@ -298,6 +298,11 @@ Log odds approach
 
 		Prop of positives among test seekers
 
+	Example: Black people accounted for 10% of recreational marijuana users and
+	40% of convictions in Philadelphia when I was in high school
+
+		OR: (4/6) / (1/9) = 6
+
 ----------------------------------------------------------------------
 
 Log-odds response
