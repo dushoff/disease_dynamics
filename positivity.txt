@@ -1,4 +1,10 @@
 
+EXTRA Todo
+
+----------------------------------------------------------------------
+
+EXTRA Champredon group 2025 Jan
+
 ----------------------------------------------------------------------
 
 EXTRA Brin 2024
@@ -55,6 +61,10 @@ Data streams
 
 	Coded physician visits, hospital admissions, deaths
 
+	Wastewater
+
+	Genomics
+
 ----------------------------------------------------------------------
 
 Serological testing data
@@ -81,7 +91,7 @@ Virological testing data
 
 ----------------------------------------------------------------------
 
-The talk that goes wrong
+EXTRA The talk that goes wrong
 
 WIDEFIG webpix/wrong.jpg
 
@@ -112,6 +122,13 @@ Patterns in data
 	\url{https://github.com/dajmcdon/rvdss-canada}
 
 ----------------------------------------------------------------------
+
+Data cleaning
+
+FIG my_images/vfields.png
+
+----------------------------------------------------------------------
+
 
 Example: 2014
 
@@ -432,8 +449,6 @@ Data curation
 Thanks for your patience!
 
 	Also:
-
-		Meeting organizers
 
 		Key collaborators: Bolker, Brown, Champredon, Li, Zhao
 
