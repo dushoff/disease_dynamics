@@ -1,4 +1,9 @@
 
+EXTRA DC positivity group 2025 January
+
+Combining data streams to understand acute respiratory infection spread
+
+
 ----------------------------------------------------------------------
 
 EXTRA Brin 2024
@@ -13,13 +18,12 @@ NOFRAME Headers
 
 \newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
 \newcommand{\jdtitle}{
-	Interpreting data for acute respiratory infections:
-	What can we infer from viral testing data?
+	Combining data streams to understand acute respiratory infection spread
 }
 \newcommand{\wdate}{
-	Brin MRC: Disease Dynamics and Human Behavior
+	PHAC Positivity Bias Modelling Group, Jan 2025
 }
-\newcommand{\years}{2024}
+\newcommand{\years}{2024--25}
 
 \newcommand{\jdsub}{}
 
