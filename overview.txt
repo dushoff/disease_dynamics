@@ -2,11 +2,16 @@
 SHORT NOFRAME
 
 \newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
-\newcommand{\jdtitle}{Conceptual models of cross-immunity, and practical applications}
+\newcommand{\jdtitle}{
+	Dynamical Modeling for Infectious Disease Policy
+}
+
 \newcommand{\wdate}{UNICEF McMaster, Mar 2025}
 \newcommand{\years}{202.}
 
-\newcommand{\jdsub}{}
+\newcommand{\jdsub}{
+	Importance and Challenges
+}
 
 ----------------------------------------------------------------------
 
@@ -68,13 +73,31 @@ I will talk about some principles of modeling the spread of infectious diseases,
 
 EXTRA History
 
-Started in Taiwan (probably 2024 Feb, when I was living there), has some Chinese which might be hard to rescue right now.
+Started in Taiwan (probably 2023 Feb, when I was living there), has some Chinese which might be hard to rescue right now.
 
-Gave as an invited Next Einstein Foundation webinar 2024 Mar.
+Gave as an invited Next Einstein Foundation webinar 2023 Mar.
 
 ----------------------------------------------------------------------
 
-SEC What is dynamical modeling?
+SHORT Origins
+
+WIDEFIG webpix/independenceHall.jpg
+
+--------------------------------------------------------------------
+
+SHORT Exploration
+
+WIDEFIG webpix/mantenga.jpg
+
+--------------------------------------------------------------------
+
+SHORT First love
+
+HIGHFIG webpix/pythagoras.pdf
+
+----------------------------------------------------------------------
+
+LONG SEC What is dynamical modeling?
 
 ----------------------------------------------------------------------
 
@@ -146,7 +169,7 @@ REP DIAGRAM SIR_model_family/sir.three.pdf
 
 ----------------------------------------------------------------------
 
-SEC Modeling approaches
+LONG SEC Modeling approaches
 
 ----------------------------------------------------------------------
 
@@ -890,11 +913,43 @@ SHORT Current projects
 
 		Re-emerging diseases (measles)
 
+	Other interests
+
+		HIV, TB and malaria
+
+----------------------------------------------------------------------
+
+SHORT Rabies
+
+BC
+
+	Important human mortality and economic burden
+
+	Almost entirely vaccine preventable (if you vaccinate domestic dogs)
+
+NC
+
+CFIG webpix/nyamongo.jpg
+
+EC
+
 ----------------------------------------------------------------------
 
 SHORT Educational outreach
 
+BC
+
+CFIG my_images/MMED18.jpg
+
+NC
+
 	Workshops in Africa and Asia
+
+	CREDIT \url{www.ici3d.org}
+
+	CREDIT National Center for Theoretical Sciences, Taiwan
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -907,6 +962,5 @@ Thanks
 	Funders
 
 	Audience
-
 
 ----------------------------------------------------------------------
