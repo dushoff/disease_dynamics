@@ -336,7 +336,8 @@ science/%:
 
 ######################################################################
 
-mirrors += resources webpix my_images
+mirrors += resources
+## webpix my_images added by default!!
 Sources += resources.mkd
 
 positivity.draft.pdf: positivity.txt
