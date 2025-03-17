@@ -1,8 +1,20 @@
-NOFRAME
 
-\newcommand{\jdtitle}{Data, models and science}
+SHORT NOFRAME
+
+\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
+\newcommand{\jdtitle}{Conceptual models of cross-immunity, and practical applications}
+\newcommand{\wdate}{UNICEF McMaster, Mar 2025}
+\newcommand{\years}{202.}
+
 \newcommand{\jdsub}{}
-\newcommand{\years}{2016--\thisyear}
+
+----------------------------------------------------------------------
+
+WORKSHOP
+
+RESTING CFIG webpix/nef.jpg
+
+RESTING This doesn't work on this page, don't know why
 
 ----------------------------------------------------------------------
 
@@ -14,15 +26,15 @@ BC
 
 PRESENT \vfill
 
-Jonathan Dushoff, McMaster University
+Jonathan Dushoff
 
 PRESENT \bigskip
 
-PRESENT NEF Webinar
+PRESENT UNICEF McMaster’s 2025 Panel Event
 
 PRESENT \bigskip
 
-March 2023
+March 2025
 
 PRESENT \vfill\vfill
 
@@ -34,7 +46,7 @@ NC
 
 PRESENT \vfill
 
-CFIG webpix/nef.jpg
+RESTING CFIG webpix/nef.jpg
 
 PRESENT \vfill\vfill
 
@@ -44,7 +56,11 @@ EC
 
 ----------------------------------------------------------------------
 
-EXTRA Abstract 2023 March
+EXTRA 2025 March! UNICEF McMaster’s 2025 Panel Event
+
+----------------------------------------------------------------------
+
+EXTRA Abstract 2023 March NEF Webinar
 
 I will talk about some principles of modeling the spread of infectious diseases, with examples from Ebola, HIV, rabies, COVID-19 and influenza. Dynamical modeling raises mathematically interesting questions, and is an essential tool for studying diseases the spread through populations. There is more interesting work to be done, both practically and theoretically.
 
@@ -62,7 +78,7 @@ SEC What is dynamical modeling?
 
 ----------------------------------------------------------------------
 
-Dynamical modeling connects scales
+SHORT Dynamical modeling connects scales
 
 PIC DBFIG 0.7 my_images/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
 
@@ -100,7 +116,7 @@ EC
 
 ----------------------------------------------------------------------
 
-Simple models of disease spread
+SHORT Simple models of disease spread
 
 	Divide people into categories:
 
@@ -120,7 +136,7 @@ REP DIAGRAM SIR_model_family/sir.np.three.pdf
 
 ----------------------------------------------------------------------
 
-What determines transition rates?
+SHORT What determines transition rates?
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -134,11 +150,11 @@ SEC Modeling approaches
 
 ----------------------------------------------------------------------
 
-SS Conceptual modeling
+LONG SS Conceptual modeling
 
 ----------------------------------------------------------------------
 
-PSLIDE Conceptual modeling
+LONG PSLIDE Conceptual modeling
 
 DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -146,7 +162,7 @@ HFIG 0.6 SIR_model_family/thinker.jpg
 
 ----------------------------------------------------------------------
 
-Conceptual modeling
+SHORT Conceptual modeling
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -158,7 +174,7 @@ REP DIAGRAM SIR_model_family/sir.three.pdf
 
 ----------------------------------------------------------------------
 
-Result: change tends to be exponential
+SHORT Result: change tends to be exponential
 
 	The number of people recovering or becoming infected is \emph{proportional}
 	to the number infected
@@ -191,19 +207,19 @@ little $r$
 
 ----------------------------------------------------------------------
 
-Exponential growth
+SHORT Exponential growth
 
 FIG SIR_simulations/hiv_plot.Rout-4.pdf
 
 ----------------------------------------------------------------------
 
-Exponential growth
+SHORT Exponential growth
 
 HFIG 0.85 coronaSpread/git_push/HBcorona.tsplot.Rout.pdf
 
 ----------------------------------------------------------------------
 
-Result: disease does not always spread 
+SHORT Result: disease does not always spread 
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -213,7 +229,7 @@ REP DIAGRAM SIR_model_family/sir.three.pdf
 
 ----------------------------------------------------------------------
 
-Concept: reproductive number
+SHORT Concept: reproductive number
 
 	$\Rx$ is the number of people who would be infected by an
 	infectious individual \emph{in a fully susceptible population.}
@@ -252,7 +268,7 @@ EC
 
 ----------------------------------------------------------------------
 
-Yellow fever in Panama
+SHORT Yellow fever in Panama
 
 BC
 
@@ -266,7 +282,7 @@ EC
 
 ----------------------------------------------------------------------
 
-Example: Dengue (Taiwan CDC) \chinese{登革熱}
+LONG Example: Dengue (Taiwan CDC) \chinese{登革熱}
 
 Indigenous cases 
 
@@ -292,7 +308,7 @@ NOTES \url{https://www.cdc.gov.tw/En/Category/ListContent/bg0g_VU_Ysrgkes_KRUDgQ
 
 ----------------------------------------------------------------------
 
-Result: not every one gets infected
+SHORT Result: not every one gets infected
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -306,7 +322,7 @@ REP DIAGRAM SIR_model_family/sir.three.pdf
 
 ----------------------------------------------------------------------
 
-Next steps
+LONG Next steps
 
 	We can \emph{implement} the model and see what it's going to do
 
@@ -318,7 +334,7 @@ Next steps
 
 ----------------------------------------------------------------------
 
-TSS Deterministic models
+LONG TSS Deterministic models
 
 	For a given set of assumptions, a deterministic model always predicts the
 	same results
@@ -327,7 +343,7 @@ TSS Deterministic models
 
 ----------------------------------------------------------------------
 
-Simulations
+SHORT Simulations
 
 WIDEFIG SIR_model_family/sir.three.pdf
 
@@ -345,16 +361,19 @@ FIG SIR_simulations/burnouts.plots.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-RHEAD Closing the circle
+SHORT Closing the circle
 
 WIDEFIG SIR_model_family/sirbd.three.pdf
 
 	ANS Births and deaths
 
 ----------------------------------------------------------------------
-REPSLIDE Closing the circle
+
+LONG REPSLIDE Closing the circle
 
 FIG SIR_simulations/burnouts.plots.Rout-0.pdf
+
+ADD Is this the wrong panel??
 
 ----------------------------------------------------------------------
 
@@ -382,13 +401,13 @@ LANDFIG SIR_model_family/comp0.pdf
 
 ----------------------------------------------------------------------
 
-Result: Oscillations tend to be damped
+SHORT Result: Oscillations tend to be damped
 
 PRESENT LANDFIG SIR_model_family/comp0.pdf
 
 ----------------------------------------------------------------------
 
-REPSLIDE What is missing from our model world?
+SHORT What is missing from our model world?
 
 BCC
 
@@ -399,6 +418,10 @@ NCC
 CFIG Disease_data/ewmeas.Rout.pdf
 
 EC
+
+----------------------------------------------------------------------
+
+EXTRA For short version, just say there must be some things, maybe wave your hands at resonance
 
 ----------------------------------------------------------------------
 
@@ -428,7 +451,7 @@ EC
 
 ----------------------------------------------------------------------
 
-Example: Ebola transmission \chinese{(埃博拉)}
+SHORT Example: Ebola transmission \chinese{(埃博拉)}
 
 BC
 
@@ -454,25 +477,25 @@ WIDEFIG SIR_model_family/sir.np.three.pdf
 
 ----------------------------------------------------------------------
 
-Model with latent period
+SHORT Model with latent period
 
 WIDEFIG SIR_model_family/seir.four.pdf
 
 ----------------------------------------------------------------------
 
-Include post-death transmission
+SHORT Include post-death transmission
 
 WIDEFIG SIR_model_family/seird.four.pdf
 
 ----------------------------------------------------------------------
 
-PRESLIDE Result: generation interval links \rR
+LONG PRESLIDE Result: generation interval links \rR
 
 FIG my_images/weitz_full.pdf
 
 ----------------------------------------------------------------------
 
-Result: generation interval links \rR
+SHORT Result: generation interval links \rR
 
 BC
 
@@ -490,13 +513,13 @@ EC
 
 ----------------------------------------------------------------------
 
-Example: COVID: flatten the curve
+SHORT Example: COVID: flatten the curve
 
 FIG my_images/flatten_ts.png
 
 ----------------------------------------------------------------------
 
-RHEAD Example: COVID
+SHORT Example: COVID
 
 FIG my_images/flatten_bif.png
 
@@ -516,31 +539,31 @@ CREDIT Childs et al., http://covid-measures.stanford.edu/
 
 ----------------------------------------------------------------------
 
-PRESLIDE Example: COVID waves
+SHORT Example: COVID waves
 
 WIDEFIG my_images/macFeb21pre.png
 
 ----------------------------------------------------------------------
 
-PRESLIDE Example: COVID waves
+SHORT Example: COVID waves
 
 WIDEFIG my_images/macFeb21res.png
 
 ----------------------------------------------------------------------
 
-Example: COVID waves
+SHORT COVID waves
 
 WIDEFIG my_images/macFeb21res.png
 
 ----------------------------------------------------------------------
 
-PRESLIDE Example: COVID waves
+SHORT Example: COVID waves
 
 WIDEFIG my_images/macFeb21VOC.png
 
 ----------------------------------------------------------------------
 
-Example: COVID waves
+SHORT COVID waves
 
 BC
 
@@ -555,7 +578,7 @@ CFIG my_images/macFeb21VOC.png
 EC
 ----------------------------------------------------------------------
 
-TSS Stochastic models
+LONG TSS Stochastic models
 
 	For a given set of assumptions, a stochastic model predicts a variety of 
 	possible results
@@ -569,7 +592,7 @@ TSS Stochastic models
 
 ----------------------------------------------------------------------
 
-Types of stochasticity
+LONG Types of stochasticity
 
 WIDEFIG SIR_model_family/sirsrates.pdf
 
@@ -583,19 +606,19 @@ WIDEFIG SIR_model_family/sirsrates.pdf
 
 ----------------------------------------------------------------------
 
-PSLIDE Deterministic spread
+LONG PSLIDE Deterministic spread
 
 LANDFIG SIR_model_family/onedet.pdf
 
 --------------------------------------------------------------------
 
-PSLIDE Demographic spread
+LONG PSLIDE Demographic spread
 
 LANDFIG SIR_model_family/onesto.pdf
 
 ----------------------------------------------------------------------
 
-Demographic spread
+LONG Demographic spread
 
 LANDFIG SIR_model_family/onestoch.pdf
 
@@ -604,7 +627,7 @@ LANDFIG SIR_model_family/onestoch.pdf
 
 ----------------------------------------------------------------------
 
-Result: outbreaks can die out at random
+LONG Result: outbreaks can die out at random
 
 BC
 
@@ -625,7 +648,7 @@ NOTES DEFHEAD Result: Pattern of outbreak sizes is related to \Rx
 
 ----------------------------------------------------------------------
 
-REPSLIDE Result: Pattern of outbreak sizes is related to \Rx
+LONG REPSLIDE Result: Pattern of outbreak sizes is related to \Rx
 
 Indigenous cases 
 
@@ -652,25 +675,25 @@ NOTES \url{https://www.cdc.gov.tw/En/Category/ListContent/bg0g_VU_Ysrgkes_KRUDgQ
 
 ----------------------------------------------------------------------
 
-PRESLIDE Result: stochasticity interacts with oscillations
+LONG PRESLIDE Result: stochasticity interacts with oscillations
 
 LANDFIG SIR_model_family/comp0.pdf
 
 ----------------------------------------------------------------------
 
-Result: stochasticity interacts with oscillations
+LONG Result: stochasticity interacts with oscillations
 
 LANDFIG SIR_model_family/comp.pdf
 
 ----------------------------------------------------------------------
 
-TSS Statistical fitting
+LONG TSS Statistical fitting
 
 FIG my_images/sierraLeone.hybrid.compare.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-RHEAD Statistical fitting
+SHORT Statistical fitting
 
 BC
 
@@ -685,11 +708,11 @@ CFIG my_images/sierraLeone.hybrid.compare.Rout-2.pdf
 EC
 ----------------------------------------------------------------------
 
-SEC Limitations
+LONG SEC Limitations
 
 ----------------------------------------------------------------------
 
-TSS Heterogeneity
+LONG TSS Heterogeneity
 
 BC
 
@@ -719,14 +742,14 @@ PIC WFIG 0.48 my_images/inuit.jpg
 
 ----------------------------------------------------------------------
 
-PSLIDE Human heterogeneity
+LONG PSLIDE Human heterogeneity
 
 WIDEFIG my_images/Lesotho_children.jpg
 
 ----------------------------------------------------------------------
 
 
-PSLIDE Human heterogeneity
+LONG PSLIDE Human heterogeneity
 
 HFIG 0.42 my_images/dump_workers.jpg
 
@@ -775,7 +798,7 @@ FIG SIR_simulations/hiv_plot.Rout-4.pdf
 
 ----------------------------------------------------------------------
 
-TSS Behavioural changes
+LONG TSS Behavioural changes
 
 	I can calculate the motion of heavenly bodies, but not the madness of
 	people. – Isaac Newton
@@ -836,7 +859,7 @@ CREDIT Weitz et al. \url{https://www.pnas.org/doi/10.1073/pnas.2009911117}
 
 ----------------------------------------------------------------------
 
-Summary
+SHORT Summary
 
 	Dynamical models are an essential tool to link scales
 
@@ -854,6 +877,24 @@ Summary
 		What else do we need to know?
 
 ----------------------------------------------------------------------
+
+Current projects
+
+	Rabies in African and Asia
+
+	Mpox in Africa
+
+	Respiratory infections in Canada
+
+		Merge COVID with “seasonal” infections to improve surveillance
+
+		Re-emerging diseases (measles)
+
+----------------------------------------------------------------------
+
+Educational outreach
+
+	Workshops in Africa and Asia
 
 Thanks
 

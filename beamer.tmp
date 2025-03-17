@@ -11,6 +11,7 @@
 \input{talkdir/bulletspace.tex}
 
 %% \usepackage{talkdir/chinese}
+\newcommand{\chinese}[1]{}
 \usepackage{talkdir/slidecomm,talkdir/commands}
 \usepackage{graphicx,xspace}
 \usepackage{grffile}
