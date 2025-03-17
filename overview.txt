@@ -878,7 +878,7 @@ SHORT Summary
 
 ----------------------------------------------------------------------
 
-Current projects
+SHORT Current projects
 
 	Rabies in African and Asia
 
@@ -892,9 +892,11 @@ Current projects
 
 ----------------------------------------------------------------------
 
-Educational outreach
+SHORT Educational outreach
 
 	Workshops in Africa and Asia
+
+----------------------------------------------------------------------
 
 Thanks
 
