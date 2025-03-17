@@ -1,13 +1,16 @@
 
 SHORT NOFRAME
 
-\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
+\newcommand{\jdauth}{
+	Jonathan Dushoff, McMaster Biology
+	\\ mac-theobio lab (with Earn and Bolker)
+}
 \newcommand{\jdtitle}{
 	Dynamical Modeling for Infectious Disease Policy
 }
 
 \newcommand{\wdate}{UNICEF McMaster, Mar 2025}
-\newcommand{\years}{202.}
+\newcommand{\years}{2023--}
 
 \newcommand{\jdsub}{
 	Importance and Challenges
@@ -206,6 +209,8 @@ SHORT Result: change tends to be exponential
 
 		How fast does disease grow?
 
+			Rate of exponential growth $r$
+
 		How quickly do we need to respond?
 
 ----------------------------------------------------------------------
@@ -230,13 +235,13 @@ little $r$
 
 ----------------------------------------------------------------------
 
-SHORT Exponential growth
+SHORT Exponential growth (HIV in Africa)
 
 FIG SIR_simulations/hiv_plot.Rout-4.pdf
 
 ----------------------------------------------------------------------
 
-SHORT Exponential growth
+SHORT Exponential growth (COVID 2020)
 
 HFIG 0.85 coronaSpread/git_push/HBcorona.tsplot.Rout.pdf
 
@@ -512,7 +517,7 @@ WIDEFIG SIR_model_family/seird.four.pdf
 
 ----------------------------------------------------------------------
 
-LONG PRESLIDE Result: generation interval links \rR
+PRESLIDE Result: generation interval links \rR
 
 FIG my_images/weitz_full.pdf
 
