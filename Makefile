@@ -104,10 +104,12 @@ dynamics.final.pdf: dynamics.txt
 dynamics.lecture:
 
 ## Temporarily disabling chinese here in this file 2024 Jun 16 (Sun)
-## It's also broken in general see talkdir/chinese.sty
+## Chinese is also broken in general see talkdir/chinese.sty
 ## overview.draft.pdf: overview.txt overview.md overview.notes
 ## overview.final.pdf: overview.txt overview.md
 ## overview.chinese.pdf: overview.txt overview.md
+
+## overview.txt.2023-04-01.datefile:
 
 page.draft.pdf: page.txt
 

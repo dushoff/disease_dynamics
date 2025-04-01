@@ -66,15 +66,21 @@ EC
 
 EXTRA 2025 March! UNICEF McMaster’s 2025 Panel Event
 
+Dynamical Modeling for Infectious Disease Policy
+
+Abstract: See email
+
 ----------------------------------------------------------------------
 
 EXTRA Abstract 2023 March NEF Webinar
 
-I will talk about some principles of modeling the spread of infectious diseases, with examples from Ebola, HIV, rabies, COVID-19 and influenza. Dynamical modeling raises mathematically interesting questions, and is an essential tool for studying diseases the spread through populations. There is more interesting work to be done, both practically and theoretically.
+Dynamical models of disease spread
+
+Abstract: I will talk about some principles of modeling the spread of infectious diseases, with examples from Ebola, HIV, rabies, COVID-19 and influenza. Dynamical modeling raises mathematically interesting questions, and is an essential tool for studying diseases the spread through populations. There is more interesting work to be done, both practically and theoretically.
 
 ----------------------------------------------------------------------
 
-EXTRA History
+EXTRA Taiwan original talk
 
 Started in Taiwan (probably 2023 Feb, when I was living there), has some Chinese which might be hard to rescue right now.
 
