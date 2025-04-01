@@ -64,6 +64,14 @@ EC
 
 ----------------------------------------------------------------------
 
+EXTRA 2025 April for someone
+
+Dynamical models of infectious-disease spread
+
+I will talk about some principles of modeling the spread of infectious diseases, with examples from Ebola, HIV, rabies, COVID-19 and influenza. Dynamical modeling is an essential tool for understanding infectious disease spread, assessing disease burden, and planning interventions, but simple dynamical models also have many limitations.
+
+----------------------------------------------------------------------
+
 EXTRA 2025 March! UNICEF McMaster’s 2025 Panel Event
 
 Dynamical Modeling for Infectious Disease Policy
@@ -82,9 +90,9 @@ Abstract: I will talk about some principles of modeling the spread of infectious
 
 EXTRA Taiwan original talk
 
-Started in Taiwan (probably 2023 Feb, when I was living there), has some Chinese which might be hard to rescue right now.
+Dynamical models of disease spread
 
-Gave as an invited Next Einstein Foundation webinar 2023 Mar.
+I will talk about some principles of modeling the spread of infectious diseases, with examples from Ebola, HIV, rabies, COVID-19 and influenza. Dynamical modeling is an essential tool for studying diseases the spread through populations, but also has many limitations.
 
 ----------------------------------------------------------------------
 
