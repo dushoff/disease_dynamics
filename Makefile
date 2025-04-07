@@ -18,6 +18,8 @@ vim_session:
 
 ######################################################################
 
+Makefile: plain.set
+
 testsetup: 
 	- rmdir $(mirrors)
 	ln -s $(mirrors:%=../%) .
@@ -50,9 +52,12 @@ Ignore += $(pardirs)
 ## daidd.set:
 ## qmee.set:
 ## plain.set:
+Ignore += *.set
 %.set: LatexTemplates/%.txt.format | LatexTemplates
+	-$(RM) *.set
 	touch $<
 	$(LNF) $< local.txt.format
+	touch $@
 
 Sources += beamer.tmp notes.tmp
 

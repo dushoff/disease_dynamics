@@ -114,7 +114,7 @@ HIGHFIG webpix/pythagoras.pdf
 
 ----------------------------------------------------------------------
 
-LONG SEC What is dynamical modeling?
+SEC What is dynamical modeling?
 
 ----------------------------------------------------------------------
 
@@ -186,11 +186,11 @@ REP DIAGRAM SIR_model_family/sir.three.pdf
 
 ----------------------------------------------------------------------
 
-LONG SEC Modeling approaches
+SEC Modeling approaches
 
 ----------------------------------------------------------------------
 
-LONG SS Conceptual modeling
+SS Conceptual modeling
 
 ----------------------------------------------------------------------
 
@@ -376,7 +376,7 @@ LONG Next steps
 
 ----------------------------------------------------------------------
 
-LONG TSS Deterministic models
+TSS Deterministic models
 
 	For a given set of assumptions, a deterministic model always predicts the
 	same results
@@ -620,7 +620,7 @@ CFIG my_images/macFeb21VOC.png
 EC
 ----------------------------------------------------------------------
 
-LONG TSS Stochastic models
+TSS Stochastic models
 
 	For a given set of assumptions, a stochastic model predicts a variety of 
 	possible results
@@ -729,7 +729,7 @@ LANDFIG SIR_model_family/comp.pdf
 
 ----------------------------------------------------------------------
 
-LONG TSS Statistical fitting
+TSS Statistical fitting
 
 FIG my_images/sierraLeone.hybrid.compare.Rout-2.pdf
 
@@ -750,11 +750,11 @@ CFIG my_images/sierraLeone.hybrid.compare.Rout-2.pdf
 EC
 ----------------------------------------------------------------------
 
-LONG SEC Limitations
+SEC Limitations
 
 ----------------------------------------------------------------------
 
-LONG TSS Heterogeneity
+TSS Heterogeneity
 
 BC
 
@@ -840,7 +840,7 @@ FIG SIR_simulations/hiv_plot.Rout-4.pdf
 
 ----------------------------------------------------------------------
 
-LONG TSS Behavioural changes
+TSS Behavioural changes
 
 	I can calculate the motion of heavenly bodies, but not the madness of
 	people. – Isaac Newton
