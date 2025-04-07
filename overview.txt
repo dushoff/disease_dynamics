@@ -3,17 +3,19 @@ SHORT NOFRAME
 
 \newcommand{\jdauth}{
 	Jonathan Dushoff, McMaster Biology
-	\\ mac-theobio lab (with Earn and Bolker)
 }
 \newcommand{\jdtitle}{
-	Dynamical Modeling for Infectious Disease Policy
+	Dynamical models of infectious-disease spread
 }
 
-\newcommand{\wdate}{UNICEF McMaster, Mar 2025}
+\newcommand{\wdate}{
+Georgia Southern University
+\\ BEES Seminar
+\\ Department of Biostatistics, Epidemiology \\ and Environmental Health Sciences
+}
 \newcommand{\years}{2023--}
 
 \newcommand{\jdsub}{
-	Importance and Challenges
 }
 
 ----------------------------------------------------------------------
@@ -26,89 +28,19 @@ RESTING This doesn't work on this page, don't know why
 
 ----------------------------------------------------------------------
 
-Dynamical models of disease spread
-
-BC
-
-\vbox to \textheight{
-
-PRESENT \vfill
-
-Jonathan Dushoff
-
-PRESENT \bigskip
-
-PRESENT UNICEF McMaster’s 2025 Panel Event
-
-PRESENT \bigskip
-
-March 2025
-
-PRESENT \vfill\vfill
-
-}
-
-NC
-
-\vbox to \textheight{
-
-PRESENT \vfill
-
-RESTING CFIG webpix/nef.jpg
-
-PRESENT \vfill\vfill
-
-}
-
-EC
-
-----------------------------------------------------------------------
-
-EXTRA 2025 April for someone
-
-Dynamical models of infectious-disease spread
-
-I will talk about some principles of modeling the spread of infectious diseases, with examples from Ebola, HIV, rabies, COVID-19 and influenza. Dynamical modeling is an essential tool for understanding infectious disease spread, assessing disease burden, and planning interventions, but simple dynamical models also have many limitations.
-
-----------------------------------------------------------------------
-
-EXTRA 2025 March! UNICEF McMaster’s 2025 Panel Event
-
-Dynamical Modeling for Infectious Disease Policy
-
-Abstract: See email
-
-----------------------------------------------------------------------
-
-EXTRA Abstract 2023 March NEF Webinar
-
-Dynamical models of disease spread
-
-Abstract: I will talk about some principles of modeling the spread of infectious diseases, with examples from Ebola, HIV, rabies, COVID-19 and influenza. Dynamical modeling raises mathematically interesting questions, and is an essential tool for studying diseases the spread through populations. There is more interesting work to be done, both practically and theoretically.
-
-----------------------------------------------------------------------
-
-EXTRA Taiwan original talk
-
-Dynamical models of disease spread
-
-I will talk about some principles of modeling the spread of infectious diseases, with examples from Ebola, HIV, rabies, COVID-19 and influenza. Dynamical modeling is an essential tool for studying diseases the spread through populations, but also has many limitations.
-
-----------------------------------------------------------------------
-
-SHORT Origins
+OFFSLIDE SHORT Origins
 
 WIDEFIG webpix/independenceHall.jpg
 
 --------------------------------------------------------------------
 
-SHORT Exploration
+OFFSLIDE SHORT Exploration
 
 WIDEFIG webpix/mantenga.jpg
 
 --------------------------------------------------------------------
 
-SHORT First love
+OFFSLIDE SHORT First love
 
 HIGHFIG webpix/pythagoras.pdf
 
@@ -239,11 +171,11 @@ little $r$
 
 	Characteristic time scale is $C=1/r$
 
-		Closely related to doubling time
-
 		COVID, $C \approx 1 \mathrm{month}$
 
 		HIV in SSA, $C \approx 18 \mathrm{month}$
+
+		Doubling time is $0.69C$
 
 	Often focus on initial period (may also say $r_0$)
 
@@ -350,6 +282,12 @@ NOTES \url{https://www.cdc.gov.tw/En/Category/ListContent/bg0g_VU_Ysrgkes_KRUDgQ
 
 ----------------------------------------------------------------------
 
+Example: Malaria in the US
+
+FIG webpix/us_malaria_1935.jpg
+
+----------------------------------------------------------------------
+
 SHORT Result: not every one gets infected
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
@@ -403,6 +341,12 @@ FIG SIR_simulations/burnouts.plots.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
+REPSLIDE Simulations
+
+FIG SIR_simulations/burnouts.plots.Rout-4.pdf
+
+----------------------------------------------------------------------
+
 SHORT Closing the circle
 
 WIDEFIG SIR_model_family/sirbd.three.pdf
@@ -411,11 +355,9 @@ WIDEFIG SIR_model_family/sirbd.three.pdf
 
 ----------------------------------------------------------------------
 
-LONG REPSLIDE Closing the circle
+OFFSLIDE LONG REPSLIDE Closing the circle
 
-FIG SIR_simulations/burnouts.plots.Rout-0.pdf
-
-ADD Is this the wrong panel??
+FIG SIR_simulations/burnouts.plots.Rout.pdf
 
 ----------------------------------------------------------------------
 
@@ -536,6 +478,15 @@ PRESLIDE Result: generation interval links \rR
 FIG my_images/weitz_full.pdf
 
 ----------------------------------------------------------------------
+
+PSLIDE How long is a disease generation?
+
+PIC WIDEFIG ../generations/my_images/generation_girls.png
+
+CREDIT David Champredon
+
+----------------------------------------------------------------------
+
 
 SHORT Result: generation interval links \rR
 
