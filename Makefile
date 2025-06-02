@@ -46,6 +46,7 @@ Ignore += $(pardirs)
 
 ## Venues
 ## THEMES themes Themes
+## pickscreen Talks LatexTemplates ## and look at README.md
 ## These rules change the format rules (but not the template)
 ## Look at LatexTemplates lines in beamer.tmp
 ## mmed.set:
@@ -98,10 +99,11 @@ chinese.pdf: chinese.tex
 	xelatex $<
 
 ### ICI3D model family lectures
-family.draft.pdf: family.txt
-family.handouts.pdf: family.txt
-family.final.pdf: family.txt
-family.lecture:
+### MMED Foundations lecture
+## family.draft.pdf: family.txt family.draft.tex
+## family.handouts.pdf: family.txt
+## family.final.pdf: family.txt
+## family.lecture:
 
 dynamics.draft.pdf: dynamics.txt
 dynamics.handouts.pdf: dynamics.txt
@@ -184,10 +186,11 @@ Sources += data.mk
 ######################################################################
 ### Heterogeneity ### NTU 2016-3
 # https://github.com/dushoff/disease_model_talks/tree/master/git_push/heterogeneity.draft.pdf 
-heterogeneity.final.pdf: heterogeneity.txt
-heterogeneity.draft.pdf: heterogeneity.txt
-heterogeneity.handouts.pdf: heterogeneity.txt
-heterogeneity.slides.pdf: heterogeneity.txt
+## heterogeneity.draft.tex: heterogeneity.txt
+## heterogeneity.final.pdf: heterogeneity.txt
+## heterogeneity.draft.pdf: heterogeneity.txt
+## heterogeneity.handouts.pdf: heterogeneity.txt
+## heterogeneity.slides.pdf: heterogeneity.txt
 
 ## Make questions for Faikah
 Sources += mentimeter.pl
