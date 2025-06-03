@@ -1,17 +1,17 @@
-Given mean parameters, variation in mixing rates (or in correlated transmission parameters) has what effect on R0?
-Increases R0
-Decreases R0
+MC If mean parameters are held constant, what is the effect of increasing variation in mixing rates on R0?
+* R0 increases
+R0 decreases
+R0 first increases, then decreases
 It depends
-1
 
-Given R0, variation in mixing rates (or in correlated transmission parameters) has what effect on equilibrium prevalence?
-Increases prevalence
-Decreases prevalence
+MC If R0 is held constant, what is the effect of increasing variation in mixing rates on equilibrium prevalence?
+Equilibrium prevalence increases
+* Equilibrium prevalence decreases
+Equilibrium prevalence first increases, then decreases
 It depends
-2
 
-Given mean parameters, variation in mixing rates (or in correlated transmission parameters) has what effect on equilibrium prevalence?
-Increases prevalence
-Decreases prevalence
+MC If mean parameters are held constant, what is the effect of increasing variation in mixing rates on equilibrium prevalence?
+Equilibrium prevalence increases
+* Equilibrium prevalence decreases
+Equilibrium prevalence first increases, then decreases
 It depends
-3
