@@ -108,6 +108,7 @@ chinese.pdf: chinese.tex
 
 ## Need to google this; right now there are no slide boundaries.
 ## fake.draft.pdf: fake.txt
+Ignore += *.pptx
 fake.pptx: fake.draft.tex
 	$(pandoc)
 
