@@ -1,0 +1,39 @@
+
+
+Goals
+
+	This lecture will:
+
+		introduce the idea of dynamical modeling
+
+		explain why dynamical modeling is a key tool for understanding infectious
+		disease
+
+		discuss and demonstrate simple dynamical models from the SIR model family
+
+		investigate some insights that can be gained from these models
+
+----------------------------------------------------------------------
+
+Dynamical modeling connects scales
+
+REP DBFIG 0.7 SIR_model_family/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
+
+	Start with rules about how things change in short time steps
+
+		Usually based on \emph{individuals}
+
+	Calculate results over longer time periods
+
+		Usually about \emph{populations}
+
+----------------------------------------------------------------------
+
+Dynamical modeling is a bridge
+
+REP DBFIG 0.7 SIR_model_family/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
+
+	If we see (or change) actions, how can we predict population-level outcomes?
+
+	If we observe population-level outcomes (or their changes), what can we
+	infer about individual-level actions?

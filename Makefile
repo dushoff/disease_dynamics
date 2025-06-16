@@ -18,7 +18,7 @@ vim_session:
 
 ######################################################################
 
-Makefile: plain.set
+Makefile: mmed.set
 
 testsetup: 
 	- rmdir $(mirrors)
@@ -101,14 +101,20 @@ chinese.pdf: chinese.tex
 ### ICI3D model family lectures
 ### MMED Foundations lecture
 ## family.draft.pdf: family.txt family.draft.tex
+## family.draft.pdf: family.txt family.draft.tex
 ## family.handouts.pdf: family.txt
 ## family.final.pdf: family.txt
 ## family.lecture:
 
-dynamics.draft.pdf: dynamics.txt
-dynamics.handouts.pdf: dynamics.txt
-dynamics.final.pdf: dynamics.txt
-dynamics.lecture:
+## Need to google this; right now there are no slide boundaries.
+## fake.draft.pdf: fake.txt
+fake.pptx: fake.draft.tex
+	$(pandoc)
+
+## dynamics.draft.pdf: dynamics.txt
+## dynamics.handouts.pdf: dynamics.txt
+## dynamics.final.pdf: dynamics.txt
+## dynamics.lecture:
 
 ## Temporarily disabling chinese here in this file 2024 Jun 16 (Sun)
 ## Chinese is also broken in general see talkdir/chinese.sty

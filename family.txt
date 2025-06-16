@@ -1,19 +1,18 @@
 
-EXTRA Todo
-
-Fill in SUPP stuff (slides added for MMED 2024; not to be done with old intro lecture, daidd, etc)
-* Currently SUPP is not even working? wtf
-
 ----------------------------------------------------------------------
 
 EXTRA
 
-	This talk is given at DAIDD, and at MMED to the DAIDD-track types. 
+	This talk is given at DAIDD, and at MMED
 
 		There are currently no conceptual differences (only the words
 		DAIDD and MMED need to be changed, and years updates)
 
-	Nobody should hear it twice (DAIDD graduates should not be in this track)
+		Used to be a 
+
+	SUPP is things that were emergency-added in 2024
+
+	TRACKED is things that were suppressed then, I think.
 
 ----------------------------------------------------------------------
 
@@ -40,7 +39,6 @@ EXTRA Tech Goals
 		come out the same and beautifully
 
 		Be able to incorporate math easily! $\exp(i\tau) = 1$
-
 
 ----------------------------------------------------------------------
 
@@ -331,7 +329,7 @@ DBFIG 0.8 SIR_model_family/exp.Rout-0.pdf 0.8 SIR_model_family/exp.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-Simple model assumptions (structure)
+SUPP Simple model assumptions (structure)
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -343,19 +341,19 @@ REP DIAGRAM SIR_model_family/sir.three.pdf
 
 ----------------------------------------------------------------------
 
-Delayed infectiousness
+SUPP Delayed infectiousness
 
 DIAGRAM SIR_model_family/seir.four.pdf
 
 ----------------------------------------------------------------------
 
-Ebola \chinese{伊波拉}
+SUPP Ebola \chinese{伊波拉}
 
 DIAGRAM SIR_model_family/seird.four.pdf
 
 ----------------------------------------------------------------------
 
-COVID-19
+SUPP COVID-19
 
 WIDEFIG my_images/stanford_diagram.png
 
@@ -363,7 +361,7 @@ CREDIT Childs et al., http://covid-measures.stanford.edu/
 
 ----------------------------------------------------------------------
 
-Time distributions
+SUPP Time distributions
 
 BC
 
@@ -381,7 +379,7 @@ EC
 
 ----------------------------------------------------------------------
 
-Time distributions
+SUPP Time distributions
 
 WIDEFIG my_images/latentIncuTable.png
 
@@ -449,7 +447,7 @@ DIAGRAM SIR_model_family/sirodes.pdf
 
 ----------------------------------------------------------------------
 
-TRACKED SMALLFIG SIR_model_family/beta.Rout-0.pdf
+SMALLFIG SIR_model_family/beta.Rout-0.pdf
 
 	$\beta(N) = \beta_0$
 
@@ -459,7 +457,7 @@ TRACKED SMALLFIG SIR_model_family/beta.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-TRACKED SMALLFIG SIR_model_family/beta.Rout-1.pdf
+SMALLFIG SIR_model_family/beta.Rout-1.pdf
 
 	$\beta(N) = \alpha_0 N$
 
@@ -469,7 +467,7 @@ TRACKED SMALLFIG SIR_model_family/beta.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-TRACKED FIG SIR_model_family/beta.Rout-3.pdf
+FIG SIR_model_family/beta.Rout-3.pdf
 
 	Per-capita rate:
 
