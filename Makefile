@@ -110,6 +110,7 @@ chinese.pdf: chinese.tex
 ######################################################################
 
 ## No media directory found.
+Ignore += *.pptx.zip
 ## family.pptx.zip: 
 %.pptx.zip: | %.pptx
 	$(lnp)
