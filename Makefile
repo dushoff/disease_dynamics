@@ -28,10 +28,11 @@ testsetup:
 
 ## Directories
 
-pardirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates stats coronaSpread
+pardirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates stats coronaSpread RTutorials
 
-colddirs += $(pardirs)
-## hotdirs += $(pardirs)
+## CHECK! which one you feel like using 🙂
+## colddirs += $(pardirs)
+hotdirs += $(pardirs)
 
 alldirs += $(pardirs)
 
@@ -105,6 +106,14 @@ chinese.pdf: chinese.tex
 ## family.handouts.pdf: family.txt
 ## family.final.pdf: family.txt
 ## family.lecture:
+
+######################################################################
+
+## No media directory found.
+## family.pptx.zip: 
+%.pptx.zip: | %.pptx
+	$(lnp)
+	unzip -l $@
 
 ## Need to google this; right now there are no slide boundaries.
 ## fake.draft.pdf: fake.txt
@@ -192,12 +201,12 @@ Sources += data.mk
 
 ######################################################################
 ### Heterogeneity ### NTU 2016-3
-# https://github.com/dushoff/disease_model_talks/tree/master/git_push/heterogeneity.draft.pdf 
-## heterogeneity.draft.tex: heterogeneity.txt
-## heterogeneity.final.pdf: heterogeneity.txt
+
 ## heterogeneity.draft.pdf: heterogeneity.txt
+## heterogeneity.final.pdf: heterogeneity.txt
 ## heterogeneity.handouts.pdf: heterogeneity.txt
 ## heterogeneity.slides.pdf: heterogeneity.txt
+## heterogeneity.draft.tex: heterogeneity.txt
 
 ## Make questions for Faikah
 Sources += mentimeter.pl
@@ -206,9 +215,13 @@ Ignore += *.mm.tsv
 %.mm.tsv: %.mm mentimeter.pl
 	$(PUSH)
 
+## hetLab.draft.pdf: hetLab.txt
+
 ## Pitch slides
 hetProject.draft.pdf: hetProject.txt
 intervalProject.draft.pdf: intervalProject.txt
+
+######################################################################
 
 ### Dushoff pitch slide
 ### Introduced DAIDD 2017
@@ -312,6 +325,14 @@ maternal.Rout: science/mat1.csv maternal.R
 
 ######################################################################
 
+## pdfpages is not working here (fighting with another rule?)
+
+Ignore += road_map25.pdf
+road_map25.pdf: my_images/road_map25.pdf Makefile
+	pdfjam $< 3 --landscape --outfile $@
+
+######################################################################
+
 ## Pictures
 
 imageDrop = ~/Dropbox/disease_model_lectures/
@@ -360,6 +381,7 @@ Sources += resources.mkd
 positivity.draft.pdf: positivity.txt
 positivity.final.pdf: positivity.txt
 
+## This is a conversion-dependency make file
 Sources += guidance.mk
 -include guidance.mk
 Ignore += *.png *.pdf
@@ -383,7 +405,7 @@ Sources += Makefile README.md
 Ignore += makestuff
 msrepo = https://github.com/dushoff
 
-Makefile: makestuff/02.stamp
+Makefile: makestuff/03.stamp
 makestuff/%.stamp:
 	- $(RM) makestuff/*.stamp
 	(cd makestuff && $(MAKE) pull) || git clone $(msrepo)/makestuff

@@ -1,0 +1,80 @@
+
+NOFRAME
+
+\newcommand{\jdtitle}{Consequences of heterogeneity lab}
+\newcommand{\jdsub}{}
+\newcommand{\years}{\thisyear}
+
+----------------------------------------------------------------------
+
+ICI3DTHEME
+
+----------------------------------------------------------------------
+
+An example population
+
+FIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Homogeneous population $\Ro=\Rnull=2$
+
+FIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Heterogeneous population $\Rnull=2$, $\kappa=0.8$
+
+FIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+Another experiment
+
+FIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+Benchmark
+
+An example where increasing kappa changes a non-epidemic to an epidemic
+
+DOUBLEFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.noSpread.pdf RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetSpread.pdf
+
+----------------------------------------------------------------------
+
+Benchmark
+
+An opposite example??
+
+DOUBLEFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.noSpread.pdf RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetSpread.pdf
+
+----------------------------------------------------------------------
+
+Benchmark
+
+Increasing kappa increases the total size of an epidemic that is already happening
+
+DOUBLEFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.homoLess.pdf RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetMore.pdf
+
+----------------------------------------------------------------------
+
+Benchmark
+
+Increasing kappa \emph{reduces} the total size of an epidemic
+
+DOUBLEFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetLess.pdf RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.homoMore.pdf
+
+----------------------------------------------------------------------
+
+Countervailing
+
+Why might increasing variance might increase epidemic size?
+
+What about reducing epidemic size?
+
+----------------------------------------------------------------------
+
+Rate plots
+
+DOUBLEFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.homoRates.pdf RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetRates.pdf

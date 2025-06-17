@@ -40,9 +40,7 @@ ICI3DTHEME
 
 ----------------------------------------------------------------------
 
-Roadmap
-
-WIDEFIG my_images/road_map24.pdf
+WIDEFIG road_map25.pdf
 
 ----------------------------------------------------------------------
 
@@ -83,9 +81,9 @@ EC
 
 Pathogen evolution
 
-PIC WFIG 0.4 my_images/influenza.jpg
+PIC WFIG 0.48 my_images/influenza.jpg
 
-PIC WFIG 0.4 my_images/tb.jpg
+PIC WFIG 0.48 my_images/tb.jpg
 
 ----------------------------------------------------------------------
 
@@ -152,7 +150,8 @@ Equilibrium analysis
 
 	What is an equilibrium?
 
-		NOANS
+		A point in “state space” (described by the state variables) where the
+		system can stay
 
 	Does an equilibrium have to be stable?
 
@@ -160,13 +159,11 @@ Equilibrium analysis
 
 		ANS If we are \emph{near} an stable equilibrium, we \emph{go} there
 
-	How many equilibria does a coin on a table have?
+	What is an example of an unstable equilibrium?
 
-		ANS Heads up, tails up, on edge
+		NOANS Try to get a disease and non-disease equilibrium
 
-		Mathematically incorrect, but you get the idea
-
-			ANS If you can balance on edge, that's a locally stable equilibrium
+		NOANS Try to get a disease and non-disease equilibrium
 
 ----------------------------------------------------------------------
 
@@ -311,7 +308,7 @@ Homogeneous dynamics
 
 		Too high of an equilibrium, when matching growth rate
 
-		Too low of a growth rate, when matching equilibrium
+		(or, equivalently) Too low of a growth rate, when matching equilibrium
 
 ----------------------------------------------------------------------
 
@@ -435,7 +432,7 @@ Equilibrium calculations with heterogeneity
 	$\sigma$ applies to susceptible individuals $\rightarrow
 	\sigma_S$
 
-	$c$ affects both groups (under the standard assumption.
+	$c$ affects both groups (under the standard assumption).
 
 	There is a cool calculation to show that the appropriate value is $c_x = c_S
 	c_I/\bar c$
@@ -483,6 +480,11 @@ Effective mixing rate
 
 	We define $\Rnull$ as the population average of $R_c$. How will this relate
 	to \Ro?
+
+		ANS \Ro\ will generally be bigger than \Rnull.
+
+		ANS Because disease will generally spread first in populations that are 
+		more prone to disease
 
 ----------------------------------------------------------------------
 
