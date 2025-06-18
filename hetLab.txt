@@ -17,21 +17,35 @@ FIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-Homogeneous population $\Ro=\Rnull=2$
+Bug in the code!
 
-FIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.Rout-1.pdf
-
-----------------------------------------------------------------------
-
-Heterogeneous population $\Rnull=2$, $\kappa=0.8$
-
-FIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.Rout-2.pdf
+	This is wrong, and I will fix it. Sorry!
 
 ----------------------------------------------------------------------
 
-Another experiment
+Homogeneous population
 
-FIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.Rout-3.pdf
+SMALLFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.homoBase.pdf
+
+We can see that $\Ro=2$ from the susceptibility at the peak
+
+----------------------------------------------------------------------
+
+Heterogeneous population
+
+HFIG 0.7 RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetBase.pdf
+
+	Faster (as expected)
+
+	Bigger epidemic (for these parameters)
+
+	Turns before $S=0.5$, why?
+
+----------------------------------------------------------------------
+
+Our first experiment
+
+SMALLFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.firstExp.pdf
 
 ----------------------------------------------------------------------
 
@@ -41,13 +55,15 @@ An example where increasing kappa changes a non-epidemic to an epidemic
 
 DOUBLEFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.noSpread.pdf RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetSpread.pdf
 
+	Sylvia's parameters
+
 ----------------------------------------------------------------------
 
 Benchmark
 
 An opposite example??
 
-DOUBLEFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.noSpread.pdf RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetSpread.pdf
+FIG my_images/impossible.png
 
 ----------------------------------------------------------------------
 
@@ -56,6 +72,8 @@ Benchmark
 Increasing kappa increases the total size of an epidemic that is already happening
 
 DOUBLEFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.homoLess.pdf RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetMore.pdf
+
+	Shad\'e's parameters
 
 ----------------------------------------------------------------------
 
@@ -71,10 +89,29 @@ Countervailing
 
 Why might increasing variance might increase epidemic size?
 
+	It makes the epidemic spread better at first
+
 What about reducing epidemic size?
+
+	It allows for susceptibility to be reduced faster than just number of
+	susceptibles
 
 ----------------------------------------------------------------------
 
 Rate plots
 
 DOUBLEFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.homoRates.pdf RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetRates.pdf
+
+	Average rates in both groups go down, but overall population mean (including
+	recovered) does not change
+
+----------------------------------------------------------------------
+
+Other experiments
+
+	How does nGroups affect things?
+
+	What value of $\kappa$ gives the biggest epidemic for a fixed value of $\bar c$?
+
+	What is \Ro\ in this model?
+
