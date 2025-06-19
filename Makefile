@@ -217,6 +217,8 @@ Ignore += *.mm.tsv
 	$(PUSH)
 
 ## hetLab.draft.pdf: hetLab.txt
+W1D3_Dushoff_Hetero_lab.pdf: | hetLab.draft.pdf
+	$(lnp)
 
 ## Pitch slides
 hetProject.draft.pdf: hetProject.txt
@@ -329,7 +331,7 @@ maternal.Rout: science/mat1.csv maternal.R
 ## pdfpages is not working here (fighting with another rule?)
 
 Ignore += road_map25.pdf
-road_map25.pdf: my_images/road_map25.pdf Makefile
+road_map25.pdf: my_images/road_map25.pdf
 	pdfjam $< 3 --landscape --outfile $@
 
 ######################################################################

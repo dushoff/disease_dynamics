@@ -17,12 +17,6 @@ FIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-Bug in the code!
-
-	This is wrong, and I will fix it. Sorry!
-
-----------------------------------------------------------------------
-
 Homogeneous population
 
 SMALLFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.homoBase.pdf
@@ -63,7 +57,7 @@ Benchmark
 
 An opposite example??
 
-FIG my_images/impossible.png
+HFIG 0.8 my_images/impossible.png
 
 ----------------------------------------------------------------------
 
