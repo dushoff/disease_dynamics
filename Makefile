@@ -50,6 +50,8 @@ Ignore += $(pardirs)
 ## pickscreen Talks LatexTemplates ## and look at README.md
 ## These rules change the format rules (but not the template)
 ## Look at LatexTemplates lines in beamer.tmp
+## Need to merge these two ideas 2025 Jun 29 (Sun)
+## Maybe have set set pointers to a starting and/or closing template? 
 ## mmed.set:
 ## daidd.set:
 ## qmee.set:
@@ -381,8 +383,9 @@ mirrors += resources
 ## webpix my_images added by default!!
 Sources += resources.mkd
 
-positivity.draft.pdf: positivity.txt
-positivity.final.pdf: positivity.txt
+## positivity.draft.tex: positivity.txt positivity.draft.log
+## positivity.draft.pdf: positivity.txt
+## positivity.final.pdf: positivity.txt
 
 ## This is a conversion-dependency make file
 Sources += guidance.mk
