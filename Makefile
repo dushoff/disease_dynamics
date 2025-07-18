@@ -47,7 +47,7 @@ Ignore += $(pardirs)
 
 ## Venues
 ## THEMES themes Themes
-## pickscreen Talks LatexTemplates ## and look at README.md
+## pickscreen Talks LatexTemplates ## and look at README.md ##
 ## These rules change the format rules (but not the template)
 ## Look at LatexTemplates lines in beamer.tmp
 ## Need to merge these two ideas 2025 Jun 29 (Sun)
@@ -203,6 +203,17 @@ posTests:
 Sources += data.mk
 
 ######################################################################
+
+## Weird Nangang talk bioAsia, Bert Chen
+
+## nextPandemic.draft.pdf: nextPandemic.txt
+## nextPandemic.final.pdf: nextPandemic.txt
+## nextPandemic.handouts.pdf: nextPandemic.txt
+## nextPandemic.slides.pdf: nextPandemic.txt
+## nextPandemic.draft.tex: nextPandemic.txt
+
+######################################################################
+
 ### Heterogeneity ### NTU 2016-3
 
 ## heterogeneity.draft.pdf: heterogeneity.txt

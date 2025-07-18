@@ -1,0 +1,29 @@
+
+EXTRA 
+
+Invented because of an invitation from bioAsia something, 2025 Jul
+
+----------------------------------------------------------------------
+
+NOFRAME Headers
+
+\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
+\newcommand{\jdtitle}{
+	Predicting acute respiratory infection threats
+}
+\newcommand{\wdate}{
+	BIO Asia-Taiwan 2025
+	\\ BioGroup Symposium: A Time to Shine
+
+}
+\newcommand{\years}{2025}
+
+\newcommand{\jdsub}{}
+
+----------------------------------------------------------------------
+
+WORKSHOP
+
+----------------------------------------------------------------------
+
+
