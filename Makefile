@@ -206,7 +206,7 @@ Sources += data.mk
 
 ## Weird Nangang talk bioAsia, Bert Chen
 
-## nextPandemic.draft.pdf: nextPandemic.txt
+## nextPandemic.draft.pdf: nextPandemic.txt nextPandemic.md
 ## nextPandemic.final.pdf: nextPandemic.txt
 ## nextPandemic.handouts.pdf: nextPandemic.txt
 ## nextPandemic.slides.pdf: nextPandemic.txt
