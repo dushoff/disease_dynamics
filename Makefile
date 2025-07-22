@@ -134,8 +134,14 @@ fake.pptx: fake.draft.tex
 ## overview.draft.pdf: overview.txt overview.md overview.notes
 ## overview.final.pdf: overview.txt overview.md
 ## overview.chinese.pdf: overview.txt overview.md
-
 ## overview.txt.2023-04-01.datefile:
+
+## ntscDynamics.draft.pdf: ntscDynamics.txt ntscDynamics.md ntscDynamics.notes
+## ntscDynamics.final.pdf: ntscDynamics.txt ntscDynamics.md
+## ntscDynamics.chinese.pdf: ntscDynamics.txt ntscDynamics.md
+## ntscDynamics.txt.2023-04-01.datefile:
+
+
 
 page.draft.pdf: page.txt
 

@@ -1,4 +1,8 @@
 
+This file is a record; put temporary stuff in .notes
+
+----------------------------------------------------------------------
+
 EXTRA 2025 April for Georgia Southern
 
 Dynamical models of infectious-disease spread

@@ -3,6 +3,9 @@ EXTRA
 
 Invented because of an invitation from bioAsia something, 2025 Jul
 
+Fraser et al. 2009 (Garske, Nishiura)
+* early estimates of pH1N1
+
 ----------------------------------------------------------------------
 
 NOFRAME Headers
