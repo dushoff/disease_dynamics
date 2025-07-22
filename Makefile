@@ -6,6 +6,8 @@
 
 ##################################################################
 
+latexEngine = xelatex
+
 ### Hooks for the editor to set the default target
 current: target
 target = Makefile
@@ -132,7 +134,8 @@ fake.pptx: fake.draft.tex
 ## Temporarily disabling chinese here in this file 2024 Jun 16 (Sun)
 ## Chinese is also broken in general see talkdir/chinese.sty
 ## overview.draft.pdf: overview.txt overview.md overview.notes
-## overview.final.pdf: overview.txt overview.md
+## overview.slides.pdf: overview.txt overview.slides.tex
+## overview.final.pdf: overview.txt overview.final.tex
 ## overview.chinese.pdf: overview.txt overview.md
 ## overview.txt.2023-04-01.datefile:
 

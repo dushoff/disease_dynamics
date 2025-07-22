@@ -1,6 +1,8 @@
 
 SHORT NOFRAME
 
+\useChinese
+
 \newcommand{\jdauth}{
 	Jonathan Dushoff, McMaster Biology
 }
@@ -9,9 +11,8 @@ SHORT NOFRAME
 }
 
 \newcommand{\wdate}{
-Georgia Southern University
-\\ BEES Seminar
-\\ Department of Biostatistics, Epidemiology \\ and Environmental Health Sciences
+NCTS Infectious Disease Workshop
+\\ July 2025
 }
 \newcommand{\years}{2023--}
 
@@ -24,29 +25,44 @@ WORKSHOP
 
 RESTING CFIG webpix/nef.jpg
 
-RESTING This doesn't work on this page, don't know why
+RESTING It doesn't seem to work to add to this page
 
 ----------------------------------------------------------------------
 
-OFFSLIDE SHORT Origins
+PERSONAL Origins
 
 WIDEFIG webpix/independenceHall.jpg
 
 --------------------------------------------------------------------
 
-OFFSLIDE SHORT Exploration
+PERSONAL Exploration
 
 WIDEFIG webpix/mantenga.jpg
 
 --------------------------------------------------------------------
 
-OFFSLIDE SHORT First love
+PERSONAL First love
 
 HIGHFIG webpix/pythagoras.pdf
 
 ----------------------------------------------------------------------
 
-SEC What is dynamical modeling?
+Goals
+
+	This lecture will:
+
+		discuss the basic concepts of dynamical modeling
+
+		explain why dynamical modeling is a key tool for understanding infectious
+		disease
+
+		discuss and demonstrate simple dynamical models from the SIR model family
+
+		investigate some insights that can be gained from these models
+
+----------------------------------------------------------------------
+
+SEC Dynamical modeling
 
 ----------------------------------------------------------------------
 
@@ -63,6 +79,16 @@ PIC DBFIG 0.7 my_images/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
 		Usually about \emph{populations}
 
 	Also known as “mechanistic” or “mathematical”
+
+----------------------------------------------------------------------
+
+NTSC Example from yesterday
+
+WIDEFIG my_images/libinHCV3phase.png
+
+	ANS Clinicians don't know where to start with data like this
+
+	ANS It's a dynamical modeling question
 
 ----------------------------------------------------------------------
 
@@ -126,7 +152,15 @@ SS Conceptual modeling
 
 ----------------------------------------------------------------------
 
-LONG PSLIDE Conceptual modeling
+LONGREP Conceptual modeling
+
+DIAGRAM SIR_model_family/sir.three.pdf
+
+HFIG 0.6 webpix/flat.png
+
+----------------------------------------------------------------------
+
+LONGREP Conceptual modeling
 
 DIAGRAM SIR_model_family/sir.three.pdf
 
@@ -206,7 +240,7 @@ REP DIAGRAM SIR_model_family/sir.three.pdf
 SHORT Concept: reproductive number
 
 	$\Rx$ is the number of people who would be infected by an
-	infectious individual \emph{in a fully susceptible population.}
+	infectious individual
 
 	$\Rx = \beta/\gamma = \beta D = (cp) D$
 
@@ -218,7 +252,7 @@ SHORT Concept: reproductive number
 
 	A disease can invade a population if and only if $\Rx>1$.
 
-	Often focus on initial period (may also say $\Ro$)
+	We say $\Ro$ for the initial period, or a fully susceptible population.
 
 ----------------------------------------------------------------------
 
@@ -355,12 +389,6 @@ WIDEFIG SIR_model_family/sirbd.three.pdf
 
 ----------------------------------------------------------------------
 
-OFFSLIDE LONG REPSLIDE Closing the circle
-
-FIG SIR_simulations/burnouts.plots.Rout.pdf
-
-----------------------------------------------------------------------
-
 RHEAD Closing the circle
 
 WIDEFIG SIR_model_family/sirs.three.pdf
@@ -479,14 +507,13 @@ FIG my_images/weitz_full.pdf
 
 ----------------------------------------------------------------------
 
-PSLIDE How long is a disease generation?
+How long is a disease generation?
 
 PIC WIDEFIG ../generations/my_images/generation_girls.png
 
 CREDIT David Champredon
 
 ----------------------------------------------------------------------
-
 
 SHORT Result: generation interval links \rR
 
@@ -503,6 +530,18 @@ NC
 CFIG my_images/weitz_full.pdf
 
 EC
+
+----------------------------------------------------------------------
+
+Calculations
+
+	FIG Generation_distributions/lognormal.curve.Rout.pdf
+
+	NTSCLINE Hiroshi told us about some calculations that have been done to link
+	\Rx\ to observed data series
+
+	Approximating this link (and accounting of uncertainty) is an active and
+	interesting problem
 
 ----------------------------------------------------------------------
 
@@ -599,13 +638,13 @@ WIDEFIG SIR_model_family/sirsrates.pdf
 
 ----------------------------------------------------------------------
 
-LONG PSLIDE Deterministic spread
+LONGREP Deterministic spread
 
 LANDFIG SIR_model_family/onedet.pdf
 
 --------------------------------------------------------------------
 
-LONG PSLIDE Demographic spread
+LONGREP Demographic spread
 
 LANDFIG SIR_model_family/onesto.pdf
 
@@ -641,7 +680,7 @@ NOTES DEFHEAD Result: Pattern of outbreak sizes is related to \Rx
 
 ----------------------------------------------------------------------
 
-LONG REPSLIDE Result: Pattern of outbreak sizes is related to \Rx
+LONGREP Result: Pattern of outbreak sizes is related to \Rx
 
 Indigenous cases 
 
@@ -668,7 +707,7 @@ NOTES \url{https://www.cdc.gov.tw/En/Category/ListContent/bg0g_VU_Ysrgkes_KRUDgQ
 
 ----------------------------------------------------------------------
 
-LONG PRESLIDE Result: stochasticity interacts with oscillations
+LONGREP Result: stochasticity interacts with oscillations
 
 LANDFIG SIR_model_family/comp0.pdf
 
@@ -684,9 +723,11 @@ TSS Statistical fitting
 
 FIG my_images/sierraLeone.hybrid.compare.Rout-2.pdf
 
+ADD Find this code and make some more images
+
 ----------------------------------------------------------------------
 
-SHORT Statistical fitting
+SHORT Statistical fitting \chinese{(埃博拉)}
 
 BC
 
@@ -696,7 +737,7 @@ BC
 
 NC
 
-CFIG my_images/sierraLeone.hybrid.compare.Rout-2.pdf
+CFIG my_images/sierraLeone.hybrid.compare.Rout-5.pdf
 
 EC
 ----------------------------------------------------------------------
@@ -735,26 +776,33 @@ PIC WFIG 0.48 my_images/inuit.jpg
 
 ----------------------------------------------------------------------
 
-LONG PSLIDE Human heterogeneity
+LONGREP Human heterogeneity
 
 WIDEFIG my_images/Lesotho_children.jpg
 
 ----------------------------------------------------------------------
 
-
-LONG PSLIDE Human heterogeneity
+LONGREP Human heterogeneity
 
 HFIG 0.42 my_images/dump_workers.jpg
 
-HFIG 0.48 my_images/bento.jpg
+HFIG 0.48 webpix/bongbong.jpg
 
 ----------------------------------------------------------------------
 
 Example: Gonorrhea
 
-FIG Endemic_curves/propCurves.Rout-0.pdf
+HFIG 0.8 Endemic_curves/propCurves.Rout-0.pdf
 
 	Homogeneous model cannot explain global pattern
+
+	NTSCLINE What does this remind you of?
+
+----------------------------------------------------------------------
+
+NTSC Fragility
+
+FIG my_images/libin_fragility.png
 
 ----------------------------------------------------------------------
 
@@ -785,9 +833,23 @@ EC
 
 Example: HIV
 
-FIG SIR_simulations/hiv_plot.Rout-4.pdf
+BC
 
 	If our model matches initial spread, it can't match later values
+
+	What happened?
+
+		Heterogeneity (intrinsic)
+
+		Policy change (extrinsic)
+
+		Behaviour change (could model either way)
+
+NC
+
+SIDEFIG SIR_simulations/hiv_plot.Rout-4.pdf
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -812,7 +874,7 @@ FIG SIR_simulations/hiv_plot.Rout-4.pdf
 
 ----------------------------------------------------------------------
 
-Example: Dengue (Taiwan CDC)
+RESTSLIDE Example: Dengue (Taiwan CDC)
 
 Indigenous cases 
 
@@ -840,7 +902,7 @@ NOTES \url{https://www.cdc.gov.tw/En/Category/ListContent/bg0g_VU_Ysrgkes_KRUDgQ
 
 Example: mpox \chinese{(猴痘)}
 
-FIG webpix/mpox_uk.jpg
+WIDEFIG webpix/mpox_uk.jpg
 
 ----------------------------------------------------------------------
 
