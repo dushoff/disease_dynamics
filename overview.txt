@@ -1,4 +1,8 @@
 
+EXTRA Don't forget to look at overview.md and overview.notes!
+
+----------------------------------------------------------------------
+
 SHORT NOFRAME
 
 \useChinese
@@ -59,6 +63,12 @@ Goals
 		discuss and demonstrate simple dynamical models from the SIR model family
 
 		investigate some insights that can be gained from these models
+
+----------------------------------------------------------------------
+
+PICSLIDE
+
+HIGHFIG webpix/man4.png
 
 ----------------------------------------------------------------------
 
@@ -727,7 +737,7 @@ ADD Find this code and make some more images
 
 ----------------------------------------------------------------------
 
-SHORT Statistical fitting \chinese{(埃博拉)}
+SHORT Statistical fitting
 
 BC
 

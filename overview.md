@@ -1,5 +1,5 @@
 
-This file is a record; put temporary stuff in .notes
+2025 Jul for NTSC workshop
 
 ----------------------------------------------------------------------
 
@@ -8,14 +8,6 @@ EXTRA 2025 April for Georgia Southern
 Dynamical models of infectious-disease spread
 
 I will talk about some principles of modeling the spread of infectious diseases, with examples from Ebola, HIV, rabies, COVID-19 and influenza. Dynamical modeling is an essential tool for understanding infectious disease spread, assessing disease burden, and planning interventions, but simple dynamical models also have many limitations.
-
-Add:
-
-a malaria picture
-
-a phase-plane breakout
-
-a little bit more about generations
 
 ----------------------------------------------------------------------
 
