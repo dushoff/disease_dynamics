@@ -214,13 +214,18 @@ Sources += data.mk
 
 ######################################################################
 
-## Weird Nangang talk bioAsia, Bert Chen
+## Nangang talk bioAsia
 
 ## nextPandemic.draft.pdf: nextPandemic.txt nextPandemic.md
 ## nextPandemic.final.pdf: nextPandemic.txt
 ## nextPandemic.handouts.pdf: nextPandemic.txt
 ## nextPandemic.slides.pdf: nextPandemic.txt
 ## nextPandemic.draft.tex: nextPandemic.txt
+## nextPandemic.now.pdf: nextPandemic.txt
+
+## nextPandemic.now.tex: talkdir/now.fmt talkdir/lect.pl
+
+%.now.TXT: 
 
 ######################################################################
 

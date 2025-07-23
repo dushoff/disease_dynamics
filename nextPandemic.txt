@@ -12,13 +12,13 @@ NOFRAME Headers
 
 \newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
 \newcommand{\jdtitle}{
-	Predicting acute respiratory infection threats
+	Acute respiratory infection threats
 }
 \newcommand{\wdate}{
 	BIO Asia-Taiwan 2025
 	\\ BioGroup Symposium: A Time to Shine
-
 }
+
 \newcommand{\years}{2025}
 
 \newcommand{\jdsub}{}
@@ -29,4 +29,51 @@ WORKSHOP
 
 ----------------------------------------------------------------------
 
+Pandemics in history
+
+BC
+
+	Black Death
+
+	Eurasia meets America
+
+	Cholera
+
+	Flu
+
+	HIV
+
+	Covid
+
+NC
+
+WIDEFIG webpix/pandemicTimeline.png
+
+EC
+
+CREDIT https://ourworldindata.org/historical-pandemics
+
+----------------------------------------------------------------------
+
+NOW What has changed?
+
+	Sanitation, hygiene, clean-water access
+
+	Germ theory of disease!
+
+	Antibiotics
+
+	Vaccines?
+
+	Antiviral drugs
+
+	Much of this could collapse, in an apparently unstable world
+
+----------------------------------------------------------------------
+
+Acute respiratory infections
+
+	
+
+----------------------------------------------------------------------
 
