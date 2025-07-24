@@ -1,22 +1,14 @@
 
 EXTRA 
 
-Invented because of an invitation from bioAsia something, 2025 Jul
+Invented because of an invitation from Taiwan, 2025 Jul
+* my_images/bioAsia.jpg
 
 ----------------------------------------------------------------------
 
 Fraser et al. 2009 (Garske, Nishiura)
 * early estimates of pH1N1
 
-----------------------------------------------------------------------
+my_images/observer_bias.png
 
-Possible sections
-
-Dynamics
-
-Pandemic threats
-
-Why is it flu?
-
-Why is it not flu?
-
+More about the “other” viruses (at least in the “not flu” part)

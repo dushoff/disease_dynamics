@@ -196,9 +196,24 @@ How unusual is influenza?
 
 	Common cold viruses are under-studied, and maybe underestimated
 
+	ADD Observer bias
+
 ----------------------------------------------------------------------
 
 But the pandemics!
+
+BC
+
+	Both major branches of H1 have been circulating in the human population for
+	decades
+
+	H5 has had \emph{many} chances to spread in humans.
+
+		Antibodies frequently seen in poultry workers when looked for
+
+		Maybe it is not well suited for that particular jump.
+
+----------------------------------------------------------------------
 
 ADD HA subtype tree
 
@@ -213,12 +228,21 @@ Syndromic quarantines
 
 		But did it do something else?
 
-			ANS
+			ANS Favor the spread of less severe strains?
 
 ----------------------------------------------------------------------
 
+Flu infrastructure
 
-TSEC Public-health preparation
+	We have a lot of vaccines against flu
+
+		Including various kinds of “universal” vaccines
+
+	We also have drugs
+
+----------------------------------------------------------------------
+
+TSEC Public-health hybrid strategies
 
 	Governments have scaled \emph{down} COVID surveillance programs
 
@@ -242,11 +266,136 @@ Plan
 
 	Focus on circulating ARVs
 
+	Build pipelines and techniques that will be useful for detecting and
+	fighting the next pandemic
+
 ----------------------------------------------------------------------
 
-Desiderata
+Obstacles
+
+	Data sharing and confidentiality
+
+	Co-operation
+
+		International
+
+		Intra-national (federal vs.~provincial)
+
+		Medical and public-health
 
 ----------------------------------------------------------------------
 
-SEC Pharmaceutical preparation
+Approaches
 
+	Build working co-operative relationships
+
+		Based on solving short- and medium-term public-health problems now!
+
+	Better data analysis tools
+
+		Principled methods for combining data streams
+
+	Pipelines 
+
+		Bring data to modelers: confidentiality agreements, \emph{automated
+		de-identification or data munging}
+
+		Bring models to data: models developed on realistic simulated or munged
+		data, packaged in ways that agencies can use
+
+		Bayesian tools that can combine standardized model \emph{outputs}
+
+----------------------------------------------------------------------
+
+Viral testing data
+
+	How to make sense of testing \emph{patterns} and testing results?
+
+	What does it mean if influenza tests go up, but not confirmed cases?
+
+		Did influenza stay the same or go down?
+
+	How to organize and leverage information on why samples were taken?
+
+		And which tests were done on which patient.
+
+----------------------------------------------------------------------
+
+Clinical data
+
+	Better methods for text analysis
+
+	Comparision between clinical trends and viral trends
+
+----------------------------------------------------------------------
+
+Wastewater data
+
+	How to standardize samples?
+
+		Across sites
+
+		Weather and hydrological conditions
+
+		Different viruses
+
+----------------------------------------------------------------------
+
+Metagenomics
+
+	How many viruses can we scan for at once, using DNA and RNA?
+
+	Can we find brand-new ones?
+
+		in wastewater samples
+
+		in samples from respiratory patients?
+
+----------------------------------------------------------------------
+
+SEC Pharmaceutical hybrid strategies
+
+----------------------------------------------------------------------
+
+Broader vaccines
+
+	More emphasis on broader influenza vaccines
+
+	Can we aim vaccines at all beta coronaviruses
+
+		or all coronaviruses
+
+	Can we aim vaccines at pneumoviruses instead of RSV specifically?
+
+		At least 5 species known, including human metapneumovirus
+
+	Vaccines for other ARVs probably would likely be seen as over-medicalization
+
+----------------------------------------------------------------------
+
+Drugs for the common cold
+
+	People already take drugs for common cold
+
+		symptom suppressors, fever suppressors, anti-biotics
+
+	These drugs \emph{help} the viruses spread
+
+		or help bacteria evolve
+
+	Should we consider aiming for broad antivirals for entero- and rhinoviruses,
+	for example?
+
+		I don't know!
+
+----------------------------------------------------------------------
+
+Thanks
+
+	Organizers
+
+	Canadian Institutes for Health Research
+
+	NTU College of Public Health
+
+	Audience
