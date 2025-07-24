@@ -221,8 +221,8 @@ Sources += data.mk
 ## nextPandemic.handouts.pdf: nextPandemic.txt
 ## nextPandemic.slides.pdf: nextPandemic.txt
 ## nextPandemic.draft.tex: nextPandemic.txt
-## nextPandemic.now.pdf: nextPandemic.txt
 
+## nextPandemic.now.pdf: nextPandemic.txt
 ## nextPandemic.now.tex: talkdir/now.fmt talkdir/lect.pl
 
 %.now.TXT: 

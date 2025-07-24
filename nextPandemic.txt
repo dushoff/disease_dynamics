@@ -1,18 +1,9 @@
 
-EXTRA 
-
-Invented because of an invitation from bioAsia something, 2025 Jul
-
-Fraser et al. 2009 (Garske, Nishiura)
-* early estimates of pH1N1
-
-----------------------------------------------------------------------
-
 NOFRAME Headers
 
 \newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
 \newcommand{\jdtitle}{
-	Acute respiratory infection threats
+	Acute respiratory virus threats
 }
 \newcommand{\wdate}{
 	BIO Asia-Taiwan 2025
@@ -26,6 +17,18 @@ NOFRAME Headers
 ----------------------------------------------------------------------
 
 WORKSHOP
+
+----------------------------------------------------------------------
+
+Dynamical modeling
+
+----------------------------------------------------------------------
+
+COVID example
+
+----------------------------------------------------------------------
+
+Rabies example
 
 ----------------------------------------------------------------------
 
@@ -55,7 +58,7 @@ CREDIT https://ourworldindata.org/historical-pandemics
 
 ----------------------------------------------------------------------
 
-NOW What has changed?
+What has changed?
 
 	Sanitation, hygiene, clean-water access
 
@@ -71,9 +74,179 @@ NOW What has changed?
 
 ----------------------------------------------------------------------
 
-Acute respiratory infections
+TSEC Acute respiratory viruses (ARVs)
 
-	
+	Can spread relatively rapidly
+
+		Often before characteristic symptoms can be detected
+
+	Spread through the air
+
+	Not susceptible to traditional antibiotics
+
+	ADD Flu cover
 
 ----------------------------------------------------------------------
+
+Circulating examples
+
+	Influenza
+
+	Coronaviruses
+
+	RSV
+
+	Adenoviruses
+
+	Entero- and rhinoviruses
+
+	Metapneumo- and parainfluenza viruses
+
+----------------------------------------------------------------------
+
+SS Why is it flu?
+
+----------------------------------------------------------------------
+
+Flu is highly effective at evolving
+
+----------------------------------------------------------------------
+
+Flu is spreading in new species
+
+----------------------------------------------------------------------
+
+Flu has caused many pandemics in the past
+
+----------------------------------------------------------------------
+
+Flu caused the deadliest pandemic we know about
+
+----------------------------------------------------------------------
+
+SS Why is it not flu?
+
+----------------------------------------------------------------------
+
+COVID
+
+	COVID was not flu
+
+		This caused some early confusion with health guidelines!
+
+ADD Covid explosion pictures
+
+----------------------------------------------------------------------
+
+How unusual was COVID?
+
+	The 2019 pandemic was based on
+
+		A totally immunologically naive population
+
+		A virus not well adapted to the upper respiratory tract
+
+			Less spread, but more severe disease
+
+		A tightly linked global population
+
+	Is COVID evolving to be Just Another Seasonal Coronavirus?
+
+	Could one of the JASCs (common-cold coronaviruses) have caused a similar
+	pandemic if its ancestor had not been introduced until this century?
+
+----------------------------------------------------------------------
+
+Tradeoffs
+
+	Our respiratory tracts look very different to pathogens as we move from the
+	throat down into the lungs
+
+		Maybe the result of evolution: the pathogens that spread best are less
+		likely to kill us
+
+	New ARVs (not specifically adapted to humans) may generally cause more
+	serious disease
+
+----------------------------------------------------------------------
+
+More counterfactuals
+
+	How deadly would the Spanish flu be today?
+
+		It was far worse than COVID in reality
+
+		But a big portion of the deaths were slow and could probably have been
+		prevented by antibiotics
+
+			Other deaths could have been prevented by oseltamivir
+
+		Disruptions from World War I probably slowed responses
+
+----------------------------------------------------------------------
+
+How unusual is influenza?
+
+	If it's possible to be as flexible at evolving as influenza, why aren't
+	there more pathogens that do it?
+
+		Maybe there are!
+
+	\scv\ evolved more rapidly than we were expecting
+
+	Common cold viruses are under-studied, and maybe underestimated
+
+----------------------------------------------------------------------
+
+But the pandemics!
+
+ADD HA subtype tree
+
+----------------------------------------------------------------------
+
+Syndromic quarantines
+
+	The 2009 pandemic response was included travel advisories and quarantines
+	for people with fever and cough
+
+		This was never going to stop or slow the spread of pH1N1
+
+		But did it do something else?
+
+			ANS
+
+----------------------------------------------------------------------
+
+
+TSEC Public-health preparation
+
+	Governments have scaled \emph{down} COVID surveillance programs
+
+		but not replaced them with broader programs
+
+	Readiness will require hybrid programs
+
+		Useful against current threats
+
+		Help prepare for the next pandemic
+
+----------------------------------------------------------------------
+
+Plan
+
+	Combine data streams
+
+		Short-term forecasting of ARVs for healthcare planning
+
+		Burden assessments for resource allocation and research prioritization
+
+	Focus on circulating ARVs
+
+----------------------------------------------------------------------
+
+Desiderata
+
+----------------------------------------------------------------------
+
+SEC Pharmaceutical preparation
 
