@@ -203,6 +203,10 @@ CCREDIT Fvasconcellos
 
 Flu caused the deadliest pandemic we know about
 
+WIDEFIG webpix/wCurve.png
+
+CREDIT Taubenberger and Morens
+
 ----------------------------------------------------------------------
 
 SS Why is it not flu?
