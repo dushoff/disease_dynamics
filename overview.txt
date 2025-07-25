@@ -286,20 +286,6 @@ EC
 
 ----------------------------------------------------------------------
 
-SHORT Yellow fever in Panama
-
-BC
-
-CFIG Endemic_curves/propCurves.Rout-0.pdf
-
-NC
-
-CFIG webpix/aedes.jpg
-
-EC
-
-----------------------------------------------------------------------
-
 LONG Example: Dengue (Taiwan CDC) \chinese{登革熱}
 
 Indigenous cases 

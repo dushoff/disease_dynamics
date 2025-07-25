@@ -20,19 +20,57 @@ WORKSHOP
 
 ----------------------------------------------------------------------
 
-Dynamical modeling
+TSEC Dynamical modeling connects scales
+
+PIC DBFIG 0.7 my_images/trans.jpg 1 Disease_data/ewmeas.Rout.pdf
+
+	Start with rules about how things change in short time steps
+
+		Usually based on \emph{individuals}
+
+	Calculate results over longer time periods
+
+		Usually about \emph{populations}
+
+	Also known as “mechanistic” or “mathematical”
 
 ----------------------------------------------------------------------
 
-COVID example
+SHORT Yellow fever in Panama
+
+BC
+
+CFIG Endemic_curves/propCurves.Rout-0.pdf
+
+NC
+
+CFIG webpix/aedes.jpg
+
+EC
 
 ----------------------------------------------------------------------
 
-Rabies example
+
+Example: COVID waves
+
+WIDEFIG my_images/macFeb21pre.png
 
 ----------------------------------------------------------------------
 
-Pandemics in history
+Example: COVID waves
+
+WIDEFIG my_images/macFeb21res.png
+
+----------------------------------------------------------------------
+
+Example: rabies control
+
+WIDEFIG my_images/rabiesControl.png
+
+----------------------------------------------------------------------
+
+
+TSEC Pandemics in history
 
 BC
 
@@ -76,6 +114,8 @@ What has changed?
 
 TSEC Acute respiratory viruses (ARVs)
 
+BC
+
 	Can spread relatively rapidly
 
 		Often before characteristic symptoms can be detected
@@ -84,7 +124,11 @@ TSEC Acute respiratory viruses (ARVs)
 
 	Not susceptible to traditional antibiotics
 
-	ADD Flu cover
+NC
+
+WIDEFIG webpix/TREE.jpg
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -94,13 +138,13 @@ Circulating examples
 
 	Coronaviruses
 
-	RSV
+	RSV and other pneumoviruses
 
 	Adenoviruses
 
 	Entero- and rhinoviruses
 
-	Metapneumo- and parainfluenza viruses
+	Parainfluenza viruses
 
 ----------------------------------------------------------------------
 
@@ -108,15 +152,52 @@ SS Why is it flu?
 
 ----------------------------------------------------------------------
 
-Flu is highly effective at evolving
+NOW Flu is highly effective at evolving
+
+BCC
+
+WIDEFIG my_images/flu_loops.png
+
+CREDIT Popova et al. 2012
+
+	Gradual drift
+
+	Antigenic loops
+
+NCC
+
+WIDEFIG webpix/fluSegments.png
+
+CREDIT Hi Eun Jung and Heung Kyu Lee
+
+	Dramatic shifts
+
+	Effective reassortment
+
+EC
+
+Influenza antigenic loops
+
 
 ----------------------------------------------------------------------
 
 Flu is spreading in new species
 
+WIDEFIG webpix/H5spread.png
+
+CCREDIT IHaveBecauseOfLocks
+
+	foxes, sea lions, bears
+
+	cows, goats, (chickens)
+
 ----------------------------------------------------------------------
 
 Flu has caused many pandemics in the past
+
+WIDEFIG webpix/subtypeTimeline.png
+
+CCREDIT Fvasconcellos
 
 ----------------------------------------------------------------------
 
@@ -128,7 +209,13 @@ SS Why is it not flu?
 
 ----------------------------------------------------------------------
 
-COVID
+NOW COVID
+
+WIDEFIG webpix/covidDeaths.png
+
+Reported COVID-19 Deaths per 100Kp 
+
+CREDIT Dan Polansky and wikipedia map collaborators 
 
 	COVID was not flu
 
@@ -138,7 +225,7 @@ ADD Covid explosion pictures
 
 ----------------------------------------------------------------------
 
-How unusual was COVID?
+How unusual is \scv?
 
 	The 2019 pandemic was based on
 
@@ -159,6 +246,8 @@ How unusual was COVID?
 
 Tradeoffs
 
+BC
+
 	Our respiratory tracts look very different to pathogens as we move from the
 	throat down into the lungs
 
@@ -167,6 +256,14 @@ Tradeoffs
 
 	New ARVs (not specifically adapted to humans) may generally cause more
 	serious disease
+
+NC
+
+HIGHFIG webpix/respiratoryTract.png 
+
+CCREDIT LadyofHats, Jmarchn 
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -212,6 +309,12 @@ BC
 		Antibodies frequently seen in poultry workers when looked for
 
 		Maybe it is not well suited for that particular jump.
+
+NC
+
+ADD H1 phylogeny
+
+EC
 
 ----------------------------------------------------------------------
 
