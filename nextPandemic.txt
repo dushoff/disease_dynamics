@@ -63,6 +63,24 @@ WIDEFIG my_images/macFeb21res.png
 
 ----------------------------------------------------------------------
 
+NOW Example: COVID waves
+
+BC
+
+CFIG my_images/macFeb21VOC.png
+
+NC
+
+	wt was declining
+
+	alpha was increasing in the background
+
+	Forecasts need data and dynamics
+
+EC
+
+----------------------------------------------------------------------
+
 Example: rabies control
 
 WIDEFIG my_images/rabiesControl.png
@@ -152,7 +170,7 @@ SS Why is it flu?
 
 ----------------------------------------------------------------------
 
-NOW Flu is highly effective at evolving
+Flu is highly effective at evolving
 
 BCC
 
@@ -213,7 +231,7 @@ SS Why is it not flu?
 
 ----------------------------------------------------------------------
 
-NOW COVID
+COVID
 
 WIDEFIG webpix/covidDeaths.png
 
@@ -224,8 +242,6 @@ CREDIT Dan Polansky and wikipedia map collaborators
 	COVID was not flu
 
 		This caused some early confusion with health guidelines!
-
-ADD Covid explosion pictures
 
 ----------------------------------------------------------------------
 
@@ -261,9 +277,11 @@ BC
 	New ARVs (not specifically adapted to humans) may generally cause more
 	serious disease
 
+		When they spread at all
+
 NC
 
-HIGHFIG webpix/respiratoryTract.png 
+WIDEFIG webpix/respiratoryTract.png 
 
 CCREDIT LadyofHats, Jmarchn 
 
@@ -288,6 +306,8 @@ More counterfactuals
 
 How unusual is influenza?
 
+BC
+
 	If it's possible to be as flexible at evolving as influenza, why aren't
 	there more pathogens that do it?
 
@@ -297,7 +317,15 @@ How unusual is influenza?
 
 	Common cold viruses are under-studied, and maybe underestimated
 
-	ADD Observer bias
+	Maybe the reason we're more scared of flu is that we know more about it
+
+NC
+
+CFIG my_images/observer_bias.png
+
+CREDIT Dushoff, Pulliam (xkcd; darwin/cmx)
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -316,19 +344,19 @@ BC
 
 NC
 
-ADD H1 phylogeny
+CFIG my_images/H1phylo.png
+
+CREDIT Ferrara et al. 2015	
 
 EC
 
 ----------------------------------------------------------------------
 
-ADD HA subtype tree
-
-----------------------------------------------------------------------
-
 Syndromic quarantines
 
-	The 2009 pandemic response was included travel advisories and quarantines
+BC
+
+	The 2009 pandemic response included travel advisories and quarantines
 	for people with fever and cough
 
 		This was never going to stop or slow the spread of pH1N1
@@ -337,15 +365,35 @@ Syndromic quarantines
 
 			ANS Favor the spread of less severe strains?
 
+	2009 flu was \emph{much} less dangerous than people predicted
+
+		But this is not necessarily the reason
+
+NC
+
+CFIG webpix/garskePyramid.jpg
+
+CREDIT Garske et al.~BMJ 2009
+
+EC
+
 ----------------------------------------------------------------------
 
 Flu infrastructure
+
+BC
 
 	We have a lot of vaccines against flu
 
 		Including various kinds of “universal” vaccines
 
 	We also have drugs
+
+NC
+
+SIDEFIG webpix/fluVirion.jpg
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -375,6 +423,8 @@ Plan
 
 	Build pipelines and techniques that will be useful for detecting and
 	fighting the next pandemic
+
+	Leverage dynamical modeling
 
 ----------------------------------------------------------------------
 
@@ -422,21 +472,25 @@ Viral testing data
 
 		Did influenza stay the same or go down?
 
+		What factors influence testing rates?
+
 	How to organize and leverage information on why samples were taken?
 
-		And which tests were done on which patient.
+		And which tests were done on which patient
+
+			multiplexing and linkage
 
 ----------------------------------------------------------------------
 
-Clinical data
+Example: Canadian surveillance (2014)
 
-	Better methods for text analysis
-
-	Comparision between clinical trends and viral trends
+FIG posTests/2014.twopath.secondplot.Rout.pdf
 
 ----------------------------------------------------------------------
 
 Wastewater data
+
+BC
 
 	How to standardize samples?
 
@@ -446,9 +500,21 @@ Wastewater data
 
 		Different viruses
 
+NC
+
+SIDEFIG my_images/wwDashboard.png
+
+A COVID wastewater dashboard; colors represent different regions of the country
+
+CREDIT US CDC
+
+EC
+
 ----------------------------------------------------------------------
 
 Metagenomics
+
+BC
 
 	How many viruses can we scan for at once, using DNA and RNA?
 
@@ -458,6 +524,60 @@ Metagenomics
 
 		in samples from respiratory patients?
 
+NC
+
+SIDEFIG webpix/respMetagenomics.jpg
+
+Virome composition in infected and control children
+
+CREDIT  Wang et al. Clin Microbiol Infect. 2016; PMC7172101
+
+EC
+
+----------------------------------------------------------------------
+
+Clinical data
+
+BC
+
+	Better methods for electronic recording and coding
+
+		and textual analysis
+
+	Comparison between clinical trends and viral trends
+
+		Do the viruses we see account for the symptoms we see?
+
+NC
+
+SIDEFIG webpix/cdSiren.jpg
+
+A Civil Defense siren.
+
+CCREDIT Hssengineering
+
+EC
+
+----------------------------------------------------------------------
+
+Dynamical approaches
+
+SIDEFIG SIR_model_family/seir.four.pdf
+
+\vspace{-10ex}
+
+BCC
+
+LCFIG SIR_model_family/comp.pdf
+
+NCC
+
+	Use dynamical mechanisms to tie things together
+
+	New infections are caused by infected people
+
+EC
+
 ----------------------------------------------------------------------
 
 SEC Pharmaceutical hybrid strategies
@@ -465,6 +585,8 @@ SEC Pharmaceutical hybrid strategies
 ----------------------------------------------------------------------
 
 Broader vaccines
+
+BC
 
 	More emphasis on broader influenza vaccines
 
@@ -477,6 +599,35 @@ Broader vaccines
 		At least 5 species known, including human metapneumovirus
 
 	Vaccines for other ARVs probably would likely be seen as over-medicalization
+
+NC
+
+SIDEFIG webpix/fluVirion.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+Be creative about endpoints
+
+BC
+
+	Vaccines tend be least effective at preventing detectable infection
+
+	As outcomes become more consequential, effectiveness becomes higher
+
+		transmission $\implies$ attended illness $\implies$ hospitalization
+		$\implies$ death
+
+	Do we sometimes want \emph{less} effective broad vaccines for public health?
+
+NC
+
+CFIG webpix/garskePyramid.jpg
+
+CREDIT Garske et al.~BMJ 2009
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -494,6 +645,21 @@ Drugs for the common cold
 	for example?
 
 		I don't know!
+
+----------------------------------------------------------------------
+
+Summary
+
+	Dynamical questions should be approached dynamically
+
+		And statistical questions statistically
+
+	To leverage public resources, we should think about approaches that can help
+	across scales:
+
+		health planning, burden assessment, pandemic readiness
+
+	We may be under-estimating other low-harm virus families
 
 ----------------------------------------------------------------------
 
