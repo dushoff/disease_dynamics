@@ -145,8 +145,6 @@ fake.pptx: fake.draft.tex
 ## ntscDynamics.chinese.pdf: ntscDynamics.txt ntscDynamics.md
 ## ntscDynamics.txt.2023-04-01.datefile:
 
-
-
 page.draft.pdf: page.txt
 
 ## Work on this -- but there is a font problem
@@ -211,6 +209,15 @@ posTests:
 
 ## A bunch of craziness for early versions of my ICI3D data principles talk (angry face)
 Sources += data.mk
+
+######################################################################
+
+## NSERC
+
+## nsercPitch.draft.pdf: nsercPitch.txt nsercPitch.md
+## nsercPitch.final.pdf: nsercPitch.txt
+## nsercPitch.handouts.pdf: nsercPitch.txt
+
 
 ######################################################################
 

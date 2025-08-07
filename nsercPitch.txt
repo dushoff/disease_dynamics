@@ -1,0 +1,67 @@
+
+EXTRA 
+
+----------------------------------------------------------------------
+
+Techniques for incorporating trait and mixing heterogeneity in population models
+
+	Biology pitch session
+
+	August 2025
+
+----------------------------------------------------------------------
+
+Aims
+
+	Develop statistical methods for analyzing and building on mixing data
+
+		Exciting, but I'm not necessarily up to date
+
+		A lot of ad hoc COVID stuff, including by me
+
+	Investigate sources and effects of heterogeneity in a dynamical context
+
+		What are the assumptions of classical models? 
+
+		How does emergent heterogeneity interact with explicit heterogeneity?
+
+	Practical approaches for modeling heterogeneity
+
+		Includes both algorithms and mathematical analysis
+
+----------------------------------------------------------------------
+
+Math vs.~ecology
+
+	This looks like biology to math people and like math to ecologists
+
+	I suggested Evolution and ecology group
+
+		It does have people that will understand
+
+	Could be passed a math/stats group
+
+		Most of my reviewers are in math departments, although they all do stuff
+		that could be seen as evolution and ecology
+
+----------------------------------------------------------------------
+
+Scoping
+
+	These phenomena are very important for the spread of infectious disease, and
+	I know a lot about this.
+
+	I will also talk about other examples, but I really don't know strategically
+	how broad or focused to be
+
+----------------------------------------------------------------------
+
+EXTRA Examples
+
+Metapopulation models 
+
+Bacterial co-operation and quorum sensing
+
+Viral “behaviour”; can also talk about viral dynamics as another scale for disease modeling
+
+
