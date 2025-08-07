@@ -39,10 +39,54 @@ Math vs.~ecology
 
 		It does have people that will understand
 
-	Could be passed a math/stats group
+	Could be passed to a math/stats group
 
 		Most of my reviewers are in math departments, although they all do stuff
 		that could be seen as evolution and ecology
+
+----------------------------------------------------------------------
+
+Heterogeneity and disease
+
+	Hosts vary in:
+
+		Mixing rate
+
+		Neighborhood
+
+		Tendency to transmit
+
+		Susceptibility
+
+----------------------------------------------------------------------
+
+Mixing data
+
+	Surveys, mobility data
+
+	Methods:
+
+		Simulate surveys, inferences
+
+		What is the effect of different biases?
+
+		How do these relate to outcomes?
+
+----------------------------------------------------------------------
+
+Dynamical heterogeneity
+
+	SIR model pictures (diagram, time series) 
+
+----------------------------------------------------------------------
+
+Practical approaches
+
+	Multi-group models
+
+	Network models
+
+	Analytic approximations
 
 ----------------------------------------------------------------------
 
@@ -56,6 +100,16 @@ Scoping
 
 ----------------------------------------------------------------------
 
+NSERC vs.~CIHR
+
+	Focus here on developing new methods and theory
+
+	Applications to human disease to be done by others
+
+		Or by me with another grant
+
+----------------------------------------------------------------------
+
 EXTRA Examples
 
 Metapopulation models 
@@ -64,4 +118,4 @@ Bacterial co-operation and quorum sensing
 
 Viral “behaviour”; can also talk about viral dynamics as another scale for disease modeling
 
-
+Information, opinions
