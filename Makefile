@@ -218,7 +218,6 @@ Sources += data.mk
 ## nsercPitch.final.pdf: nsercPitch.txt
 ## nsercPitch.handouts.pdf: nsercPitch.txt
 
-
 ######################################################################
 
 ## Nangang talk bioAsia

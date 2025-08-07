@@ -1,6 +1,8 @@
 
 EXTRA 
 
+resources/nsercNoI25.pdf
+
 ----------------------------------------------------------------------
 
 Techniques for incorporating trait and mixing heterogeneity in population models
@@ -28,6 +30,100 @@ Aims
 	Practical approaches for modeling heterogeneity
 
 		Includes both algorithms and mathematical analysis
+
+----------------------------------------------------------------------
+
+Aim 1: Mixing matrices
+
+	E.g., ages, risk groups, geographica
+
+	Data from surveys, cell phones
+
+	Matrices often don't balance
+
+		Old people know more young people
+
+		Men have more sex than women
+
+	What are methods for incorporating these data?
+
+	How do assumptions propagate to outcomes?
+
+----------------------------------------------------------------------
+
+Aim 2: Dynamical heterogeneity
+
+REP DIAGRAM SIR_model_family/sir.three.pdf
+
+	People are in different “groups”
+
+		sex, age, behaviour
+
+	People get infected at different times, recover at different times
+
+		effectively modeled as random
+
+----------------------------------------------------------------------
+
+Aim 3: Practical approaches
+
+	This is kind of a hodge-podge
+
+	Making multi-group models
+
+	Making network models
+
+	Making models with simple approximations
+
+		... and testing them
+
+----------------------------------------------------------------------
+
+Structured models
+
+WFIG 0.8 my_images/modelFactors.png
+
+PAUSE
+
+WFIG 0.8 my_images/modelProduct.png
+
+----------------------------------------------------------------------
+
+Approximations
+
+FIG SIR_simulations/mpHIVplots.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Approximations
+
+FIG SIR_simulations/mpHIVplots.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Approximations
+
+FIG SIR_simulations/mpHIVplots.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+Approximations
+
+FIG SIR_simulations/mpHIVplots.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+Methodology
+
+	Lots of validation in simulated worlds
+
+		Simulate survey answers and movement data with biases
+
+		Simulate how disease would spread in these populations
+
+			And what inferences would be made with various methodologies
+
+		Simulate outbreaks with lots of unknowns
 
 ----------------------------------------------------------------------
 
@@ -92,25 +188,41 @@ Practical approaches
 
 Scoping
 
-	These phenomena are very important for the spread of infectious disease, and
-	I know a lot about this.
+	These phenomena are very important for the spread of infectious
+	disease, and I know a lot about this.
 
-	I will also talk about other examples, but I really don't know strategically
-	how broad or focused to be
+	I will also talk about other examples, but I really don't know
+	strategically how broad or focused to be
 
 ----------------------------------------------------------------------
 
 NSERC vs.~CIHR
 
-	Focus here on developing new methods and theory
+	NSERC supports foundational work, new models, etc.
 
-	Applications to human disease to be done by others
+	Be specific about scoping
 
-		Or by me with another grant
+	Apply for a CIHR grant and try to draw clear lines
+
+		make it clear that work will still be useful without the CIHR grant
 
 ----------------------------------------------------------------------
 
-EXTRA Examples
+Other applications
+
+	Maybe easiest to stick with things that are infectious
+
+		Definitely include non-human disease systems
+
+			Bats, bacteria
+
+		Could include spread of information, ideas, behaviours
+
+			Bacterial signaling?
+
+		Are there other contexts where it makes sense?
+
+----------------------------------------------------------------------
 
 Metapopulation models 
 
