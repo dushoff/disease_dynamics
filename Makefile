@@ -28,9 +28,14 @@ testsetup:
 
 ######################################################################
 
+Sources += nserc.mk
+-include nserc.mk
+
+######################################################################
+
 ## Directories
 
-pardirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates stats coronaSpread RTutorials
+pardirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates stats coronaSpread RTutorials caseVariation
 
 ## CHECK! which one you feel like using 🙂
 ## colddirs += $(pardirs)
@@ -444,7 +449,7 @@ Sources += Makefile README.md
 Ignore += makestuff
 msrepo = https://github.com/dushoff
 
-Makefile: makestuff/03.stamp
+Makefile: makestuff/04.stamp
 makestuff/%.stamp:
 	- $(RM) makestuff/*.stamp
 	(cd makestuff && $(MAKE) pull) || git clone $(msrepo)/makestuff
