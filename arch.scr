@@ -1,0 +1,11 @@
+rm -fr pearson
+mkdir pearson
+cd pearson
+git clone --depth 1 https://github.com/ICI3D/LatexTemplates
+git clone --depth 1 https://github.com/dushoff/disease_dynamics
+cd disease_dynamics
+make setup
+make daidd
+make heterogeneity.final.tex
+make heterogeneity.final.pdf.go
+

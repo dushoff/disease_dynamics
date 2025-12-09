@@ -20,7 +20,7 @@ vim_session:
 
 ######################################################################
 
-Makefile: mmed.set
+Makefile: 
 
 testsetup: 
 	- rmdir $(mirrors)
@@ -371,6 +371,10 @@ maternal.Rout: science/mat1.csv maternal.R
 ## het archaeology for Carl Pearson 2025 Dec 09 (Tue)
 heterogeneity.txt.af0e61c64d6.oldfile:
 heterogeneity.txt.olddiff:
+
+arch.out: arch.scr
+	bash < $< > $@
+Sources += arch.scr
 
 setup: | makestuff LatexTemplates
 	cd LatexTemplates && make Makefile
