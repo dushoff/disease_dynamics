@@ -8,4 +8,3 @@ make setup
 make daidd
 make heterogeneity.final.tex
 make heterogeneity.final.pdf.go
-
