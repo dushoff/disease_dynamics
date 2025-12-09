@@ -372,7 +372,7 @@ maternal.Rout: science/mat1.csv maternal.R
 heterogeneity.txt.af0e61c64d6.oldfile:
 heterogeneity.txt.olddiff:
 
-arch.out: arch.scr
+arch.out: arch.scr up.time
 	bash < $< > $@
 Sources += arch.scr
 
@@ -470,7 +470,7 @@ makestuff/%.stamp: | makestuff
 	touch $@
 
 makestuff:
-	git clone -depth 1 $(msrepo)/$@ f$@ && mv f$@ $@
+	git clone --depth 1 $(msrepo)/$@ f$@ && mv f$@ $@
 
 -include makestuff/os.mk
 
