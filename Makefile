@@ -376,7 +376,8 @@ arch.out: arch.scr up.time
 	bash < $< > $@
 Sources += arch.scr
 
-setup: | makestuff LatexTemplates
+setup: | makestuff
+	$(MAKE) LatexTemplates
 	cd LatexTemplates && make Makefile
 
 daidd: daidd.set
