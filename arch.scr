@@ -1,9 +1,12 @@
 rm -fr pearson
 mkdir pearson
 cd pearson
-git clone --depth 1 https://github.com/ICI3D/LatexTemplates
-git clone --depth 1 https://github.com/dushoff/disease_dynamics
-cd disease_dynamics
+git clone --depth 1 https://github.com/dushoff/Talks
+cd Talks
+make Makefile
+make disease.mset
+make LatexTemplates.mset
+make SIR_model_family.mset
 make setup
 make daidd
 make heterogeneity.final.tex
