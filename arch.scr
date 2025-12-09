@@ -8,6 +8,7 @@ make disease.mset
 make LatexTemplates.mset
 make SIR_model_family.mset
 make setup
+
 make daidd
 make heterogeneity.final.tex
 make heterogeneity.final.pdf.go
