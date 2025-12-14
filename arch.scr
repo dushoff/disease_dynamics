@@ -1,0 +1,14 @@
+rm -fr pearson
+mkdir pearson
+cd pearson
+git clone --depth 1 https://github.com/dushoff/Talks
+cd Talks
+make Makefile
+make disease.mset
+make LatexTemplates.mset
+make SIR_model_family.mset
+cd disease
+make setup
+make daidd
+make heterogeneity.final.tex
+make heterogeneity.final.pdf.go
