@@ -208,9 +208,13 @@ sandbox:
 
 hotdirs += posTests
 Ignore += posTests
-posTests: dir=../../research/betaTesting
+posTests: dir=../../research/ariCanada
 posTests:
 	$(linkdirname)
+
+sevilla: dir= ../../research/betaTesting
+sevilla:
+	$(linkdir)
 
 ## A bunch of craziness for early versions of my ICI3D data principles talk (angry face)
 Sources += data.mk
@@ -421,8 +425,9 @@ mirrors += resources
 ## webpix my_images added by default!!
 Sources += resources.mkd
 
-## positivity.draft.tex: positivity.txt positivity.draft.log
+## positivity.md
 ## positivity.draft.pdf: positivity.txt
+## positivity.draft.tex: positivity.txt positivity.draft.log
 ## positivity.final.pdf: positivity.txt
 
 ## This is a conversion-dependency make file
