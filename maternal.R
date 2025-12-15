@@ -1,8 +1,12 @@
-library(tidyverse); theme_set(theme_bw(base_size=20))
+library(shellpipes)
 
-dev.off(); pdf(pdfname, height=5, width=8)
+library(dplyr)
+library(tidyr)
+library(ggplot2); theme_set(theme_bw(base_size=20))
 
-dat <- read_csv(input_files[[1]])
+startGraphics(height=5, width=8)
+
+dat <- csvRead()
 
 rates <- (dat
 	%>% select(Year, Rate_1, Up_1, Down_1, Rate_2, Up_2, Down_2)

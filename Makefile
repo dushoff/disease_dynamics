@@ -20,7 +20,7 @@ vim_session:
 
 ######################################################################
 
-Makefile: mmed.set
+Makefile: plain.set
 
 testsetup: 
 	- rmdir $(mirrors)
@@ -370,7 +370,24 @@ Farr.Rout: science/farr.tsv Farr.R
 
 ## My own version of the Semmelweiss
 
-maternal.Rout: science/mat1.csv maternal.R
+maternal.Rout: maternal.R science/mat1.csv
+	$(pipeR)
+
+######################################################################
+
+## het archaeology for Carl Pearson 2025 Dec 09 (Tue)
+heterogeneity.txt.af0e61c64d6.oldfile:
+heterogeneity.txt.olddiff:
+
+arch.out: arch.scr up.time
+	bash < $< > $@
+Sources += arch.scr
+
+setup: LatexTemplates SIR_model_family
+
+daidd: daidd.set
+
+######################################################################
 
 ######################################################################
 
