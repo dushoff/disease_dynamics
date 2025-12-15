@@ -3,6 +3,8 @@ EXTRA DC positivity group 2025 January
 
 Combining data streams to understand acute respiratory infection spread
 
+Look at EXTRA marks added in Sevilla
+
 ----------------------------------------------------------------------
 
 EXTRA Brin 2024
@@ -286,6 +288,8 @@ Hazard approach
 
 	Why is \emph{missing} the talk the focal event here?
 
+		ANS Because if I miss one piece I miss the talk
+
 ----------------------------------------------------------------------
 
 Hazard response
@@ -302,7 +306,7 @@ FIG sandbox/ohComp.Rout-1.pdf
 
 Log odds approach
 
-	The odds corresponding a probability $P$ is $\theta = P/(1-P)$
+	The odds corresponding to probability $P$ is $\theta = P/(1-P)$
 
 		$\ell = \log(P/(1-P))$
 
@@ -341,19 +345,19 @@ FIG posTests/orGrid.compPlots.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
-Constant odds ratio
+EXTRA Constant odds ratio
 
 FIG posTests/orGrid.compPlots.Rout-1.pdf
 
 ----------------------------------------------------------------------
 
-Constant odds ratio
+EXTRA Constant odds ratio
 
 FIG posTests/orGrid.compPlots.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-Constant odds ratio
+EXTRA Constant odds ratio
 
 FIG posTests/orGrid.compPlots.Rout-3.pdf
 
@@ -383,12 +387,48 @@ FIG posTests/orConv.compPlots.Rout-2.pdf
 
 ----------------------------------------------------------------------
 
-Prevalence-incidence gap
+Changing concern scenario
+
+FIG sevilla/bigpop.varplot.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Changing concern scenario
+
+FIG sevilla/bigpop.varplot.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Changing concern scenario
+
+FIG sevilla/bigpop.varplot.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+Changing concern scenario
+
+FIG sevilla/bigpop.mixcomp.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Changing concern scenario
+
+FIG sevilla/bigpop.varcomp.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Changing concern scenario
+
+FIG sevilla/bigpop.varplot.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+EXTRA Prevalence-incidence gap
 
 	We are thinking about the asymptotic properties of these tests as measuring
-	prevalence when we test the whole population
+	\emph{prevalence} when we test the whole population
 
-	But what we're trying to measure is incidence of new cases
+	But what we're trying to measure is \emph{incidence} of new cases
 
 	Consider the population we consider eligible to take these tests
 
@@ -398,7 +438,7 @@ Prevalence-incidence gap
 
 ----------------------------------------------------------------------
 
-Modeling approaches
+EXTRA Modeling approaches
 
 	Top-down models to fit a beta shape parameter together with disease dynamics
 

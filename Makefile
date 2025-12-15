@@ -20,7 +20,7 @@ vim_session:
 
 ######################################################################
 
-Makefile: 
+Makefile: mmed.set
 
 testsetup: 
 	- rmdir $(mirrors)
@@ -212,6 +212,8 @@ posTests: dir=../../research/ariCanada
 posTests:
 	$(linkdirname)
 
+hotdirs += sevilla
+Ignore += sevilla
 sevilla: dir= ../../research/betaTesting
 sevilla:
 	$(linkdir)
@@ -372,20 +374,6 @@ maternal.Rout: science/mat1.csv maternal.R
 
 ######################################################################
 
-## het archaeology for Carl Pearson 2025 Dec 09 (Tue)
-heterogeneity.txt.af0e61c64d6.oldfile:
-heterogeneity.txt.olddiff:
-
-arch.out: arch.scr up.time
-	bash < $< > $@
-Sources += arch.scr
-
-setup: LatexTemplates SIR_model_family
-
-daidd: daidd.set
-
-######################################################################
-
 ## pdfpages is not working here (fighting with another rule?)
 
 Ignore += road_map25.pdf
@@ -469,12 +457,10 @@ Ignore += makestuff
 msrepo = https://github.com/dushoff
 
 Makefile: makestuff/04.stamp
-makestuff/%.stamp: | makestuff
-	cd makestuff && $(MAKE) pull
+makestuff/%.stamp:
+	- $(RM) makestuff/*.stamp
+	(cd makestuff && $(MAKE) pull) || git clone $(msrepo)/makestuff
 	touch $@
-
-makestuff:
-	git clone --depth 1 $(msrepo)/$@ f$@ && mv f$@ $@
 
 -include makestuff/os.mk
 

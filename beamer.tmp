@@ -6,8 +6,8 @@
 %% \setsansfont{Noto Sans CJK TC}
 
 %% 2024 Nov 15 (Fri) Something weird going on with these templates
-\input{LatexTemplates/ici3dTemplate.tex}
-\input{LatexTemplates/ici3dCurrent.tex}
+%% \input{LatexTemplates/ici3dTemplate.tex}
+%% \input{LatexTemplates/ici3dCurrent.tex}
 \input{talkdir/bulletspace.tex}
 
 \usepackage{talkdir/chinese}
@@ -25,6 +25,6 @@
 
 ----------------------------------------------------------------------
 
-\input{LatexTemplates/ici3dClose.tex}
+%% \input{LatexTemplates/ici3dClose.tex}
 
 \end{document}
