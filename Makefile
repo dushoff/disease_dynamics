@@ -142,13 +142,14 @@ fake.pptx: fake.draft.tex
 ## overview.slides.pdf: overview.txt overview.slides.tex
 
 ## overview.final.pdf: overview.txt overview.final.tex
+## overview.draft.pdf: overview.txt overview.final.tex
 ## overview.chinese.pdf: overview.txt overview.md
 ## overview.txt.2023-04-01.datefile:
 
+## Never took flight; just plaing with Chinese options, I think
 ## ntscDynamics.draft.pdf: ntscDynamics.txt ntscDynamics.md ntscDynamics.notes
 ## ntscDynamics.final.pdf: ntscDynamics.txt ntscDynamics.md
 ## ntscDynamics.chinese.pdf: ntscDynamics.txt ntscDynamics.md
-## ntscDynamics.txt.2023-04-01.datefile:
 
 page.draft.pdf: page.txt
 
@@ -473,7 +474,7 @@ Sources += Makefile README.md
 Ignore += makestuff
 msrepo = https://github.com/dushoff
 
-Makefile: makestuff/04.stamp
+Makefile: makestuff/05.stamp
 makestuff/%.stamp:
 	- $(RM) makestuff/*.stamp
 	(cd makestuff && $(MAKE) pull) || git clone $(msrepo)/makestuff
