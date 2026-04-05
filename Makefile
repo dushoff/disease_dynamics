@@ -16,7 +16,7 @@ target = Makefile
 target: $(target)
 
 vim_session:
-	bash -cl "vmt README.md"
+	bash -ic "vmt README.md"
 
 ######################################################################
 
