@@ -20,7 +20,7 @@ vim_session:
 
 ######################################################################
 
-Makefile: plain.set
+Makefile: mmed.set
 
 testsetup: 
 	- rmdir $(mirrors)
@@ -57,6 +57,7 @@ Ignore += $(pardirs)
 ## pickscreen Talks LatexTemplates ## and look at README.md ##
 ## These rules change the format rules (but not the template)
 ## Look at LatexTemplates lines in beamer.tmp
+## Also should beamer.tmp be an RO link to LatexTemplates?
 ## Need to merge these two ideas 2025 Jun 29 (Sun)
 ## Maybe have set set pointers to a starting and/or closing template? 
 ## mmed.set:
@@ -111,6 +112,7 @@ chinese.pdf: chinese.tex
 ### ICI3D model family lectures
 ### MMED Foundations lecture
 ## family.draft.pdf: family.txt family.draft.tex
+## family.draft.pdf: family.draft.log
 ## family.draft.pdf: family.txt family.draft.tex
 ## family.handouts.pdf: family.txt
 ## family.final.pdf: family.txt
