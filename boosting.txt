@@ -15,7 +15,6 @@ ADD Re-do some figures
 
 ----------------------------------------------------------------------
 
-
 NOFRAME
 
 \newcommand{\jdauth}{Jonathan Dushoff, McMaster University}

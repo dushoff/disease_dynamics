@@ -1,0 +1,34 @@
+
+----------------------------------------------------------------------
+
+EXTRA
+
+	Start from README.md
+
+----------------------------------------------------------------------
+
+NOFRAME
+
+\newcommand{\jdtitle}{Fake lecture:}
+\newcommand{\jdsub}{for workshop setup}
+\newcommand{\years}{2026--\thisyear} 
+\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
+
+----------------------------------------------------------------------
+
+ICI3DTHEME
+
+----------------------------------------------------------------------
+
+Goals
+
+	This lecture will:
+
+		introduce the idea of dynamical modeling
+
+		explain why dynamical modeling is a key tool for understanding infectious
+		disease
+
+		discuss and demonstrate simple dynamical models from the SIR model family
+
+		investigate some insights that can be gained from these models

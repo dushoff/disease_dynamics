@@ -109,6 +109,9 @@ Sources += chinese.tex
 chinese.pdf: chinese.tex
 	xelatex $<
 
+## Workshop setup
+## setup.draft.pdf: setup.txt family.draft.tex
+
 ### ICI3D model family lectures
 ### MMED Foundations lecture
 ## family.draft.pdf: family.txt family.draft.tex

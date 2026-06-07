@@ -21,6 +21,7 @@ NOFRAME
 \newcommand{\jdtitle}{Foundations of dynamic modeling:}
 \newcommand{\jdsub}{The SIR Model Family}
 \newcommand{\years}{2013--\thisyear} 
+\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
 
 ----------------------------------------------------------------------
 
@@ -237,7 +238,18 @@ Spreadsheet implementation
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 
+\url{http://tinyurl.com/SIR-MMED-2026}
+
+----------------------------------------------------------------------
+
+EXTRA
+
+resources/qrSIR2026.png
+
 \url{http://tinyurl.com/SIR-MMED-2025}
+\url{http://tinyurl.com/SIR-MMED-2024}
+\url{http://tinyurl.com/SIR-MMED-2023}
+\url{http://tinyurl.com/SIR-MMED-2022}
 
 ----------------------------------------------------------------------
 
