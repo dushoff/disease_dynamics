@@ -22,7 +22,7 @@ vim_session:
 
 Makefile: mmed.set
 
-testsetup: 
+testsetup:
 	- rmdir $(mirrors)
 	ln -s $(mirrors:%=../%) .
 
@@ -341,7 +341,7 @@ jsPubHealth:
 ## If we're going to cannibalize, it would be good to have a link here to a public version of the original slides, but this is not available
 
 ## my_images/africaMAP.png ##
-Ignore += pearson*.*
+Ignore += pearson*.* pearson/
 pearson.pages: science/Pearson18.pdf
 	convert $< pearson.png
 	touch $@
