@@ -3,7 +3,7 @@
 
 EXTRA
 
-	Start from README.md
+	Start from README.md.
 
 ----------------------------------------------------------------------
 
