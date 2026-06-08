@@ -110,7 +110,7 @@ chinese.pdf: chinese.tex
 	xelatex $<
 
 ## Workshop setup
-## setup.draft.pdf: setup.txt family.draft.tex
+## setup.draft.pdf: setup.txt setup.draft.tex
 
 ### ICI3D model family lectures
 ### MMED Foundations lecture
