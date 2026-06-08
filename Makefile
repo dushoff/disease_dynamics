@@ -479,7 +479,7 @@ Sources += Makefile README.md
 Ignore += makestuff
 msrepo = https://github.com/dushoff
 
-Makefile: makestuff/05.stamp
+Makefile: makestuff/06.stamp
 makestuff/%.stamp:
 	- $(RM) makestuff/*.stamp
 	(cd makestuff && $(MAKE) pull) || git clone $(msrepo)/makestuff

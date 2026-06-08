@@ -32,3 +32,8 @@ Goals
 		discuss and demonstrate simple dynamical models from the SIR model family
 
 		investigate some insights that can be gained from these models
+
+----------------------------------------------------------------------
+
+
+
