@@ -35,7 +35,10 @@ Sources += nserc.mk
 
 ## Directories
 
-pardirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates stats coronaSpread RTutorials caseVariation
+pardirs += SIR_simulations Exponential_figures SIR_model_family Disease_data Birth_death_models Endemic_curves Generation_distributions LatexTemplates statsTalks coronaSpread RTutorials caseVariation
+
+## mv ../stats ../statsTalks ##
+## del stats ##
 
 ## CHECK! which one you feel like using 🙂
 ## colddirs += $(pardirs)
