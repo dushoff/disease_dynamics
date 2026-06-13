@@ -3,8 +3,9 @@ NOFRAME
 
 \newcommand{\jdtitle}{MMED Project Proposal}
 \newcommand{\jdsub}{Heterogeneity and disease invasion}
+\newcommand{\years}{}
 \newcommand{\wdate}{}
-\renewcommand{\jdauth}{}
+\newcommand{\jdauth}{}
 
 ----------------------------------------------------------------------
 

@@ -1,0 +1,93 @@
+
+NOFRAME
+
+\newcommand{\jdtitle}{Predicting epidemic size}
+\newcommand{\jdsub}{MMED Project Proposal}
+\newcommand{\years}{2026}
+\newcommand{\jdauth}{Jonathan Dushoff}
+
+----------------------------------------------------------------------
+
+ICI3DTHEME
+
+----------------------------------------------------------------------
+
+Background
+
+BCC
+
+	Outbreak data is often consistent with a wide range of possible final sizes
+
+	What are the key factors underlying epidemic size?
+
+	What are the tools for understanding, predicting and quantifying uncertainty?
+
+NCC
+
+CFIG my_images/weitz_full.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+Methods: conceptual
+
+	How should we define the size of an epidemic?
+
+	How does epidemic size depend on key factors?
+
+		\Rx
+
+		Severity
+
+		Heterogeneity and infection population size
+
+		Others?
+
+----------------------------------------------------------------------
+
+Methods: fitting
+
+	We will:
+
+		Simulate scenarios where epidemic size is affected by different factors
+
+		Do simple fitting exercises
+
+		Explore what assumptions or information are necessary to
+		differentiate between different driving factors
+
+----------------------------------------------------------------------
+
+Data
+
+	Depending on progress, we may choose to apply our methods to data
+	from:
+
+		The HIV labs
+
+		West African Ebola
+
+		The current Ebola outbreak
+
+		Others
+
+----------------------------------------------------------------------
+
+Considerations
+
+	This project is suitable for:
+
+		Thinking about conceptual underpinnings
+
+		Doing simple simulations
+
+		Exploring and explaining uncertainty
+
+	Be prepared to do:
+
+		Calculations
+
+		Simulations
+
+		Fits

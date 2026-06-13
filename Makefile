@@ -276,8 +276,11 @@ W1D3_Dushoff_Hetero_lab.pdf: | hetLab.draft.pdf
 	$(lnp)
 
 ## Pitch slides
+
 hetProject.draft.pdf: hetProject.txt
 intervalProject.draft.pdf: intervalProject.txt
+
+sizeProjectPitch.draft.pdf: sizeProjectPitch.txt
 
 ######################################################################
 
