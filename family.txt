@@ -5,6 +5,8 @@ TODO
 
 Ghost orphan warnings in processing script
 
+xrandr --output DP-4 --same-as eDP-1 --mode 1920x1080
+
 ----------------------------------------------------------------------
 
 EXTRA
@@ -37,6 +39,10 @@ NOFRAME
 ----------------------------------------------------------------------
 
 ICI3DTHEME
+
+----------------------------------------------------------------------
+
+WIDEFIG family.roadmap.pdf
 
 ----------------------------------------------------------------------
 
@@ -77,14 +83,13 @@ MMED Goals
 
 		review the dynamical modeling approach to infectious disease
 
-		explain why dynamical modeling is a key tool for understanding infectious
-		disease
+		discuss some considerations to take into account when making an
+		SIR-family “compartmental” model
 
-		discuss and demonstrate simple dynamical models from the SIR model family
+		show a concrete example of a dynamic model implementation, using
+		a spreadsheet
 
-		investigate some insights that can be gained from these models
-
-	just like my last lecture!
+		discuss some limitations of simple compartmental models
 
 ----------------------------------------------------------------------
 
@@ -278,7 +283,7 @@ REP DIAGRAM SIR_model_family/sir.three.pdf
 
 EXTRA
 
-resources/qrSIR2026.png
+resources/qrSIR2026.png ## Completely lost??
 
 \url{http://tinyurl.com/SIR-MMED-2025}
 \url{http://tinyurl.com/SIR-MMED-2024}
@@ -335,7 +340,8 @@ ODEs and mechanistic models
 	Warning: the relationship between unit-ed parameters and discrete-time
 	models can be very complicated.
 
-		This can often be ignored when time steps, and that's what we've done here.
+		This can often be ignored when time steps are small, and that's
+		what we've done here.
 
 		Be careful about this
 
@@ -483,7 +489,7 @@ TRACKED Population sizes
 
 ----------------------------------------------------------------------
 
-TRACKED REPSLIDE Population sizes
+REPSLIDE Population sizes
 
 REP DIAGRAM SIR_model_family/sir.three.pdf
 

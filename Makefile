@@ -117,12 +117,19 @@ chinese.pdf: chinese.tex
 
 ### ICI3D model family lectures
 ### MMED Foundations lecture
-## family.slides.pdf: family.txt family.draft.tex
+## family.slides.pdf: family.txt family.slides.tex
 ## family.draft.pdf: family.txt family.draft.tex
 ## family.draft.pdf: family.draft.log
 ## family.handouts.pdf: family.txt
 ## family.final.pdf: family.txt
 ## family.lecture:
+Ignore += W1D2_Dushoff_IntroDynamicsII.pdf
+W1D2_Dushoff_IntroDynamicsII.pdf: family.slides.pdf
+	$(copy)
+
+Ignore += *.roadmap.pdf
+family.roadmap.pdf: LatexTemplates/resources/roadMaps26.pdf
+	pdfjam --papersize '{10in,7in}' $< 13 --outfile $@
 
 ######################################################################
 
