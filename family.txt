@@ -20,11 +20,16 @@ EXTRA
 
 	TRACKED is things that were suppressed then, I think.
 
+	I am not using SUPP for MMED 2026, since it's a different kind of emergency this year 🙂
+
+	Keeping TRACKED, but removing the scripts stuff, which may be a straw person by now
+
 ----------------------------------------------------------------------
 
 NOFRAME
 
 \newcommand{\jdtitle}{Foundations of dynamic modeling:}
+\renewcommand{\jdtitle}{Introduction to dynamic modelling of infectious disease II}
 \newcommand{\jdsub}{The SIR Model Family}
 \newcommand{\years}{2013--\thisyear} 
 \newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
@@ -49,11 +54,11 @@ EXTRA Tech Goals
 
 ----------------------------------------------------------------------
 
-Goals
+EXTRA Isolation Goals
 
 	This lecture will:
 
-		introduce the idea of dynamical modeling
+		re-introduce the idea of dynamical modeling
 
 		explain why dynamical modeling is a key tool for understanding infectious
 		disease
@@ -61,6 +66,25 @@ Goals
 		discuss and demonstrate simple dynamical models from the SIR model family
 
 		investigate some insights that can be gained from these models
+
+	just like my last lecture!
+
+----------------------------------------------------------------------
+
+MMED Goals
+
+	This lecture will:
+
+		review the dynamical modeling approach to infectious disease
+
+		explain why dynamical modeling is a key tool for understanding infectious
+		disease
+
+		discuss and demonstrate simple dynamical models from the SIR model family
+
+		investigate some insights that can be gained from these models
+
+	just like my last lecture!
 
 ----------------------------------------------------------------------
 
@@ -97,7 +121,7 @@ DIAGRAM SIR_model_family/sirlin.three.pdf
 
 	Susceptible $\to$ Infectious $\to$ Recovered
 
-	How well does this reflect the simple transmission model?
+	OFFLINE How well does this reflect the simple transmission model?
 
 	What's missing?
 
@@ -137,7 +161,11 @@ REP DIAGRAM SIR_model_family/sir.three.pdf
 
 	What is the final result?
 
+		ANS Not everyone gets infected!
+
 	When does disease increase, decrease?
+
+		ANS Disease starts to decrease when susceptibles fall below threshold
 
 ----------------------------------------------------------------------
 
@@ -295,7 +323,6 @@ What is our graph showing?
 
 ----------------------------------------------------------------------
 
-
 ODEs and mechanistic models
 
 	What is the relationship between the spreadsheet and the ODE model we
@@ -304,6 +331,13 @@ ODEs and mechanistic models
 		ANS The ODE is the limit when deltaT $\to 0$
 
 		ANS We need technical software to do this well
+
+	Warning: the relationship between unit-ed parameters and discrete-time
+	models can be very complicated.
+
+		This can often be ignored when time steps, and that's what we've done here.
+
+		Be careful about this
 
 ----------------------------------------------------------------------
 
@@ -403,7 +437,7 @@ WIDEFIG my_images/latentIncuTable.png
 
 ----------------------------------------------------------------------
 
-TRACKED Scripts vs.\ spreadsheets
+OFFSLIDE Scripts vs.\ spreadsheets
 
 PIC DBFIG 0.7 SIR_model_family/gd.png 0.8 SIR_model_family/R.png
 
@@ -501,7 +535,7 @@ TRACKED Digression -- units
 
 	$\beta: [1/\mathrm{time}]$
 
-		The true $\beta$ always has people in the numerator and the denominator
+		The “true” $\beta$ always has people in the numerator and the denominator
 
 		$\beta/\gamma = \beta D: [1]$
 

@@ -117,9 +117,9 @@ chinese.pdf: chinese.tex
 
 ### ICI3D model family lectures
 ### MMED Foundations lecture
+## family.slides.pdf: family.txt family.draft.tex
 ## family.draft.pdf: family.txt family.draft.tex
 ## family.draft.pdf: family.draft.log
-## family.draft.pdf: family.txt family.draft.tex
 ## family.handouts.pdf: family.txt
 ## family.final.pdf: family.txt
 ## family.lecture:
