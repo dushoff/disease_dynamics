@@ -5,7 +5,7 @@ TODO
 
 Ghost orphan warnings in processing script
 
-xrandr --output DP-4 --same-as eDP-1 --mode 1920x1080
+xrandr --output DP-4 --same-as eDP-1 --mode 1920x1080 ##
 
 ----------------------------------------------------------------------
 
