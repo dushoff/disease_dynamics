@@ -16,7 +16,7 @@ target = Makefile
 target: $(target)
 
 vim_session:
-	bash -ic "vmt README.md"
+	bash -ic "vmt README.md TODO.md"
 
 ######################################################################
 
@@ -270,6 +270,22 @@ Sources += data.mk
 ## heterogeneity.handouts.pdf: heterogeneity.txt
 ## heterogeneity.slides.pdf: heterogeneity.txt
 ## heterogeneity.draft.tex: heterogeneity.txt
+W1D4_Dushoff_Heterogeneity.pdf: heterogeneity.slides.pdf
+	$(ln)
+
+heterogeneity.roadmap.pdf: LatexTemplates/resources/roadMaps26.pdf
+	pdfjam --papersize '{10in,7in}' $< 24 --outfile $@
+
+## hetLab.draft.pdf: hetLab.txt
+## hetLab.final.pdf: hetLab.txt
+## hetLab.handouts.pdf: hetLab.txt
+## hetLab.slides.pdf: hetLab.txt
+## hetLab.draft.tex: hetLab.txt
+
+W1D4_Dushoff_Hetero_lab.pdf: hetLab.draft.pdf
+	$(ln)
+
+######################################################################
 
 ## Make questions for Faikah
 Sources += mentimeter.pl
@@ -277,10 +293,6 @@ Sources += mentimeter.pl
 Ignore += *.mm.tsv
 %.mm.tsv: %.mm mentimeter.pl
 	$(PUSH)
-
-## hetLab.draft.pdf: hetLab.txt
-W1D3_Dushoff_Hetero_lab.pdf: | hetLab.draft.pdf
-	$(lnp)
 
 ## Pitch slides
 

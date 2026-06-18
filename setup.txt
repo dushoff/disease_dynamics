@@ -11,12 +11,12 @@ NOFRAME
 
 \newcommand{\jdtitle}{Fake lecture:}
 \newcommand{\jdsub}{for workshop setup}
-\newcommand{\years}{2026--\thisyear} 
+\newcommand{\years}{2026--\the\year} 
 \newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
 
 ----------------------------------------------------------------------
 
-ICI3DTHEME
+THEMETITLE
 
 ----------------------------------------------------------------------
 
@@ -24,14 +24,11 @@ Goals
 
 	This lecture will:
 
-		introduce the idea of dynamical modeling
+		Stretch your brain
 
-		explain why dynamical modeling is a key tool for understanding infectious
-		disease
+		Save the world
 
-		discuss and demonstrate simple dynamical models from the SIR model family
-
-		investigate some insights that can be gained from these models
+		Change your perspective on eggplants
 
 ----------------------------------------------------------------------
 

@@ -1,19 +1,55 @@
 
-NOFRAME
+----------------------------------------------------------------------
 
-\newcommand{\jdtitle}{Consequences of heterogeneity lab}
-\newcommand{\jdsub}{}
-\newcommand{\years}{\thisyear}
+EXTRA
+
+	Start from README.md.
 
 ----------------------------------------------------------------------
 
-ICI3DTHEME
+NOFRAME
+
+\newcommand{\jdtitle}{Lab}
+\newcommand{\jdsub}{Consequences of heterogeneity}
+\newcommand{\years}{2026--\the\year} 
+\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
+
+----------------------------------------------------------------------
+
+THEMETITLE
+
+----------------------------------------------------------------------
+
+Goals
+
+	Experiment with a simple model of heterogeneity based on activity
+	groups
+
+	Explore how variation in mixing rate effects
+
+		Ability to spread
+
+		Rate of spread
+
+		Final epidemic size
 
 ----------------------------------------------------------------------
 
 An example population
 
-FIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.Rout-0.pdf
+BC
+
+CFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.Rout-0.pdf
+
+NC
+
+	10 groups, differing in mixing rate
+
+	Subgroup \Rx\ varies from $<1$ to $>6$
+
+	What parameters did we use for this?
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -21,19 +57,41 @@ Homogeneous population
 
 SMALLFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.homoBase.pdf
 
-We can see that $\Ro=2$ from the susceptibility at the peak
+	How can we confirm that $\Ro=2$?
+
+		ANS Number of susceptibles at the peak
 
 ----------------------------------------------------------------------
 
 Heterogeneous population
 
-HFIG 0.7 RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetBase.pdf
+SMALLFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetBase.pdf
+
+----------------------------------------------------------------------
+
+Heterogeneous population
+
+BCC
+
+CFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetBase.pdf
+
+NCC
 
 	Faster (as expected)
 
+	\Ro?
+
+		ANS $>2$
+
 	Bigger epidemic (for these parameters)
 
-	Turns before $S=0.5$, why?
+	Turns before $S=0.5$!
+
+		ANS The opposite of what we expect from \Ro
+
+		ANS Susceptibility goes down as disease spreads
+
+EC
 
 ----------------------------------------------------------------------
 
@@ -48,8 +106,6 @@ Benchmark
 An example where increasing kappa changes a non-epidemic to an epidemic
 
 DOUBLEFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.noSpread.pdf RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetSpread.pdf
-
-	Sylvia's parameters
 
 ----------------------------------------------------------------------
 
@@ -67,6 +123,12 @@ Increasing kappa increases the total size of an epidemic that is already happeni
 
 DOUBLEFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.homoLess.pdf RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetMore.pdf
 
+----------------------------------------------------------------------
+
+EXTRA
+
+How to say Shadé in LaTeX
+
 	Shad\'e's parameters
 
 ----------------------------------------------------------------------
@@ -75,7 +137,7 @@ Benchmark
 
 Increasing kappa \emph{reduces} the total size of an epidemic
 
-DOUBLEFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetLess.pdf RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.homoMore.pdf
+DOUBLEFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.homoMore.pdf RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetLess.pdf
 
 ----------------------------------------------------------------------
 
@@ -96,8 +158,8 @@ Rate plots
 
 DOUBLEFIG RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.homoRates.pdf RTutorials/ICI3D_Lab_Heterogeneous_Groups.batch.hetRates.pdf
 
-	Average rates in both groups go down, but overall population mean (including
-	recovered) does not change
+	Average rates in both groups go down, but overall population mean
+	(including recovered) does not change
 
 ----------------------------------------------------------------------
 
@@ -105,7 +167,14 @@ Other experiments
 
 	How does nGroups affect things?
 
-	What value of $\kappa$ gives the biggest epidemic for a fixed value of $\bar c$?
+	What value of $\kappa$ gives the biggest epidemic for a fixed value
+	of $\bar c$?
 
 	What is \Ro\ in this model?
 
+		\Ro\ is proportional to $m$
+
+		So start by picking $m<1$ and find the smallest $\kappa$ to have
+		$\Ro>1$ 
+
+			Disease increases from beginning

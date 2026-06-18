@@ -1,6 +1,12 @@
 
 EXTRA Todo
 
+Something wrong with PSLIDE
+
+----------------------------------------------------------------------
+
+EXTRA Todo archive
+
 * Yellow lines
 
 * Logistic scales for proportion affected plots
@@ -30,9 +36,9 @@ EXTRA
 
 NOFRAME
 
-\newcommand{\jdtitle}{Heterogeneity, contact patterns and modeling options}
+\newcommand{\jdtitle}{Consequences of heterogeneity and modelling options}
 \newcommand{\jdsub}{}
-\newcommand{\years}{2013--\thisyear}
+\newcommand{\years}{2013--\the\year}
 \newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
 
 ----------------------------------------------------------------------
@@ -41,13 +47,13 @@ ICI3DTHEME
 
 ----------------------------------------------------------------------
 
-WIDEFIG road_map25.pdf
+WIDEFIG heterogeneity.roadmap.pdf
 
 ----------------------------------------------------------------------
 
 Goals
 
-	Explain the importance of heterogeneity on patterns of disease spread
+	Explain the importance of heterogeneity for patterns of disease spread
 
 		Focus on different types of human heterogeneity
 
@@ -96,18 +102,17 @@ PIC WFIG 0.48 my_images/inuit.jpg
 
 ----------------------------------------------------------------------
 
-PSLIDE Human heterogeneity
+Human heterogeneity
 
 WIDEFIG my_images/Lesotho_children.jpg
 
 ----------------------------------------------------------------------
 
-
-PSLIDE Human heterogeneity
+Human heterogeneity
 
 HFIG 0.42 my_images/dump_workers.jpg
 
-HFIG 0.48 my_images/bento.jpg
+HFIG 0.48 webpix/bongbong.jpg
 
 --------------------------------------------------------------
 
@@ -162,9 +167,7 @@ Equilibrium analysis
 
 	What is an example of an unstable equilibrium?
 
-		NOANS Try to get a disease and non-disease equilibrium
-
-		NOANS Try to get a disease and non-disease equilibrium
+		ANS The disease-free equilibrium for a prevalent disease
 
 ----------------------------------------------------------------------
 
@@ -403,10 +406,9 @@ Heterogeneity among hosts
 
 	Is it clear why we multiply $\sigma$ and $\tau$? 
 
-		ANS Not biologically.
+		ANS The simplest way to combine them
 
-		ANS This is an assumption we make for convenience, and should be
-		questioned!
+		ANS This is a model world assumption we should question
 
 ----------------------------------------------------------------------
 
@@ -457,7 +459,8 @@ How does $\Rx$ change?
 	Imagine a disease spread by people who differ only in their
 	mixing rates
 
-		Assume these don't change as the disease spreads, at least at first
+		Assume these don't change as the disease spreads, at least at
+		first
 
 	If the disease has just started spreading in the population, how do
 	$c_S$ and $c_I$ compare to $\bar c$?
@@ -476,11 +479,11 @@ Effective mixing rate
 
 		If we had only one group: $\Ro = (\sigma \tau) c D$,
 
-		We define $R_c$ for a group to be this value (the reproductive number if
-		everyone were in this group
+		We define $R_c$ for a group to be this value (the reproductive
+		number if everyone were in this group
 
-	We define $\Rnull$ as the population average of $R_c$. How will this relate
-	to \Ro?
+	We define $\Rnull$ as the population average of $R_c$. How will this
+	relate to \Ro?
 
 		ANS \Ro\ will generally be bigger than \Rnull.
 
@@ -692,6 +695,18 @@ Multi-group models
 
 ----------------------------------------------------------------------
 
+Multi-group models
+
+	Divide the population into \emph{virtual} groups. 
+
+	Groups are considered the same from the outside
+
+		but we assume there are unobserved differences
+
+	This is what we do in lab
+
+----------------------------------------------------------------------
+
 Individual-based models
 
 BC
@@ -725,8 +740,8 @@ PIC DBFIG 0.8 Endemic_curves/propCurves.Rout-1.pdf 0.8 Endemic_curves/propCurves
 
 Obstacle or opportunity
 
-	Heterogeneity makes diseases seem harder to eliminate (i.e., for a given
-	level of observed disease)
+	Heterogeneity makes diseases seem harder to eliminate (i.e., for a
+	given level of observed disease)
 
 	But they also provide opportunity for targeting:
 
