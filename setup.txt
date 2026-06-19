@@ -12,7 +12,18 @@ NOFRAME
 \newcommand{\jdtitle}{Fake lecture:}
 \newcommand{\jdsub}{for workshop setup}
 \newcommand{\years}{2026--\the\year} 
-\newcommand{\jdauth}{Jonathan Dushoff, McMaster University}
+
+\newcommand{\jdauth}{AUTHOR HERE!}
+\renewcommand{\jdauth}{Jonathan Dushoff, McMaster University}
+\renewcommand{\jdauth}{\textbf{Jonathan Dushoff}, Bobby Reiner, Seth Blumberg}
+
+----------------------------------------------------------------------
+
+EXTRA
+
+Institute is already defined as the sharing url (currently mmed main, I think)
+
+\renewcommand{\institute}{Agoclemptes}
 
 ----------------------------------------------------------------------
 
