@@ -20,7 +20,7 @@ vim_session:
 
 ######################################################################
 
-Makefile: mmed.set
+Makefile: plain.set
 
 testsetup:
 	- rmdir $(mirrors)
