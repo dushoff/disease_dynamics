@@ -57,7 +57,13 @@ Strategies
 
 	Should I try to leverage other proposal space?
 
-		e.g., less overlap between
+		e.g., less overlap between Summary and Proposal
+
+	Should I fiddle appearance?
+
+		I use whitespace to make boxed text (especially HQP boxes) more readable
+
+		This makes them look longer
 
 ----------------------------------------------------------------------
 
@@ -83,7 +89,7 @@ Aims
 
 Aim 1: Mixing matrices
 
-	E.g., ages, risk groups, geographica
+	E.g., ages, risk groups, geography
 
 	Data from surveys, cell phones
 
@@ -220,7 +226,13 @@ Mixing data
 
 Dynamical heterogeneity
 
-	SIR model pictures (diagram, time series) 
+WIDEFIG my_images/secDistLin.png
+
+----------------------------------------------------------------------
+
+Dynamical heterogeneity
+
+WIDEFIG my_images/secDist.png
 
 ----------------------------------------------------------------------
 
