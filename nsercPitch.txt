@@ -9,7 +9,55 @@ Techniques for incorporating trait and mixing heterogeneity in population models
 
 	Biology pitch session
 
-	August 2025
+	Jul 2026
+
+----------------------------------------------------------------------
+
+Status
+
+	Rejected!
+
+	Not enough detail about Methods
+
+		Sharpen and specify; will limit scope
+
+	Proof was not appreciated
+
+		Work on advancing this project first
+
+	Improve training plan (rated as Strong)
+
+----------------------------------------------------------------------
+
+Feedback
+
+	R1 very grumpy
+
+		thinks I spent too much time not talking about science
+
+		wants more detail than I really want to provide (but could compromise)
+
+	R2 very positive in general
+
+		but also agrees about methodological detail!
+
+	Panel
+
+		Panel complained about theoretical inclusion not mentioned by reviewers!
+
+----------------------------------------------------------------------
+
+Strategies
+
+	Reduce scope
+
+	Give very specific examples
+
+		try to make substantive progress to crystallize these
+
+	Should I try to leverage other proposal space?
+
+		e.g., less overlap between
 
 ----------------------------------------------------------------------
 
@@ -226,8 +274,8 @@ Other applications
 
 Metapopulation models 
 
-Bacterial co-operation and quorum sensing
+	Bacterial co-operation and quorum sensing
 
-Viral “behaviour”; can also talk about viral dynamics as another scale for disease modeling
+	Viral “behaviour”; can also talk about viral dynamics as another scale for disease modeling
 
-Information, opinions
+	Information, opinions
