@@ -3,8 +3,6 @@ EXTRA
 
 resources/nsercNoI25.pdf
 
-----------------------------------------------------------------------
-
 Techniques for incorporating trait and mixing heterogeneity in population models
 
 	Biology pitch session
@@ -12,6 +10,8 @@ Techniques for incorporating trait and mixing heterogeneity in population models
 	Jul 2026
 
 ----------------------------------------------------------------------
+
+EXTRA
 
 Status
 
@@ -28,6 +28,8 @@ Status
 	Improve training plan (rated as Strong)
 
 ----------------------------------------------------------------------
+
+EXTRA
 
 Feedback
 
@@ -46,6 +48,8 @@ Feedback
 		Panel complained about theoretical inclusion not mentioned by reviewers!
 
 ----------------------------------------------------------------------
+
+EXTRA
 
 Strategies
 

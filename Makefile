@@ -156,10 +156,19 @@ fake.pptx: fake.draft.tex
 ## overview.draft.pdf: overview.txt overview.md overview.notes
 ## overview.slides.pdf: overview.txt overview.slides.tex
 
+## lmHACK: overview.txt hetOverview.md
+
 ## overview.final.pdf: overview.txt overview.final.tex
 ## overview.draft.pdf: overview.txt overview.final.tex
 ## overview.chinese.pdf: overview.txt overview.md
 ## overview.txt.2023-04-01.datefile:
+
+## McMaster 2026 / NSERC-adjacent
+## Only working in md now!
+## hetOverview.draft.pdf: hetOverview.txt hetOverview.md
+## hetOverview.final.pdf: hetOverview.txt hetOverview.final.tex
+## hetOverview.chinese.pdf: hetOverview.txt hetOverview.md
+## hetOverview.txt.2023-04-01.datefile:
 
 ## Never took flight; just plaing with Chinese options, I think
 ## ntscDynamics.draft.pdf: ntscDynamics.txt ntscDynamics.md ntscDynamics.notes

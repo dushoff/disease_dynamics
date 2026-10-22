@@ -505,7 +505,7 @@ FIG my_images/weitz_full.pdf
 
 How long is a disease generation?
 
-PIC WIDEFIG ../generations/my_images/generation_girls.png
+PIC WIDEFIG ../generationTalks/my_images/generation_girls.png
 
 CREDIT David Champredon
 
