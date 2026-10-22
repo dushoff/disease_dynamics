@@ -3,6 +3,18 @@ Dynamical modeling of infectious disease
 
 	Simple lessons
 
+		change tends to be exponential
+		disease does not always spread
+		not every one gets infected
+		Diseases tend to oscillate
+		Oscillations tend to be damped
+		generation interval links \rR
+		It is easier to reduce the peak than the total cases
+		outbreaks can die out at random
+		Pattern of outbreak sizes is related to \Rx
+		stochasticity interacts with oscillations
+		heterogeneity makes incidence robust
+
 Compartmental vs. renewal equation
 
 	SIR_model_family/sir.three.pdf
