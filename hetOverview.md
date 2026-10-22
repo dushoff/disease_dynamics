@@ -25,7 +25,7 @@ Heterogeneity
 
 	Population structure
 
-		Age, gender
+		Age, gender and/or sex
 
 		Networkiness
 
@@ -37,7 +37,13 @@ Heterogeneity
 
 	Spatial structure
 
+		Explicit, or meta-population 
+
 	Ties to equity
+
+Heterogeneity outcomes
+
+	Disease levels respond less than expected to changes in exogenous whatever
 
 Measuring heterogeneity
 
@@ -59,6 +65,10 @@ Possible aims
 
 	Building structured models
 
+		my_images/modelFactors.png
+
+		my_images/modelProduct.png
+
 	Phenomenological heterogeneity
 
 		SIR_simulations/mpHIVplots.Rout.pdf
@@ -72,6 +82,10 @@ Possible aims
 	Emergent heterogeneity
 
 		Hard to grasp, maybe exciting
+
+		my_images/secDistLin.png
+
+		my_images/secDist.png
 
 	Equity and targeting?
 
