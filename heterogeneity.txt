@@ -47,6 +47,10 @@ ICI3DTHEME
 
 ----------------------------------------------------------------------
 
+EXTRA
+
+Surprised this is not working during nserc dev 2026 Oct 28 (Wed)
+
 WIDEFIG heterogeneity.roadmap.pdf
 
 ----------------------------------------------------------------------

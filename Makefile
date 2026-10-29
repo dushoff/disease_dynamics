@@ -274,7 +274,7 @@ Sources += data.mk
 
 ### Heterogeneity ### NTU 2016-3
 
-## heterogeneity.draft.pdf: heterogeneity.txt
+## heterogeneity.draft.pdf: heterogeneity.txt heterogeneity.draft.tex
 ## heterogeneity.final.pdf: heterogeneity.txt
 ## heterogeneity.handouts.pdf: heterogeneity.txt
 ## heterogeneity.slides.pdf: heterogeneity.txt
